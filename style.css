@@ -8,14 +8,21 @@
   background-color: rgb(66, 103, 178);
   display: flex;
   margin: 0 auto;
+  border: solid 1px;
 }
 .top-bar img {
   display: flex;
   margin-right: 50px;
+  border: solid 1px;
 }
 
 .facebook-login {
   color: white;
+  border: solid 1px;
+}
+
+.top-bar form {
+  justify-content: flex-end;
 }
 
 .facebook-logo {
@@ -23,6 +30,7 @@
 }
 
 .form-group {
-  display: inline-block;
+  display: flex;
+  flex-flow: row nowrap;
   justify-content: flex-end;
 }
