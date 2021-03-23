@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Facebook</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/dist/css/DatePickerX.min.css">
 </head>
 <body>
   <header class="top-bar">    
@@ -13,7 +14,7 @@
     <form action="" class="facebook-login">
       <div class="form-group">
         <label for="user-email-phone" id="user-email-phone-label">Email ou telefone<br></label>
-        <input type="email" id="user-email-phone" name="email-phone">
+        <input type="text" id="user-email-phone" name="email-phone">
       </div>
       <div class="form-group">
         <label for="user-password" id="user-password-label">Senha<br></label>
@@ -38,16 +39,16 @@
       </div>
       <form action="">
         <div class="name-lastname">
-          <input type="text" required maxlength="20" name="firstname" placeholder="Nome">
-          <input type="text" required maxlength="20" name="lastname" placeholder="Sobrenome">
+          <input type="text" required maxlength="20" name="firstname" placeholder="Nome" class="form">
+          <input type="text" required maxlength="20" name="lastname" placeholder="Sobrenome" class="form">
         </div>
         <div class="email">
-          <input type="text" required maxlength="40" name="phone_email" placeholder="Celular ou email">
+          <input type="email" required maxlength="40" name="phone_email" placeholder="Celular ou email" class="form">
         </div>
         <div class="password">
-          <input type="password" required max="16" name="password" placeholder="Nova senha">
+          <input type="password" required max="16" name="password" placeholder="Nova senha" class="form">
         </div>
-        <label for="birthdate" id="label-birthdate"  >Data de nascimento<br></label>
+        <label for="birthdate" id="label-birthdate">Data de nascimento<br></label>
         <input type="text" id="birthdate" name="birthdate" placeholder="dd/mm/aaaa"> <br>
         <label for="gender" id="label-gender" aria-required="true" >Gênero<br></label>
         <input type="radio" name="gender" value="Feminino">Feminino
@@ -59,6 +60,7 @@
   </section>
   
 
+  <script src='dist/js/DatePickerX.min.js'></script>
   <script src="script.js"></script>
 </body>
 </html>

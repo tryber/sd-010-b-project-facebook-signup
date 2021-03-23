@@ -10,4 +10,11 @@ function alertLogin() {
 
 btnLogin.addEventListener('click', alertLogin);
 
-// const genderPersonalize = document.querySelector('#gender-personalize');
+const formValues = document.querySelectorAll('.form');
+
+const birthDate = document.getElementById('birthdate');
+
+
+
+
+
