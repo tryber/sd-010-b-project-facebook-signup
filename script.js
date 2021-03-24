@@ -15,10 +15,10 @@ btnEntrar.addEventListener('click', entrar);
 
 const aparecerInput = nada => {
   const pegaInput = document.getElementById('genero-opcional');
-  pegaInput.style.display = 'block'
+  pegaInput.style.display = 'block';
 }
 
 const desaparecerInput = nada => {
   const pegaInput = document.getElementById('genero-opcional');
-  pegaInput.style.display = 'none'
+  pegaInput.style.display = 'none';
 }
