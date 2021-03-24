@@ -13,12 +13,12 @@ function entrar() {
 }
 btnEntrar.addEventListener('click', entrar);
 
-const aparecerInput = nada => {
+function aparecerInput() {
   const pegaInput = document.getElementById('genero-opcional');
   pegaInput.style.display = 'block';
 }
 
-const desaparecerInput = nada => {
+function desaparecerInput() {
   const pegaInput = document.getElementById('genero-opcional');
   pegaInput.style.display = 'none';
 }
