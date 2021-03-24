@@ -20,7 +20,7 @@ function alerta() {
 // }
 
 function verifyText() {
-  const campos = document.querySelectorAll(':required');
+  const campos = document.querySelectorAll('.teste');
   for (let index = 0; index < campos.length; index = +1) {
     if (campos[index].value === '') {
       alertIvalidField.innerHTML = 'Campos inválidos';
