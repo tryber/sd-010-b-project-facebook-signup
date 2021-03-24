@@ -55,16 +55,11 @@ function checkBoth() {
   }
 }
 
-facebookRegister.addEventListener('click', (e) => {
-  e.preventDefault();
-  checkBoth();
-});
-
 // Para o request 18, recebemos ajuda do nosso colega Antenor Zapata pelo slack, que explicou como usar o .preventDefault();
 
 const newGender = inputsForm[7];
-newGender.addEventListener('click', (e) => {
-  e.preventDefault();
+
+newGender.addEventListener('click', () => {
   const newInput = document.createElement('input');
   const genderInputs = document.getElementById('other-gender');
   genderInputs.appendChild(newInput);
@@ -77,4 +72,68 @@ newGender.addEventListener('click', (e) => {
   newInput.setAttributeNode(attribute1);
   newInput.setAttributeNode(attribute2);
   newInput.setAttributeNode(attribute3);
+});
+
+// aprendi a criar atributos lendo um artigo no site Clube do Hardware, src: https://www.clubedohardware.com.br/topic/1274438-criar-um-formul%C3%A1rio-com-elementos-inputs-s%C3%B3-com-javascript/
+
+const rightContent = document.querySelector('.right-content');
+
+function createPs() {
+  const newText = document.createElement('p');
+  const newEmail = document.createElement('p');
+  const newDate = document.createElement('p');
+  const genderNew = document.createElement('p');
+  return {
+    newText,
+    newEmail,
+    newDate,
+    genderNew,
+  };
+}
+
+function getValues() {
+  const firstName = document.getElementById('first-name').value;
+  const lastName = document.getElementById('last-name').value;
+  const emailPhone = document.getElementById('email-phone').value;
+  const birthDate = document.getElementById('birth-date').value;
+  return {
+    firstName,
+    lastName,
+    emailPhone,
+    birthDate,
+  };
+}
+
+function newRightContent() {
+  const ps = createPs();
+  const values = getValues();
+  ps.newText.innerText = `Olá, ${values.firstName} ${values.lastName}`;
+  ps.newEmail.innerText = values.emailPhone;
+  ps.newDate.innerText = values.birthDate;
+  if (inputsForm[5].checked === true) {
+    ps.genderNew.innerText = inputsForm[5].value;
+  } else if (inputsForm[6].checked === true) {
+    ps.genderNew.innerText = inputsForm[6].value;
+  } else {
+    ps.genderNew.innerText = inputsForm[7].value;
+  }
+  rightContent.innerHTML = '';
+  rightContent.appendChild(ps.newText);
+  rightContent.appendChild(ps.newEmail);
+  rightContent.appendChild(ps.newDate);
+  rightContent.appendChild(ps.genderNew);
+}
+
+function checkBothTrue() {
+  checkFirst();
+  checkSecond();
+  if (checkFirst() !== true && checkSecond() !== true) {
+    newRightContent();
+  }
+}
+
+facebookRegister.addEventListener('click', (e) => {
+  e.preventDefault();
+  checkBoth();
+  checkBothTrue();
 });
