@@ -92,13 +92,13 @@ function createPs() {
 }
 
 function getValues() {
-  const firstName = document.getElementById('first-name').value;
-  const lastName = document.getElementById('last-name').value;
+  const firstName = `${document.getElementById('first-name').value}`;
+  const lastName = `${document.getElementById('last-name').value}`;
+  const fullName = `${firstName} ${lastName}`;
   const emailPhone = document.getElementById('email-phone').value;
   const birthDate = document.getElementById('birth-date').value;
   return {
-    firstName,
-    lastName,
+    fullName,
     emailPhone,
     birthDate,
   };
@@ -107,7 +107,7 @@ function getValues() {
 function newRightContent() {
   const ps = createPs();
   const values = getValues();
-  ps.newText.innerText = `Olá, ${values.firstName} ${values.lastName}`;
+  ps.newText.innerText = `Olá, ${values.fullName}`;
   ps.newEmail.innerText = values.emailPhone;
   ps.newDate.innerText = values.birthDate;
   if (inputsForm[5].checked === true) {
