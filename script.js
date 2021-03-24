@@ -12,3 +12,13 @@ function entrar() {
   }
 }
 btnEntrar.addEventListener('click', entrar);
+
+const aparecerInput = nada => {
+  const pegaInput = document.getElementById('genero-opcional');
+  pegaInput.style.display = 'block'
+}
+
+const desaparecerInput = nada => {
+  const pegaInput = document.getElementById('genero-opcional');
+  pegaInput.style.display = 'none'
+}

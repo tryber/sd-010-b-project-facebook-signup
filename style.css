@@ -69,3 +69,7 @@
 .cadastro-email {
   flex-direction: column;
 }
+
+#genero-opcional {
+  display: none;
+}
