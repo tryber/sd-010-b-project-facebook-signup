@@ -21,7 +21,8 @@
         <input type="password" name="" id="user-password">
       </div>
       <div class="form-control">
-        <button type="submit" id="button-login">Entrar</button>
+        <button id="button-login">Entrar</button>
+      </div>
     </form>
   </header>
   
@@ -39,38 +40,29 @@
       </div>
       <form action="" id="form-container">
         <div class="name-lastname">
-          <input type="text" required maxlength="20" name="firstname" placeholder="Nome" class="form">
-          <input type="text" required maxlength="20" name="lastname" placeholder="Sobrenome" class="form">
+          <input type="text" required maxlength="20" name="firstname" placeholder="Nome" class="validInfo firstName">
+          <input type="text" required maxlength="20" name="lastname" placeholder="Sobrenome" class="validInfo">
         </div>
         <div class="email">
-          <input type="email" required maxlength="40" name="phone_email" placeholder="Celular ou email" class="form">
+          <input type="text" required maxlength="40" name="phone_email" placeholder="Celular ou email" class="validInfo">
         </div>
         <div class="password">
-          <input type="password" required max="16" name="password" placeholder="Nova senha" class="form">
+          <input type="password" required max="16" name="password" placeholder="Nova senha" class="validInfo">
         </div>
-        <label for="birthdate" id="label-birthdate">Data de nascimento</label><br>
-        <input type="text" id="birthdate" name="birthdate" placeholder="dd/mm/aaaa"><br>
-        <label for="gender" id="label-gender" aria-required="true" >Gênero</label>
+        <label for="birthdate" id="label-birthdate"  >Data de nascimento<br></label>
+        <input type="text" id="birthdate" name="birthdate" placeholder="dd/mm/aaaa"> <br>
+          <label for="gender" id="label-gender" aria-required="true">Gênero<br></label>
           <input type="radio" name="gender" value="Feminino">Feminino
           <input type="radio" name="gender" value="Masculino">Masculino
-          <input type="radio" name="gender" value="Personalizado" id='generico'>Personalizado
-          <br>
-        <button type="submit" id="facebook-register">Cadastre-se</button>
+          <input type="radio" name="gender" value="Personalizado" id='generico'>Personalizado      
       </form>
+      <br>
+      <button type="submit" id="facebook-register">Cadastre-se</button>
+      
     </section>
   </section>
-  
 
   
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
