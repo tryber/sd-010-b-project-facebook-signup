@@ -7,38 +7,49 @@ function entrarFacebook() {
 }
 entrarFacebook();
 
-const getPrimeiroNome = document.getElementById('first-name-form').value;
-const getUltimoNome = document.getElementById('last-name-form').value;
-const getEmailCelular = document.getElementById('phone-email-form').value;
-const dateBirthdate = document.getElementById('date-birthdate-form');
-const getDataNascimento = dateBirthdate.value;
 const botaoCadastro = document.getElementById('facebook-register');
+const formDireita = document.querySelector('.right-content');
+
+function recuperarInfo() {
+  const getPrimeiroNome = document.getElementById('first-name-form').value;
+  const getUltimoNome = document.getElementById('last-name-form').value;
+  const getEmailCelular = document.getElementById('phone-email-form').value;
+  const dataNasci = document.getElementById('date-birthdate-form').value;
+  const iRadio = document.querySelector('input[type="radio"]:checked').value;
+  return {
+    getPrimeiroNome,
+    getUltimoNome,
+    getEmailCelular,
+    dataNasci,
+    iRadio,
+  };
+}
+
+function renderizarInfo(infos) {
+  formDireita.innerHTML = '';
+  const fullName = document.createElement('h2');
+  fullName.innerText = `Olá, ${infos.getPrimeiroNome}${infos.getUltimoNome}`;
+  const emailCelular = document.createElement('p');
+  emailCelular.innerText = infos.getEmailCelular;
+  const dataNascimento = document.createElement('p');
+  dataNascimento.innerText = infos.dataNasci;
+  const opcaoGenero = document.createElement('p');
+  opcaoGenero.innerText = infos.iRadio;
+  formDireita.appendChild(fullName);
+  formDireita.appendChild(emailCelular);
+  formDireita.appendChild(dataNascimento);
+  formDireita.appendChild(opcaoGenero);
+}
 
 function substituiConteudo() {
-  botaoCadastro.addEventListener('click', () => {
-    const nomeCompleto = document.createElement('h2');
-    nomeCompleto.innerText = `Olá, ${getPrimeiroNome} ${getUltimoNome}`;
-    const emailCelular = document.createElement('p');
-    emailCelular.innerText = getEmailCelular;
-    const dataNascimento = document.createElement('p');
-    dataNascimento.innerText = getDataNascimento;
-    const opcaoGenero = document.createElement('p');
-    const inputRadio = document.querySelector('input[type="radio"]:checked');
-    opcaoGenero.innerText = inputRadio.value;
-    const formDireita = document.querySelector('.right-content');
-    formDireita.innerHTML = '';
-    formDireita.appendChild(nomeCompleto);
-    formDireita.appendChild(emailCelular);
-    formDireita.appendChild(dataNascimento);
-    formDireita.appendChild(opcaoGenero);
-  });
+  const infos = recuperarInfo();
+  renderizarInfo(infos);
 }
-substituiConteudo();
-// Validando campos
-const inputText = document.querySelectorAll('.form input[type=text');
 
+// Validando campos
 botaoCadastro.addEventListener('click', (e) => {
   e.preventDefault();
+  const inputText = document.querySelectorAll('.form input[type="radio"]');
   const form = document.querySelector('.form');
   const erro = document.createElement('p');
   erro.innerText = 'Campos inválidos';
@@ -48,10 +59,12 @@ botaoCadastro.addEventListener('click', (e) => {
       form.appendChild(erro);
     }
   }
+  substituiConteudo();
 });
+
 //  campo personalizar genero
 const genderOtherDiv = document.querySelector('.gender-other');
-const radios = document.querySelectorAll('input[type=radio]');
+const radios = document.querySelectorAll('input[type="radio"]');
 radios.forEach((radio) => {
   radio.addEventListener('click', () => {
     if (radio.id === 'other') {
