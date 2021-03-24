@@ -43,3 +43,11 @@
 .right-content {
   width: 300px;
 }
+
+.top-contanier {
+  display: flex;
+  width: 1080px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
