@@ -13,6 +13,7 @@ entrarButton.addEventListener('click', alertMessage);
 function insertHide() {
   const name = document.getElementById('info');
   name.classList.add('hide');
+  name.innerText = 'a'
 }
 
 function removeHide() {
@@ -29,7 +30,7 @@ let valid;
 function validate() {
   valid = true;
   const inputs = document.querySelectorAll('#sign-up-form input');
-  for (let i = 0; i < inputs.length - 1; i += 1) {
+  for (let i = 0; i < inputs.length; i += 1) {
     if (inputs[i].value === '') {
       const validMsg = document.createElement('p');
       validMsg.innerText = 'Campos inválidos';
