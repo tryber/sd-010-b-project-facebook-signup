@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.facebook-logo {
+  margin-top: 10px;
+  width: 170px;
+}
+
+.top-bar {
+  display: flex;
+  background-color: rgb(66, 103, 178);
+  justify-content: space-between;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  margin: 10px;
+}
+
+.email {
+  height: 55px;
+}
+
+#button-login {
+  padding: 1px;
+}
+
+.form-control {
+  align-self: flex-end;
+  margin-bottom: 27px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.facebook-login label {
+  color: white;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.AbraConta {
+  display: flex;
+  flex-direction: column;
+}
+
+#firstLastName {
+  display: flex;
+  justify-content: space-around;
+}
+
+#firstLastName input {
+  width: 40%;
+}
