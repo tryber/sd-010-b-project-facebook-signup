@@ -10,19 +10,19 @@ function alertMessage(evento) {
 
 entrarButton.addEventListener('click', alertMessage);
 
-femaleRadius.addEventListener('click', insertHide);
-maleRadius.addEventListener('click', insertHide);
-optionRadius.addEventListener('click', removeHide);
-
-function insertHide(){
+function insertHide() {
   const name = document.getElementById('info');
   name.classList.add('hide');
 }
 
-function removeHide(){
+function removeHide() {
   const name = document.getElementById('info');
   name.classList.remove('hide');
 }
+
+femaleRadius.addEventListener('click', insertHide);
+maleRadius.addEventListener('click', insertHide);
+optionRadius.addEventListener('click', removeHide);
 
 let valid;
 
