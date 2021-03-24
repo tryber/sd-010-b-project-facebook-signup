@@ -13,7 +13,7 @@ entrarButton.addEventListener('click', alertMessage);
 function insertHide() {
   const name = document.getElementById('info');
   name.classList.add('hide');
-  name.innerText = 'a'
+  name.innerText = 'a';
 }
 
 function removeHide() {
