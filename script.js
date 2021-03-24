@@ -2,6 +2,7 @@ const buttonLogin = document.querySelector('#button-login');
 const catchValueInput = document.querySelector('#user-email-phone');
 const registerInputs = document.querySelectorAll('.input-register');
 const registerButton = document.querySelector('#facebook-register');
+const pegaRadio = document.querySelector('#custom');
 
 buttonLogin.addEventListener('click', () => {
   if (catchValueInput.value !== '') {
@@ -29,7 +30,7 @@ function validatesForm() {
   const errorField = document.querySelector('#error-message');
 
   if (!validatesInputs()) {
-    errorField.innerHTML = 'Campos inválidos';
+    errorField.innerText = 'Campos inválidos';
   }
 }
 
@@ -39,11 +40,10 @@ registerButton.addEventListener('click', (event) => {
   validatesForm();
 });
 
-const pegaRadio = document.querySelector("#custom");
-pegaRadio.addEventListener("click", () => {
-const pegaContainer = document.querySelector("#gender-container");
-const criaInput = document.createElement("input");
-criaInput.name = "gender-custom";
-criaInput.placeholder = "Gênero (opcional)";
-pegaContainer.appendChild(criaInput);
-})
+pegaRadio.addEventListener('click', () => {
+  const pegaContainer = document.querySelector('#gender-container');
+  const criaInput = document.createElement('input');
+  criaInput.name = 'gender-custom';
+  criaInput.placeholder = 'Gênero (opcional)';
+  pegaContainer.appendChild(criaInput);
+});
