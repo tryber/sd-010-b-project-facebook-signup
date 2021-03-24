@@ -38,3 +38,12 @@ registerButton.addEventListener('click', (event) => {
 
   validatesForm();
 });
+
+const pegaRadio = document.querySelector("#custom");
+pegaRadio.addEventListener("click", () => {
+const pegaContainer = document.querySelector("#gender-container");
+const criaInput = document.createElement("input");
+criaInput.name = "gender-custom";
+criaInput.placeholder = "Gênero (opcional)";
+pegaContainer.appendChild(criaInput);
+})
