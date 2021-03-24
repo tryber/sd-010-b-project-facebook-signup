@@ -21,7 +21,7 @@ function alerta() {
 
 function verifyText() {
   const campos = document.querySelectorAll(':required');
-  for (let index = 0; index < campos.length; index =+ 1) {
+  for (let index = 0; index < campos.length; index = +1) {
     if (campos[index].value === '') {
       alertIvalidField.innerHTML = 'Campos inválidos';
       return false;
