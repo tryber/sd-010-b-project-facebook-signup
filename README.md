@@ -52,7 +52,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 - [Avisos finais](#avisos-finais)
 
 ---
-
+...
 ## Habilidades
 
 Neste projeto, verificaremos se você é capaz de:

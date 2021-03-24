@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+  background-color: white;
+}
+
+.top-bar {
+  display: flex;
+  background-color: rgb(66, 103, 178);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.facebook-logo {
+  height: 65px;
+}
+
+.facebook-login {
+  font-size: 13px;
+  display: flex;
+  color: white;
+  flex-direction: row;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 7px;
+}
+
+.form-control {
+  align-self: flex-end;
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+#button-login {
+  font-weight: 700;
+  color: white;
+  background-color: blue;
+  margin-right: 3px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  background-color: #d5dae8;
+  justify-content: space-between;
+}
+
+.left-content {
+  width: 800px;
+  margin-left: 10px;
+}
+
+#facebook-slogan {
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 29px;
+  margin-top: 40px;
+  width: 450px;
+  word-spacing: -1px;
+}
+
+#facebook-networking {
+  width: 537px;
+}
+
+.right-content {
+  width: 300px;
+  font-size: 14px;
+  margin-right: 120px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 31px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 600;
+}
+
+footer {
+  font-size: 11px;
+  color: #737373;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.name {
+  display: flex;
+  margin-right: 2px;
+  margin-bottom: -13px;
+}
+
+.last-name {
+  margin-left: 3px;
+}
+
+.cadastro {
+  font-size: 14px;
+}
+
+.campo {
+  display: flex;
+  width: 125px;
+}
+
+.campo2 {
+  display: flex;
+  width: 125px;
+}
+
+.Nova-senha {
+  margin-top: 2px;
+  display: flex;
+}
+
+.form-dist {
+  margin-bottom: 15px;
+}
+
+.return-form {
+  visibility: hidden;
+}
+
+.alter-gender {
+  display: none;
+}
+
+#facebook-register {
+  margin-bottom: 40px;
+}
+
+#error {
+  color: red;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
