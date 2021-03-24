@@ -29,3 +29,8 @@
   background-color: rgb(66, 103, 178);
   align-self: flex-end;
 }
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+}
