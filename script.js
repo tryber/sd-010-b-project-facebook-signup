@@ -10,11 +10,13 @@ function alertLogin() {
 
 btnLogin.addEventListener('click', alertLogin);
 
-const formValues = document.querySelectorAll('.form');
+const newGenderElem = document.getElementById('form-container');
+const newGenderInput = document.createElement('input');
+const genderRadio = document.getElementById('generico');
 
-const birthDate = document.getElementById('birthdate');
-
-
-
-
-
+genderRadio.addEventListener('click', () => {
+  newGenderElem.appendChild(newGenderInput);
+  newGenderInput.setAttribute('type', 'text');
+  newGenderInput.setAttribute('name', 'gender-custom');
+  newGenderInput.setAttribute('placeholder', 'Gênero (opcional)');
+});

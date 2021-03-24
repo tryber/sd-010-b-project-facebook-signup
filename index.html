@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Facebook</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="/dist/css/DatePickerX.min.css">
+  
 </head>
 <body>
   <header class="top-bar">    
@@ -37,7 +37,7 @@
       <div class="quick-easy">
         É rápido e fácil.
       </div>
-      <form action="">
+      <form action="" id="form-container">
         <div class="name-lastname">
           <input type="text" required maxlength="20" name="firstname" placeholder="Nome" class="form">
           <input type="text" required maxlength="20" name="lastname" placeholder="Sobrenome" class="form">
@@ -48,19 +48,20 @@
         <div class="password">
           <input type="password" required max="16" name="password" placeholder="Nova senha" class="form">
         </div>
-        <label for="birthdate" id="label-birthdate">Data de nascimento<br></label>
-        <input type="text" id="birthdate" name="birthdate" placeholder="dd/mm/aaaa"> <br>
-        <label for="gender" id="label-gender" aria-required="true" >Gênero<br></label>
-        <input type="radio" name="gender" value="Feminino">Feminino
-        <input type="radio" name="gender" value="Masculino">Masculino
-        <input type="radio" name="gender" value="Personalizado" id=gender-personalize>Personalizado
+        <label for="birthdate" id="label-birthdate">Data de nascimento</label><br>
+        <input type="text" id="birthdate" name="birthdate" placeholder="dd/mm/aaaa"><br>
+        <label for="gender" id="label-gender" aria-required="true" >Gênero</label>
+          <input type="radio" name="gender" value="Feminino">Feminino
+          <input type="radio" name="gender" value="Masculino">Masculino
+          <input type="radio" name="gender" value="Personalizado" id='generico'>Personalizado
+          <br>
         <button type="submit" id="facebook-register">Cadastre-se</button>
       </form>
     </section>
   </section>
   
 
-  <script src='dist/js/DatePickerX.min.js'></script>
+  
   <script src="script.js"></script>
 </body>
 </html>
