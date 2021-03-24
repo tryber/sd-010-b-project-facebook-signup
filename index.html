@@ -41,15 +41,15 @@
       <p class="quick-easy">É rápido e fácil.</p>
       <form action="" name="cadastro">
         <p id="camposInvalidos"></p>
-        <input class="name teste" type="text" name="firstname" id="campo-name" placeholder="Nome">
-        <input class="name teste" type="text" name="lastname" id="campo-lastname" placeholder="Sobrenome">
+        <input required class="name teste" type="text" name="firstname" id="campo-name" placeholder="Nome">
+        <input required class="name teste" type="text" name="lastname" id="campo-lastname" placeholder="Sobrenome">
         <div>
-          <input class="phone-mail teste" type="text" name="phone_email" id="campo-phone" placeholder="Celular ou email">
-          <input class="phone-mail teste" name="password" id="campo-senha" placeholder="Nova senha" type="password" >
+          <input required class="phone-mail teste" type="text" name="phone_email" id="campo-phone" placeholder="Celular ou email">
+          <input required class="phone-mail teste" name="password" id="campo-senha" placeholder="Nova senha" type="password" >
         </div>
         <div>
           <label id="label-birthdate" for="birthdate">Data de nascimento</label>
-          <input class="teste" id="birthdate" type="text" name="birthdate" placeholder="dd/mm/aaaa">
+          <input required class="teste" id="birthdate" type="text" name="birthdate" placeholder="dd/mm/aaaa">
         </div>
         <div>
           <label id="label-gender" for="">Gênero</label>
