@@ -3,6 +3,13 @@ const bulletOptional = document.getElementById('radio-three');
 const bulletGener = document.getElementsByName('gender');
 const inputGenerCustom = document.getElementById('input-gener-custom');
 const bulletGender = document.getElementsByName('gender');
+const rgContent = document.querySelector('.right-content');
+const btnRegister = document.getElementById('facebook-register');
+const inpFName = document.getElementsByName('firstname');
+const inpLName = document.getElementsByName('lastname');
+const inpPEmail = document.getElementsByName('phone_email');
+const inpPassword = document.getElementsByName('password');
+const inpBirthdate = document.getElementsByName('birthdate');
 
 function checkErrosForm(arrInput) {
   let erros = 0;
@@ -26,12 +33,12 @@ function checkErroFormBullet(input) {
 }
 
 function getInputs() {
-  const inpFName = document.getElementsByName('firstname')[0].value;
-  const inpLName = document.getElementsByName('lastname')[0].value;
-  const inpPEmail = document.getElementsByName('phone_email')[0].value;
-  const inpPassword = document.getElementsByName('password')[0].value;
-  const inpBirthdate = document.getElementsByName('birthdate')[0].value;
-  const inputs = [inpFName, inpLName, inpPEmail, inpPassword, inpBirthdate];
+  const inputs = [
+    inpFName[0].value, inpLName[0].value,
+    inpPEmail[0].value, inpPassword[0].value,
+    inpBirthdate[0].value,
+  ];
+
   return inputs;
 }
 
@@ -50,17 +57,35 @@ function alertUserEmailPhone() {
   });
 }
 
+function showData(generCustom) {
+  const buletterTrue = bulletGener[0].checked;
+  const gener1 = bulletGener[0].value;
+  const gener2 = bulletGener[1].value;
+  rgContent.innerHTML = `
+    <h1> Ola ${inpFName[0].value} ${inpLName[0].value}</h1>
+    <p>Email-Telefone: ${inpPEmail[0].value}</p>
+    <p>Data de Nascimento: ${inpBirthdate[0].value}<p>
+  `;
+
+  if (inputGenerCustom.value !== '') {
+    rgContent.innerHTML += `<p>Genero: ${generCustom}</p>`;
+  } else if (buletterTrue) {
+    rgContent.innerHTML += `<p>Genero: ${gener1}</p>`;
+  } else {
+    rgContent.innerHTML += `<p>Genero: ${gener2}</p>`;
+  }
+}
+
 function validateNewUser() {
-  const btnRegister = document.getElementById('facebook-register');
   btnRegister.addEventListener('click', (e) => {
     const arrayInputs = getInputs();
     const generCustomIsHide = !boxGenerGustom.classList.contains('hide');
     if (checkErrosForm(arrayInputs) > 0 || !checkErroFormBullet(bulletGender)) {
       outputError();
-    }
-
-    if (generCustomIsHide && inputGenerCustom.value === '') {
+    } else if (generCustomIsHide && inputGenerCustom.value === '') {
       outputError();
+    } else {
+      showData(inputGenerCustom.value);
     }
 
     e.preventDefault();
