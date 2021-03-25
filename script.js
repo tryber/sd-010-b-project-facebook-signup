@@ -18,7 +18,7 @@ const addLocalStorage = (jsonInfoFacebook) => {
 
 const isValidFunction = (isValid, objectLocalStorage) => {
   if (!isValid) {
-    let p = document.createElement('p');
+    const p = document.createElement('p');
     p.setAttribute('id', 'messege-error');
     p.style.color = 'rgb(255, 0, 0)';
     p.innerText = 'Campos inválidos';
@@ -32,7 +32,8 @@ const setMessegeEmpty = () => {
   if (document.getElementById('messege-error')) {
     document.getElementById('messege-error').innerText = '';
   }
-}
+};
+
 function validateForm(event) {
   event.preventDefault();
   setMessegeEmpty();
