@@ -20,17 +20,21 @@ function validarGenero() {
 }
 
 function exibirConteudo(event) {
-  const div = document.getElementById('div-error');
+  const content = document.getElementById('right-content');
+  const divShow = document.createElement('div');
   const nome = document.getElementById('firstname').value;
   const sobrenome = document.getElementById('lastname').value;
-
-  for (let index = 0; index < 3; index += 1) {
-    if (genders[index].checked) {
-      div.innerHTML = `Olá, ${nome} ${sobrenome}`;
-    }
-  }
+  const email = document.getElementById('phone_email').value;
+  const data = document.getElementById('birthdate').value;
+  const genero = document.querySelector(':checked').value;
+  content.innerHTML = '';
+  divShow.innerHTML = `Olá, ${nome} ${sobrenome} 
+  Email: ${email} Data:${data}
+  Genero: ${genero}`;
+  content.appendChild(divShow);
   event.preventDefault();
 }
+
 
 //  https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault
 function cadastrarButton() {
