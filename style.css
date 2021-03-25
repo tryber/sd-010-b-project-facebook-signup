@@ -123,13 +123,11 @@ h2 {
 }
 
 .name-lastname {
-  height: 39px;
-  width: 172px;
+  display: flex;
 }
 
 .name-lastname input {
-  height: 35%;
-  width: 40%;
+  max-width: 40%;
 }
 
 #label-gender {
