@@ -114,13 +114,18 @@ const rcontent = document.querySelector('.right-content');
 rcontent.appendChild(qhead);
 //
 const q = 'quick-easy';
+const easyform = document.createElement('form');
+easyform.className = q;
+easyform.innerText = 'É rápido e fácil.';
+rcontent.appendChild(easyform);
+
 const qlabel = document.createElement('label');
-qlabel.class = q;
 qlabel.htmlFor = q;
-qlabel.innerText = 'É rápido e fácil.';
 rcontent.appendChild(qlabel);
 
 const qinput = document.createElement('input');
 qinput.id = q;
 qinput.type = 'text';
+qinput.name = 'firstname';
+qinput.placeholder = 'Nome';
 rcontent.appendChild(qinput);
