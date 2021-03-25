@@ -8,8 +8,6 @@ function exibeAlerta() {
 
 clickBotao.addEventListener('click', exibeAlerta);
 
-clickCad.addEventListener('click', camposInvalidos);
-
 function camposInvalidos() {
   const divMensagem = document.getElementById('div_mensagem');
   const nome = document.getElementById('nome');
@@ -41,3 +39,5 @@ function camposInvalidos() {
     divMensagem.innerHTML = ''
   }
 }
+
+clickCad.addEventListener('click', camposInvalidos);
