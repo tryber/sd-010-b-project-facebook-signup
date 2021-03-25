@@ -18,8 +18,9 @@ const addLocalStorage = (jsonInfoFacebook) => {
 
 const isValidFunction = (isValid, objectLocalStorage) => {
   if (!isValid) {
-    p = document.createElement('p');
-    p.style.color = 'rgb(255, 0, 0)'
+    const p = document.createElement('p');
+    p.setAttribute('id','messege-error');
+    p.style.color = 'rgb(255, 0, 0)';
     p.innerText = 'Campos inválidos';
     divRightContent.prepend(p);
   } else {
@@ -28,6 +29,9 @@ const isValidFunction = (isValid, objectLocalStorage) => {
 };
 function validateForm(event) {
   event.preventDefault();
+  if (document.getElementById('messege-error')) {
+    document.getElementById('messege-error').innerText = '';
+  }
   let isValid = true; const objectLocalStorage = {};
   const inputs = ['firstname', 'lastname', 'phone_email',
     'password', 'birthdate', 'gender'];
