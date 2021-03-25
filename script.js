@@ -1,3 +1,4 @@
+// Mudança para envio do projeto //
 const paragraph = document.querySelector('#paragraph');
 
 function entrarFacebook() {
