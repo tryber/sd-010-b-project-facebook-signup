@@ -12,7 +12,6 @@ function addEventGenderCustom() {
   const custom = document.getElementById('other');
   custom.addEventListener('click', showElement);
 }
-
 addEventGenderCustom();
 
 function hideElement() {
@@ -26,5 +25,14 @@ function addEventMaleFemale() {
   const female = document.getElementById('female');
   female.addEventListener('click', hideElement);
 }
-
 addEventMaleFemale();
+
+const validarCampos = () => {
+  const element = document.getElementById('formCadastro').querySelectorAll('input');
+  for (let index = 0; index < element.length; index += 1) {
+    if (element[index].value === '') {
+      element[index].placeholder = 'Campos inválidos';
+    }
+  }
+}
+document.getElementById('facebook-register').addEventListener('click', validarCampos);
