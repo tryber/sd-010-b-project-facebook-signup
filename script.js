@@ -2,6 +2,9 @@ const inputEmailPhone = document.getElementById('user-email-phone');
 const buttonGetIn = document.getElementById('button-login');
 const genderPersonality = document.getElementById('input-gender-personality');
 const divRightContent = document.getElementsByClassName('right-content')[0];
+const formOpenAccount = document.querySelector('[name="form"]');
+
+console.log(formOpenAccount);
 
 function buttonIn() {
   alert(inputEmailPhone.value);
@@ -23,7 +26,7 @@ const isValidFunction = (isValid, objectLocalStorage) => {
     p.setAttribute('id', idMessegeError);
     p.style.color = 'rgb(255, 0, 0)';
     p.innerText = 'Campos inválidos';
-    divRightContent.prepend(p);
+    formOpenAccount.prepend(p);
   } else {
     addLocalStorage(JSON.stringify(objectLocalStorage));
   }
