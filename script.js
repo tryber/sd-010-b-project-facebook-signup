@@ -46,7 +46,7 @@ function createPhrase() {
   const foneMail = document.getElementById('foneMail').value;
   const data = document.getElementById('data').value;
   const genero = getGender();
-  phrase = `Olá, ${nome} ${sobrenome} ${foneMail} ${data} ${genero}.`
+  phrase = `Olá, ${nome} ${sobrenome} ${foneMail} ${data} ${genero}.`;
   return (phrase);
 }
 
