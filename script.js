@@ -21,7 +21,7 @@ function validarGenero() {
 
 function exibirConteudo(event) {
   const content = document.getElementById('right-content');
-  const divShow = document.createElement('div');
+  const divShow = document.createElement('p');
   const nome = document.getElementById('firstname').value;
   const sobrenome = document.getElementById('lastname').value;
   const email = document.getElementById('phone_email').value;
@@ -29,9 +29,9 @@ function exibirConteudo(event) {
   const genero = document.querySelector(':checked').value;
   content.innerHTML = '';
   divShow.innerHTML = `Olá, ${nome} ${sobrenome} 
-  Email: ${email} 
-  Data:${data}
-  Genero: ${genero}`;
+  Email ou telefone: ${email} 
+  Data de Nascimento:${data}
+  Gênero: ${genero}`;
   content.appendChild(divShow);
   event.preventDefault();
 }
