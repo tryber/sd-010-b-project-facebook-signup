@@ -78,7 +78,7 @@ input {
   margin: 5px;
 }
 
-#user-email-phone , 
+#user-email-phone,
 #user-password {
   height: 30px;
   padding-left: 2px;
@@ -87,7 +87,14 @@ input {
   border-radius: 8px;
 }
 
-#firstname , 
+#firstname#lastname {
+  height: 30px;
+  padding-left: 10px;
+  font-size: 15px;
+  border: 1px solid #a5dcff;
+  border-radius: 8px;
+}
+
 #lastname {
   height: 30px;
   padding-left: 10px;
@@ -96,9 +103,30 @@ input {
   border-radius: 8px;
 }
 
-#phone_email , 
-#password , 
-#birthdate , 
+#phone_email {
+  height: 30px;
+  padding-left: 10px;
+  font-size: 15px;
+  border: 1px solid #a5dcff;
+  border-radius: 8px;
+}
+
+#password {
+  height: 30px;
+  padding-left: 10px;
+  font-size: 15px;
+  border: 1px solid #a5dcff;
+  border-radius: 8px;
+}
+
+#birthdate {
+  height: 30px;
+  padding-left: 10px;
+  font-size: 15px;
+  border: 1px solid #a5dcff;
+  border-radius: 8px;
+}
+
 #gender-custom {
   height: 30px;
   padding-left: 10px;
