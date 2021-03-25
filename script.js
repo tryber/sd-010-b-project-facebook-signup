@@ -81,6 +81,7 @@ button.addEventListener('click', alerta);
 const mainContent = document.createElement('div');
 mainContent.className = 'main-content';
 mainContent.style.display = 'flex';
+mainContent.style.justifyContent = 'space-evenly';
 spawn(mainContent);
 
 const leftContent = document.createElement('div');
@@ -101,3 +102,25 @@ simage.id = 'facebook-networking';
 simage.src = 'imgs/networking.png';
 document.querySelector('.left-content').appendChild(slogan);
 document.querySelector('.left-content').appendChild(simage);
+
+const rightContent = document.createElement('div');
+rightContent.className = 'right-content';
+rightContent.style.justifyContent = 'right';
+rightContent.style.width = '300px';
+document.querySelector('.main-content').appendChild(rightContent);
+const qhead = document.createElement('h1');
+qhead.innerText = 'Abra uma conta';
+const rcontent = document.querySelector('.right-content');
+rcontent.appendChild(qhead);
+//
+const q = 'quick-easy';
+const qlabel = document.createElement('label');
+qlabel.class = q;
+qlabel.htmlFor = q;
+qlabel.innerText = 'É rápido e fácil.';
+rcontent.appendChild(qlabel);
+
+const qinput = document.createElement('input');
+qinput.id = q;
+qinput.type = 'text';
+rcontent.appendChild(qinput);
