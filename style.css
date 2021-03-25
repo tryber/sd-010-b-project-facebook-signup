@@ -33,6 +33,7 @@
 .main-content {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .left-content {
@@ -44,6 +45,20 @@
 }
 
 .thingamagig {
+  display: flex;
+  flex-direction: column;
+}
+
+#button-login {
+  background-color: dodgerblue;
+  color: white
+}
+
+.email_phone {
+  display: flex;
+}
+
+.name_fast_last {
   display: flex;
   flex-direction: row;
 }
