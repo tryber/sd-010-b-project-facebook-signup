@@ -32,7 +32,7 @@ function validateForm(event) {
     if (content === '' || content.includes(' ')) {
       isValid = false;
     } else {
-      let field = inputs[index];
+      const field = inputs[index];
       objectLocalStorage[field] = content;
     }
   }
@@ -53,10 +53,9 @@ genderPersonality.addEventListener('click', () => {
 });
 
 /* Requisito 20: */
-let divRightContent = document.getElementsByClassName('right-content')[0];
+const divRightContent = document.getElementsByClassName('right-content')[0];
 
-/* Se as informações foram preenchidas pelo usuário anteriormente, 
-ele retorna uma mensagem na tela de login: */
+/* Se as informações foram preenchidas pelo usuário anteriormente, ele retorna uma mensagem na tela de login: */
 if (localStorage.getItem('infoUserFacebook')) {
   let info = localStorage.getItem('infoUserFacebook');
   console.log(info);
@@ -67,6 +66,5 @@ if (localStorage.getItem('infoUserFacebook')) {
   ${info.phone_email}
   ${info.birthdate}
   ${info.gender}
-  `
+  `;
 }
-
