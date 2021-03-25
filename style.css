@@ -78,7 +78,14 @@ input {
   margin: 5px;
 }
 
-#user-email-phone,
+#user-email-phone {
+  height: 30px;
+  padding-left: 2px;
+  font-size: 15px;
+  border: 1px solid #a5dcff;
+  border-radius: 8px;
+}
+
 #user-password {
   height: 30px;
   padding-left: 2px;
