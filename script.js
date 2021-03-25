@@ -1,3 +1,5 @@
+const paragraph = document.querySelector('#paragraph');
+
 function entrarFacebook() {
   const entrarBotao = document.getElementById('button-login');
   entrarBotao.addEventListener('click', () => {
@@ -47,19 +49,26 @@ function substituiConteudo() {
 }
 
 // Validando campos
-botaoCadastro.addEventListener('click', (e) => {
-  e.preventDefault();
-  const inputText = document.querySelectorAll('.form input[type="radio"]');
-  const form = document.querySelector('.form');
-  const erro = document.createElement('p');
-  erro.innerText = 'Campos inválidos';
-  erro.style.color = 'red';
-  for (let index = 0; index < inputText.length; index += 1) {
-    if (inputText[index].value === '') {
-      form.appendChild(erro);
+function validarCampos() {
+  const formInput = document.querySelectorAll('.formInput');
+  for (let index = 0; index < formInput.length; index += 1) {
+    if (formInput[index].value === '') {
+      paragraph.innerText = ('Campos inválidos');
+      return;
     }
   }
   substituiConteudo();
+}
+
+botaoCadastro.addEventListener('click', (e) => {
+  e.preventDefault();
+  paragraph.innerText = '';
+  const radioInput = document.querySelectorAll('.formInput');
+  for (let index = 0; index < radioInput.length; index += 1) {
+    if (radioInput[index].type === 'radio' && radioInput[index].checked) {
+      validarCampos();
+    }
+  }
 });
 
 //  campo personalizar genero
