@@ -29,7 +29,7 @@ function exibirConteudo(event) {
 
   for (let index = 0; index < 3; index += 1) {
     if (genders[index].checked) {
-      div.innerHTML = `Olá, ${nome} ${sobrenome}`
+      div.innerHTML = `Olá, ${nome} ${sobrenome}`;
       divShow.innerHTML = `Email: ${email} Data:${data}
         Genero: ${genders[index].value}`;
     }
