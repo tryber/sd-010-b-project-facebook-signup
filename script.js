@@ -1,6 +1,6 @@
 document.querySelector('#button-login').addEventListener('click', function () {
   const first = document.querySelector('#user-email-phone').value;
-    alert(first)
+  alert(first);
 });
 
 function checkForm() {
@@ -9,7 +9,7 @@ function checkForm() {
   const phone = document.getElementById('phone_email').value;
   const password = document.getElementById('password').value;
 
-  if (fname === '' || lname === '' || phone ==='' || password === '') {
+  if (fname === '' || lname === '' || phone === '' || password === '') {
     alert('Campos inválidos');
     return false;
   }
