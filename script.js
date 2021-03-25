@@ -27,11 +27,14 @@ function exibirConteudo() {
   const email = document.getElementById('phone_email').value;
   const data = document.getElementById('birthdate').value;
   const genero = document.querySelector(':checked').value;
+
   content.innerHTML = '';
+
   divShow.innerHTML = `Olá, ${nome} ${sobrenome} 
-  Email ou telefone: ${email} 
+  Email ou Telefone: ${email} 
   Data de Nascimento:${data}
   Gênero: ${genero}`;
+  
   content.appendChild(divShow);
 }
 
