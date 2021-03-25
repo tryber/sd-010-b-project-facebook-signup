@@ -63,16 +63,6 @@ function signUp() {
   rightCont.appendChild(newCont);
 }
 
-// let customGender = false;
-// function gender() {
-//   if (!customGender) {
-
-//     customGender = true;
-//   } else {
-
-//   }
-// }
-
 document.getElementById('facebook-register').onclick = (evento) => {
   evento.preventDefault();
   if (validate()) {
