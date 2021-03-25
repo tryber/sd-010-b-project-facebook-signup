@@ -42,7 +42,7 @@ const validarCampos = () => {
       const lastName = document.querySelectorAll('input')[3].value;
       const email = document.querySelectorAll('input')[4].value;
       const date = document.querySelectorAll('input')[7].value;
-      formCadastro.innerHTML = `${name} ${lastName}, ${email}, ${date}`;
+      formCadastro.innerHTML = `Olá ${name} ${lastName}, ${email}, ${date}`;
     }
   }
 };
