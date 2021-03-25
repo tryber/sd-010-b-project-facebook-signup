@@ -14,15 +14,13 @@ function campoInvalido() {
 
   const clickSiginup = document.querySelectorAll('input');
   let cont = 0;
-  
+
   for (let index = 0; index < clickSiginup.length; index += 1) {
     if (clickSiginup[index].value === '') {
       cont += 1;
     }
   }
-  if(cont != 0) {
+  if (cont != 0) {
     alert('Campos inválidos');
   }
 }
-
-
