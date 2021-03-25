@@ -19,7 +19,7 @@ function validarGenero() {
   return true;
 }
 
-function exibirConteudo(event) {
+function exibirConteudo() {
   const content = document.getElementById('right-content');
   const divShow = document.createElement('div');
   const nome = document.getElementById('firstname').value;
@@ -45,7 +45,7 @@ function cadastrarButton() {
       div.innerHTML = 'Campos inválidos';
       event.preventDefault();
     } else {
-      exibirConteudo(event);
+      exibirConteudo();
     }
   });
 }
