@@ -55,8 +55,10 @@ body {
 }
 
 #button-login {
-  background-color: dodgerblue;
+  background-color: rgb(66, 103, 178);
   color: white;
+  height: 30px;
+  width: 50px;
 }
 
 .email_phone {
