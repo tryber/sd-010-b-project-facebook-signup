@@ -21,19 +21,19 @@ function camposInvalidos() {
 
   if (nome.value === '') {
     divMensagem.innerHTML = 'Campos Inválidos';
-  } else if (sobrenome.value === '') {
+  } if (sobrenome.value === '') {
     divMensagem.innerHTML = 'Campos Inválidos';
-  } else if (email.value === '') {
+  } if (email.value === '') {
     divMensagem.innerHTML = 'Campos Inválidos';
-  } else if (senha.value === '') {
+  } if (senha.value === '') {
     divMensagem.innerHTML = 'Campos Inválidos';
-  } else if (dataDeNascimento.value === '') {
+  } if (dataDeNascimento.value === '') {
     divMensagem.innerHTML = 'Campos Inválidos';
-  } else if (generoF.value === '') {
+  } if (generoF.value === '') {
     divMensagem.innerHTML = 'Campos Inválidos';
-  } else if (generoM.value === '') {
+  } if (generoM.value === '') {
     divMensagem.innerHTML = 'Campos Inválidos';
-  } else if (generoP.value === '') {
+  } if (generoP.value === '') {
     divMensagem.innerHTML = 'Campos Inválidos';
   } else {
     divMensagem.innerHTML = ''
