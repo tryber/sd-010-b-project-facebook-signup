@@ -82,6 +82,7 @@ const mainContent = document.createElement('div');
 mainContent.className = 'main-content';
 mainContent.style.display = 'flex';
 mainContent.style.justifyContent = 'space-evenly';
+mainContent.style.alignItems = 'center';
 spawn(mainContent);
 
 const leftContent = document.createElement('div');
@@ -122,45 +123,61 @@ const easyform = document.createElement('form');
 easyform.className = q;
 rcontent.appendChild(easyform);
 
+const divName = document.createElement('div');
+divName.className = 'divName';
+divName.style.display = 'flex';
+divName.style.flexDirection = 'row';
+rcontent.appendChild(divName);
+const nameDiv = document.querySelector('.divName');
+
 const qlabel = document.createElement('label');
 qlabel.htmlFor = q;
-rcontent.appendChild(qlabel);
+nameDiv.appendChild(qlabel);
 
 const qinput = document.createElement('input');
 qinput.id = q;
+qinput.className = q;
 qinput.type = 'text';
 qinput.name = 'firstname';
 qinput.placeholder = 'Nome';
-rcontent.appendChild(qinput);
+qinput.required = true;
+nameDiv.appendChild(qinput);
 
 const surnameLabel = document.createElement('label');
 surnameLabel.htmlFor = 'surname';
-rcontent.appendChild(surnameLabel);
+surnameLabel.className = q;
+nameDiv.appendChild(surnameLabel);
 
 const surnameInput = document.createElement('input');
 surnameInput.id = 'surname';
+surnameInput.className = q;
 surnameInput.type = 'text';
 surnameInput.name = 'lastname';
 surnameInput.placeholder = 'Sobrenome';
-rcontent.appendChild(surnameInput);
+surnameInput.required = true;
+nameDiv.appendChild(surnameInput);
 
 const emailLabel = document.createElement('label');
 emailLabel.htmlFor = 'email';
+emailLabel.className = q;
 rcontent.appendChild(emailLabel);
 
 const emailInput = document.createElement('input');
 emailInput.id = 'email';
 emailInput.type = 'text';
+emailInput.className = q;
 emailInput.name = 'phone_email';
 emailInput.placeholder = 'Celular ou email';
 rcontent.appendChild(emailInput);
 
 const pwdLabel = document.createElement('label');
+pwdLabel.className = q;
 pwdLabel.htmlFor = 'pwd';
 rcontent.appendChild(pwdLabel);
 
 const pwdInput = document.createElement('input');
 pwdInput.id = 'pwd';
+pwdInput.className = q;
 pwdInput.type = 'password';
 pwdInput.name = 'password';
 pwdInput.placeholder = 'Nova senha';
