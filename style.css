@@ -43,3 +43,44 @@
   display: flex;
   flex-direction: column;
 }
+
+
+@media screen and ( max-width : 486px ) {
+
+  /* tudo */
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+
+  /* retirando a parte de baixo do header e as labels */
+  .main-content , #user-email-phone-label , #user-password-label {
+    display: none;
+  }
+
+  /* separando o logo do login */
+  .top-bar {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* centralizando e botando cor em volta da logo */
+  .facebook-logo {
+    background-color: rgb(66, 103, 178);
+    padding: 0 50%;
+  }
+
+  /* botando a caixa de login uma em cima da outra */
+  .facebook-login {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #user-email-phone {
+    background-color: black;
+  }
+}
