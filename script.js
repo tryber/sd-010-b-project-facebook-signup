@@ -15,7 +15,7 @@ btnEntrar.addEventListener('click', entrar);
 
 function verificaInput() {
   const encontraInput = document.getElementsByClassName('input');
-  for (const index in encontraInput) {
+  for (const index = 0;index >= encontraInput.length;index +=1) {
     if (encontraInput[index].value === '') {
       return false;
     }
@@ -26,13 +26,15 @@ function verificarRadio() {
   const pegaRadios = document.getElementsByName('gender');
   if (pegaRadios[0].checked) {
     return true;
-  } else if (pegaRadios[1].checked) {
-    return true;
-  } else if (pegaRadios[2].checked) {
-    return true;
-  } else {
-    return false;
   }
+  if (pegaRadios[1].checked) {
+    return true;
+  }
+  if (pegaRadios[2].checked) {
+    return true;
+  } 
+    return false;
+  
 }
 
 function clickCadastro() {
@@ -42,7 +44,6 @@ function clickCadastro() {
   if (verificaRadios === false || verificarInputs === false) {
     const encontraP = document.getElementById('cadastro-invalito');
     encontraP.style.display = 'block';
-
   }
 }
 
@@ -60,8 +61,8 @@ clickCadastro();
 
 verificaInput();
 
-verificarRadio()
+verificarRadio();
 
 aparecerInput();
 
-desaparecerInput()
+desaparecerInput();
