@@ -103,6 +103,7 @@ simage.src = 'imgs/networking.png';
 document.querySelector('.left-content').appendChild(slogan);
 document.querySelector('.left-content').appendChild(simage);
 
+const q = 'quick-easy';
 const rightContent = document.createElement('div');
 rightContent.className = 'right-content';
 rightContent.style.justifyContent = 'right';
@@ -113,10 +114,10 @@ qhead.innerText = 'Abra uma conta';
 const rcontent = document.querySelector('.right-content');
 rcontent.appendChild(qhead);
 const quickText = document.createElement('p');
+quickText.className = q;
 quickText.innerText = 'É rápido e fácil.';
 rcontent.appendChild(quickText);
 
-const q = 'quick-easy';
 const easyform = document.createElement('form');
 easyform.className = q;
 rcontent.appendChild(easyform);
@@ -142,3 +143,38 @@ surnameInput.type = 'text';
 surnameInput.name = 'lastname';
 surnameInput.placeholder = 'Sobrenome';
 rcontent.appendChild(surnameInput);
+
+const emailLabel = document.createElement('label');
+emailLabel.htmlFor = 'email';
+rcontent.appendChild(emailLabel);
+
+const emailInput = document.createElement('input');
+emailInput.id = 'email';
+emailInput.type = 'text';
+emailInput.name = 'phone_email';
+emailInput.placeholder = 'Celular ou email';
+rcontent.appendChild(emailInput);
+
+const pwdLabel = document.createElement('label');
+pwdLabel.htmlFor = 'pwd';
+rcontent.appendChild(pwdLabel);
+
+const pwdInput = document.createElement('input');
+pwdInput.id = 'pwd';
+pwdInput.type = 'password';
+pwdInput.name = 'password';
+pwdInput.placeholder = 'Nova senha';
+rcontent.appendChild(pwdInput);
+
+const birthLabel = document.createElement('label');
+birthLabel.id = 'label-birthdate';
+birthLabel.innerText = 'Data de nascimento';
+birthLabel.htmlFor = 'birth';
+rcontent.appendChild(birthLabel);
+
+const birthInput = document.createElement('input');
+birthInput.id = 'birth';
+birthInput.type = 'text';
+birthInput.name = 'birthdate';
+birthInput.placeholder = 'dd/mm/aaaa';
+rcontent.appendChild(birthInput);
