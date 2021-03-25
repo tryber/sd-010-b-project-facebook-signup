@@ -97,7 +97,7 @@ stext = `${stext} com as pessoas que fazem parte da sua vida.`;
 //  ):<
 slogan.innerText = stext;
 const simage = document.createElement('img');
-img.id = 'facebook-networking';
-img.src = 'imgs/networking.png';
+simage.id = 'facebook-networking';
+simage.src = 'imgs/networking.png';
 document.querySelector('.left-content').appendChild(slogan);
 document.querySelector('.left-content').appendChild(simage);
