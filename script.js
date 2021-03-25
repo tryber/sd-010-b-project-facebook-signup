@@ -15,7 +15,7 @@ btnEntrar.addEventListener('click', entrar);
 
 function verificaInput() {
   const encontraInput = document.getElementsByClassName('input');
-  for (const index = 0;index <= encontraInput.length;index +=1) {
+  for (const index = 0; index <= encontraInput.length; index += 1) {
     if (encontraInput[index].value === '') {
       return false;
     }
@@ -32,15 +32,12 @@ function verificarRadio() {
   }
   if (pegaRadios[2].checked) {
     return true;
-  } 
-    return false;
-  
+  }
+  return false;
 }
-
 function clickCadastro() {
   const verificaRadios = verificarRadio();
   const verificarInputs = verificaInput();
-
   if (verificaRadios === false || verificarInputs === false) {
     const encontraP = document.getElementById('cadastro-invalito');
     encontraP.style.display = 'block';
