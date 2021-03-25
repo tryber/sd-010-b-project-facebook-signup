@@ -8,6 +8,10 @@ const masculino = document.querySelector('#masculino');
 const inputsForm = document.querySelectorAll('.input');
 const mensagem = document.querySelector('#mensagem');
 const novaConta = document.querySelector('.nova-conta');
+const rightContent = document.querySelector('.right-content');
+const mainContent = document.querySelector('.main-content');
+const paragrafo = document.createElement('p');
+const div = document.createElement('div');
 
 function alertEmail() {
   alert(inputEmail.value);
@@ -39,6 +43,13 @@ function validaCampos(evento) {
     if (inputsForm[i].value === '' || generoSelec === null) {
       mensagem.innerHTML = 'Campos inválidos';
       mensagem.style.color = 'red';
+    } else {
+      paragrafo.innerHTML = `Olá, ${inputsForm[0].value} ${inputsForm[1].value}
+      ${inputsForm[2].value}, ${inputsForm[4].value}, ${generoSelec.value}`;
+      mainContent.removeChild(rightContent);
+      mainContent.appendChild(div);
+      div.className = 'right-content';
+      div.appendChild(paragrafo);
     }
   }
 }
