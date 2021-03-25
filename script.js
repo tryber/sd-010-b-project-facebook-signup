@@ -9,7 +9,6 @@ function exibeAlerta() {
 clickBotao.addEventListener('click', exibeAlerta);
 
 function campoInvalido() {
-
   const clickSiginup = document.querySelectorAll('input');
   let cont = 0;
   for (let index = 0; index < clickSiginup.length; index += 1) {
