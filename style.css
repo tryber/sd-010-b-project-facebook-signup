@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
@@ -61,4 +66,9 @@
 .name_fast_last {
   display: flex;
   flex-direction: row;
+}
+
+.contaneir-birthdate {
+  display: flex;
+  flex-direction: column;
 }
