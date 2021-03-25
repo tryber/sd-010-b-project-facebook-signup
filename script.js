@@ -27,8 +27,8 @@ function recuperarInfo() {
 
 function renderizarInfo(infos) {
   formDireita.innerHTML = '';
-  const fullName = document.createElement('h2');
-  fullName.innerText = `Olá, ${infos.getPrimeiroNome}${infos.getUltimoNome}`;
+  const fullName = document.createElement('h1');
+  fullName.innerText = `Olá, ${infos.getPrimeiroNome} ${infos.getUltimoNome}`;
   const emailCelular = document.createElement('p');
   emailCelular.innerText = infos.getEmailCelular;
   const dataNascimento = document.createElement('p');
