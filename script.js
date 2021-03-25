@@ -121,18 +121,15 @@ rcontent.appendChild(quickText);
 
 const easyform = document.createElement('form');
 easyform.className = q;
+easyform.id = 'formeasy';
 rcontent.appendChild(easyform);
-
-const divName = document.createElement('div');
-divName.className = 'divName';
-divName.style.display = 'flex';
-divName.style.flexDirection = 'row';
-rcontent.appendChild(divName);
-const nameDiv = document.querySelector('.divName');
+easyform.style.display = 'flex';
+easyform.style.flexDirection = 'column';
+const formeasy = document.querySelector('#formeasy');
 
 const qlabel = document.createElement('label');
 qlabel.htmlFor = q;
-nameDiv.appendChild(qlabel);
+formeasy.appendChild(qlabel);
 
 const qinput = document.createElement('input');
 qinput.id = q;
@@ -141,12 +138,12 @@ qinput.type = 'text';
 qinput.name = 'firstname';
 qinput.placeholder = 'Nome';
 qinput.required = true;
-nameDiv.appendChild(qinput);
+formeasy.appendChild(qinput);
 
 const surnameLabel = document.createElement('label');
 surnameLabel.htmlFor = 'surname';
 surnameLabel.className = q;
-nameDiv.appendChild(surnameLabel);
+formeasy.appendChild(surnameLabel);
 
 const surnameInput = document.createElement('input');
 surnameInput.id = 'surname';
@@ -155,12 +152,13 @@ surnameInput.type = 'text';
 surnameInput.name = 'lastname';
 surnameInput.placeholder = 'Sobrenome';
 surnameInput.required = true;
-nameDiv.appendChild(surnameInput);
+surnameInput.style.flexDirection = 'row';
+formeasy.appendChild(surnameInput);
 
 const emailLabel = document.createElement('label');
 emailLabel.htmlFor = 'email';
 emailLabel.className = q;
-rcontent.appendChild(emailLabel);
+formeasy.appendChild(emailLabel);
 
 const emailInput = document.createElement('input');
 emailInput.id = 'email';
@@ -168,12 +166,12 @@ emailInput.type = 'text';
 emailInput.className = q;
 emailInput.name = 'phone_email';
 emailInput.placeholder = 'Celular ou email';
-rcontent.appendChild(emailInput);
+formeasy.appendChild(emailInput);
 
 const pwdLabel = document.createElement('label');
 pwdLabel.className = q;
 pwdLabel.htmlFor = 'pwd';
-rcontent.appendChild(pwdLabel);
+formeasy.appendChild(pwdLabel);
 
 const pwdInput = document.createElement('input');
 pwdInput.id = 'pwd';
@@ -181,17 +179,17 @@ pwdInput.className = q;
 pwdInput.type = 'password';
 pwdInput.name = 'password';
 pwdInput.placeholder = 'Nova senha';
-rcontent.appendChild(pwdInput);
+formeasy.appendChild(pwdInput);
 
 const birthLabel = document.createElement('label');
 birthLabel.id = 'label-birthdate';
 birthLabel.innerText = 'Data de nascimento';
 birthLabel.htmlFor = 'birth';
-rcontent.appendChild(birthLabel);
+formeasy.appendChild(birthLabel);
 
 const birthInput = document.createElement('input');
 birthInput.id = 'birth';
 birthInput.type = 'text';
 birthInput.name = 'birthdate';
 birthInput.placeholder = 'dd/mm/aaaa';
-rcontent.appendChild(birthInput);
+formeasy.appendChild(birthInput);
