@@ -11,7 +11,6 @@ buttonEntrar.addEventListener('click', botaoEntrar);
 
 // Validações
 function invalid() {
-
   const errorMessage = document.querySelector('.error-message');
   errorMessage.innerText = 'Campo inválido - confira seus dados!';
 }
