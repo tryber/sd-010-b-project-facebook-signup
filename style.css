@@ -56,20 +56,8 @@
   width: 300px;
 }
 
-.nameFirst {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-self: frent-start;
-  width: 10px;
-}
-
-.lname {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-self: frent-end;
-  width: 20px;
+.nameFirst input[type="text"]{
+  width: 30%;
 }
 
 h1 {
