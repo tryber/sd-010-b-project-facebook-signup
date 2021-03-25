@@ -82,3 +82,19 @@ const mainContent = document.createElement('div');
 mainContent.className = 'main-content';
 mainContent.style.display = 'flex';
 spawn(mainContent);
+
+const leftContent = document.createElement('div');
+leftContent.className = 'left-content';
+leftContent.style.justifyContent = 'left';
+leftContent.style.width = '800px';
+document.querySelector('.main-content').appendChild(leftContent);
+
+const slogan = document.createElement('p');
+slogan.id = 'facebook-slogan';
+stext = "O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.";
+slogan.innerText = stext;
+simage = document.createElement('img');
+img.id = 'facebook-networking';
+img.src = 'imgs/networking.png'
+document.querySelector('.left-content').appendChild(slogan);
+document.querySelector('.left-content').appendChild(simage);
