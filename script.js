@@ -46,12 +46,12 @@ function printText() {
   const recoverdInfo = JSON.parse(localStorage.formPreenchido);
   createH2.innerText = `Olá, ${recoverdInfo.first} ${recoverdInfo.last}! Blza?`;
   const cool = ' Recebemos seu cadastro com sucesso! =]\n Confira teus dados:';
-  createUl.innerText = `\n${cool}\n`;
+  createUl.innerText = `${cool}\n`;
   const arrayOfInfos = Object.values(recoverdInfo);
   for (let index = 3; index < arrayOfInfos.length; index += 1) {
     const selectUl = document.querySelector('ul');
     const createLi = document.createElement('li');
-    createLi.innerText = arrayOfInfos[index];
+    createLi.innerText = `${arrayOfInfos[index]}`;
     selectUl.appendChild(createLi);
   }
 }
@@ -64,7 +64,7 @@ function guardaFormulario() {
     first: document.querySelector('.firstname').value,
     last: document.querySelector('.lastname').value,
     password: document.querySelector('#password').value,
-    mail: document.querySelector('.phone_email').value,
+    mailOrTell: document.querySelector('.phone_email').value,
     birthDate: document.getElementById('birthdate').value,
     gender: document.querySelector('input[name="gender"]:checked').value,
   };
