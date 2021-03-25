@@ -112,11 +112,13 @@ const qhead = document.createElement('h1');
 qhead.innerText = 'Abra uma conta';
 const rcontent = document.querySelector('.right-content');
 rcontent.appendChild(qhead);
-//
+const quickText = document.createElement('p');
+quickText.innerText = 'É rápido e fácil.';
+rcontent.appendChild(quickText);
+
 const q = 'quick-easy';
 const easyform = document.createElement('form');
 easyform.className = q;
-easyform.innerText = 'É rápido e fácil.';
 rcontent.appendChild(easyform);
 
 const qlabel = document.createElement('label');
@@ -129,3 +131,14 @@ qinput.type = 'text';
 qinput.name = 'firstname';
 qinput.placeholder = 'Nome';
 rcontent.appendChild(qinput);
+
+const surnameLabel = document.createElement('label');
+surnameLabel.htmlFor = 'surname';
+rcontent.appendChild(surnameLabel);
+
+const surnameInput = document.createElement('input');
+surnameInput.id = 'surname';
+surnameInput.type = 'text';
+surnameInput.name = 'lastname';
+surnameInput.placeholder = 'Sobrenome';
+rcontent.appendChild(surnameInput);
