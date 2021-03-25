@@ -21,17 +21,12 @@ function validarGenero() {
 
 function exibirConteudo(event) {
   const div = document.getElementById('div-error');
-  const divShow = document.getElementById('div-show');
   const nome = document.getElementById('firstname').value;
   const sobrenome = document.getElementById('lastname').value;
-  const email = document.getElementById('phone_email').value;
-  const data = document.getElementById('birthdate').value;
 
   for (let index = 0; index < 3; index += 1) {
     if (genders[index].checked) {
       div.innerHTML = `Olá, ${nome} ${sobrenome}`;
-      divShow.innerHTML = `Email: ${email} Data:${data}
-        Genero: ${genders[index].value}`;
     }
   }
   event.preventDefault();
