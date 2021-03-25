@@ -13,7 +13,7 @@ const buttonSubmitForm = document.getElementById('facebook-register');
 /* Função para adicionar informações ao localStorage: */
 const addLocalStorage = (jsonInfoFacebook) => {
   localStorage.setItem('infoUserFacebook', jsonInfoFacebook);
-}
+};
 
 const isValidFunction = (isValid, objectLocalStorage) => {
   if (!isValid) {
@@ -21,7 +21,7 @@ const isValidFunction = (isValid, objectLocalStorage) => {
   } else {
     addLocalStorage(JSON.stringify(objectLocalStorage));
   }
-}
+};
 function validateForm(event) {
   event.preventDefault();
   let isValid = true; const objectLocalStorage = {};
