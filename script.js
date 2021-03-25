@@ -2,8 +2,7 @@ function textAlert() {
   let textMsg = document.getElementById("user-email-phone").value;
   alert(textMsg);
 }
-​
-​
+​​
 function checkForm() {
   let fname = document.getElementById("firstname").value;
   let lname = document.getElementById("lastname").value;
