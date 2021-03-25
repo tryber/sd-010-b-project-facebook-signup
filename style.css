@@ -44,15 +44,30 @@
   flex-direction: column;
 }
 
+#user-email-phone , #user-password {
+  background-color: #F5F6F7;
+  width: auto;
+  height: auto;
+  border: black 1px solid;
+}
+
+
+#responsive-article, #conect-div {
+  display: none;
+}
 
 @media screen and ( max-width : 486px ) {
 
   /* tudo */
-  * {
+  * { 
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
+  }
+
+  #responsive-article {
+    display: inherit;
   }
 
   /* retirando a parte de baixo do header e as labels */
@@ -80,7 +95,101 @@
     flex-direction: column;
   }
 
+  #conect-div {
+    display: flex;
+    align-items: center;
+    color: #a89939;
+    border-bottom: 2px solid #a89939;
+    background: #FFFBE2;
+    height: 5vh;
+    width: 100vw;
+  }
+
+  #user-email-phone , #user-password {
+    background-color: #F5F6F7;
+    width: 90vw;
+    height: 50px;
+    border: black 1px solid;
+  }
+
   #user-email-phone {
-    background-color: black;
+    margin-top: 20px;
+    border-radius: 3px 3px 0 0 ;
+  }
+
+  #user-password {
+    border-radius: 0 0 3px 3px;
+  }
+
+  #button-login {
+    margin: 20px 0 20px 0;
+    background-color: #1877F2;
+    width: 90vw;
+    height: 50px;
+  }
+
+  .form-control {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #create-account {
+    display: block;
+  }
+
+  #create-account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+  }
+
+  #create-account button {
+    height: 8vh;
+    width: 40vw;
+    border-radius: 5px;
+    background-color: #00A401;
+  }
+
+  #create-account a {
+    margin: 10px 0 0 0;
+    text-decoration: none;
+    color: #3974d3;
+  }
+
+  #account-password-div {
+    display: flex;
+    justify-content: center;
+  }
+  #right ul, #left ul {
+    list-style-type: none;
+  }
+
+  #right , #left {
+    margin-top: 15vh;
+    color: rgb(77, 77, 231);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #mais {
+    display: inline-block;
+    border: 1px solid rgb(77, 77, 231);
+    height: 20px;
+    width: 20px;
+    font-weight: 900;
+    color: gray
+  }
+  #languages {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  article p {
+    margin-top: 10px;
+    text-align: center;
+    color: gray;
   }
 }
