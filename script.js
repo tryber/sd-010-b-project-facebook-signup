@@ -3,17 +3,22 @@ function alerta() {
   alert(email);
 }
 
-document.getElementById('button-login').addEventListener('click', alerta);
+function valida() {
+  const array = document.getElementsByClassName('verifica');
+  let cont = 0;
+  for (let i = 0; i < array.length; i += 1) {
+    if (array[i].value === '') {
+      cont += 1;
+    }
+  }
+  if (cont !== 0) {
+    const pai = document.getElementById('campo-obrigatorio');
+    const p = document.createElement('p');
+    p.innerHTML = 'Campos inválidos';
+    pai.appendChild(p);
+  }
+}
 
- function validar_form_contato() {
- const nome = formcontato.firstname.value;
- const sobreNome = formcontato.lastname.value;
- const email = formcontato.phone_email.value;
- const senha = formcontato.password.value;
- const texto = "Nome: " +nome + " "+ sobreNome + "; Email: "+email;
- alert(texto) 
- return true;
- }
- 
- 
+document.getElementById('button-login').addEventListener('click', alerta);
+document.getElementById('facebook-register').addEventListener('click', valida);
 
