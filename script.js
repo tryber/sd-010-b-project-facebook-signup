@@ -9,19 +9,25 @@ function botaoEntrar() {
 
 buttonEntrar.addEventListener('click', botaoEntrar);
 
-const buttonCadastrar = document.getElementById('facebook-register');
-// const userName = document.getElementById('name');
-// const lastName = document.getElementById('lastname');
-// const phoneEmail = document.getElementById('phone_email');
-// const password = document.getElementById('password');
-// const birthdate = document.getElementById('birthdate');
-const radioSelecionado = document.querySelector('input[name="gender"]:checked');
-console.log(radioSelecionado);
+// Validações
+function invalid () {
 
-function validarCadastro() {
-  if (radioSelecionado.value === null) {
-    alert('Campo inválido');
-  }
+  const errorMessage = document.querySelector('.error-message');
+  errorMessage.innerText = 'Campo inválido - confira seus dados!';
 }
 
-buttonCadastrar.addEventListener('click', validarCadastro);
+const getForms = document.getElementById('forms');
+
+
+function validate (event) {
+  event.preventDefault();
+  console.log('entrou validate')
+  const arrayInfoUser = document.querySelectorAll('.info-user');
+
+  for (let index = 0; index < arrayInfoUser.length; index += 1) {
+    if (arrayInfoUser[index].value === '') {
+      invalid();
+    }
+  }
+}
+getForms.addEventListener('submit', validate);

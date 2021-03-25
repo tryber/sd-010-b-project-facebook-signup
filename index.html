@@ -40,12 +40,13 @@
                     É rápido e fácil.
                 </p>
                 <form action="" id="forms">
+                    <p class="error-message"></p>
                     <div class="container-input">
-                        <input type="text" name="firstname" placeholder="Nome" id="name" required>
-                        <input type="text" name="lastname" placeholder="Sobrenome" id="lastname" required>
+                        <input type="text" name="firstname" placeholder="Nome" id="name" class="info-user">
+                        <input type="text" name="lastname" placeholder="Sobrenome" id="lastname" class="info-user">
                     </div>  
-                    <input type="text" name="phone_email" placeholder="Celular ou email" id="phone_email" required>
-                    <input type="password" name="password" placeholder="Nova senha" id="password" required>
+                    <input type="text" name="phone_email" placeholder="Celular ou email" id="phone_email" class="info-user">
+                    <input type="password" name="password" placeholder="Nova senha" id="password" class="info-user">
 
                     <div>
                         <label for="" id="label-gender">Gênero</label> <br>
@@ -63,7 +64,7 @@
 
                    <div class="container-date"></div>
                    <label id="label-birthdate" for="">Data de nascimento</label>
-                   <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate" required>
+                   <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate" class="info-user">
 
                    <button id="facebook-register" type="submit">Cadastre-se</button>
                    
