@@ -69,6 +69,10 @@
   width: 130px;
 }
 
+.hidden {
+  display: none;
+}
+
 .genders {
   display: flex;
   flex-wrap: wrap;
