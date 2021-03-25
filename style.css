@@ -72,3 +72,8 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.genero {
+  display: flex;
+  flex-direction: column;
+}
