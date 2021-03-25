@@ -1,0 +1,239 @@
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+}
+
+.facebook-logo {
+  display: flex;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  display: flex;
+  align-self: flex-end;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+#name-section {
+  display: flex;
+}
+
+#gender-section {
+  display: flex;
+  flex-direction: column;
+}
+
+#user-email-phone , #user-password {
+  background-color: rgb(245, 246, 247);
+  width: auto;
+  height: auto;
+  border: black 1px solid;
+}
+
+#user-email-phone::placeholder , #user-password::placeholder {
+  color: transparent;
+}
+
+#responsive-article , #conect-div {
+  display: none;
+}
+
+@media screen and ( max-width : 486px ) {
+
+  /* tudo */
+  * {
+    font-family: Lato, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+
+  #responsive-article {
+    display: inherit;
+  }
+
+  /* retirando a parte de baixo do header e as labels */
+  .main-content , #user-email-phone-label , #user-password-label {
+    display: none;
+  }
+
+  /* separando o logo do login */
+  .top-bar {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* centralizando e botando cor em volta da logo */
+  .facebook-logo {
+    background-color: rgb(66, 103, 178);
+    padding: 0 50%;
+  }
+
+  /* botando a caixa de login uma em cima da outra */
+  .facebook-login {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #conect-div {
+    display: flex;
+    align-items: center;
+    color: #a89939;
+    border-bottom: 1px solid #f1db46;
+    background: rgb(255, 251, 226);
+    width: 100vw;
+    font-weight: 500;
+    padding: 5px 15px;
+  }
+
+  #user-email-phone , #user-password {
+    background-color: rgb(245, 246, 247);
+    width: 90vw;
+    height: 50px;
+    border: rgb(138, 138, 138) 1px solid;
+  }
+
+  #user-email-phone::placeholder , #user-password::placeholder {
+    color: gray;
+    padding-left: 10px;
+    font-size: 15px;
+  }
+
+  #user-email-phone {
+    margin-top: 20px;
+    border-radius: 3px 3px 0 0;
+  }
+
+  #user-password {
+    border-radius: 0 0 3px 3px;
+    border-top: none;
+  }
+
+  button {
+    font-size: 15px;
+  }
+
+  #button-login {
+    margin: 20px 0 5px;
+    background-color: rgb(24, 119, 242);
+    border-radius: 5px;
+    width: 90vw;
+    height: 50px;
+    font-weight: 900;
+    color: white;
+  }
+
+  .form-control {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #create-account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+  }
+
+  #create-account button {
+    font-weight: 900;
+    color: white;
+    height: 8vh;
+    width: 35vw;
+    border-radius: 5px;
+    background-color: #00a401;
+  }
+
+  #create-account a {
+    margin: 10px 0 0;
+    text-decoration: none;
+    color: #3974d3;
+  }
+
+  #account-password-div {
+    display: flex;
+    justify-content: center;
+  }
+
+  #right ul , #left ul {
+    list-style-type: none;
+  }
+
+  #right , #left {
+    font-size: 13px;
+    margin-top: 8vh;
+    color: rgb(66, 103, 178);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #mais {
+    display: inline-block;
+    border: 1px solid rgb(66, 103, 178);
+    height: 20px;
+    width: 20px;
+    font-weight: 900;
+    color: gray;
+  }
+
+  #languages {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  article p {
+    margin-top: 10px;
+    text-align: center;
+    color: gray;
+    font-size: 13px;
+  }
+
+  #ou-div p {
+    display: inline-block;
+    margin: 10px;
+    color: #4d4d4d;
+  }
+
+  #ou-div hr {
+    display: inline-block;
+    width: 40vw;
+    height: 1px;
+    border: none;
+    background-color: #4d4d4d;
+  }
+
+  #ou-div {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+}
