@@ -11,6 +11,13 @@ buttonGetIn.addEventListener('click', buttonIn);
 /* Requisito 18: verificando se algum dos campos é vazio: */
 const buttonSubmitForm = document.getElementById('facebook-register');
 
+const isValidFunction = (isValid) => {
+  if (!isValid) {
+    alert('Campos inválidos');
+  } else {
+    addLocalStorage(JSON.stringify(objectLocalStorage))
+  }
+}
 function validateForm(event) {
   event.preventDefault();
   let isValid = true; const objectLocalStorage = {};
@@ -21,15 +28,11 @@ function validateForm(event) {
     if (content === '' || content.includes(' ')) {
       isValid = false;
     } else {
-      field = inputs[index];
+      let field = inputs[index];
       objectLocalStorage[field] = content;
     }
   }
-  if (!isValid) {
-    alert('Campos inválidos');
-  } else {
-    addLocalStorage(JSON.stringify(objectLocalStorage))
-  }
+  isValidFunction(isValid);
 }
 
 buttonSubmitForm.addEventListener('click', validateForm);
