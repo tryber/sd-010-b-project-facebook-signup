@@ -14,16 +14,23 @@ const buttonSubmitForm = document.getElementById('facebook-register');
 function validateForm(event) {
   event.preventDefault();
   let isValid = true;
+  const objectLocalStorage = {};
   const inputs = ['firstname', 'lastname', 'phone_email',
     'password', 'birthdate', 'gender'];
   for (let index = 0; index < inputs.length; index += 1) {
     const content = document.forms.form[inputs[index]].value;
     if (content === '' || content.includes(' ')) {
       isValid = false;
+    } else {
+      field = inputs[index];
+      objectLocalStorage[field] = content;
     }
   }
-  if (!isValid) alert('Campos inválidos');
-  return false;
+  if (!isValid) {
+    alert('Campos inválidos');
+  } else {
+    addLocalStorage(JSON.stringify(objectLocalStorage))
+  }
 }
 
 buttonSubmitForm.addEventListener('click', validateForm);
@@ -38,3 +45,26 @@ genderPersonality.addEventListener('click', () => {
   input.placeholder = 'Gênero (opcional)';
   divPai.appendChild(input);
 });
+
+/* Requisito 20: */
+let divRightContent = document.getElementsByClassName('right-content')[0];
+
+const addLocalStorage = (jsonInfoFacebook) => {
+  localStorage.setItem('infoUserFacebook', jsonInfoFacebook);
+}
+
+/* Se as informações foram preenchidas pelo usuário anteriormente, 
+ele retorna uma mensagem na tela de login: */
+if (localStorage.getItem('infoUserFacebook')) {
+  let info = localStorage.getItem('infoUserFacebook');
+  console.log(info);
+  info = JSON.parse(info);
+  /* console.log(divRightContent); */
+  divRightContent.innerHTML = '';
+  divRightContent.innerText = `Olá, ${info.firstname} ${info.lastname}
+  ${info.phone_email}
+  ${info.birthdate}
+  ${info.gender}
+  `
+}
+
