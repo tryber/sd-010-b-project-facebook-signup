@@ -5,7 +5,7 @@ function emailTelephoneAlert() {
 
 let clicked = false;
 function customGender() {
-  if (clicked === false){
+  if (clicked === false) {
     const parent = document.getElementsByClassName('genders')[0];
     const custom = document.createElement('input');
     custom.name = 'gender-custom';
@@ -32,10 +32,8 @@ window.onload = function () {
 
   const genderCustom = document.getElementById('custom-gender');
   genderCustom.addEventListener('click', customGender);
-
   // const feminino = document.getElementById('feminino');
   // feminino.addEventListener('click', removeCustomGender);
-
   // const masculino = document.getElementById('masculino');
   // masculino.addEventListener('click', removeCustomGender);
 };
