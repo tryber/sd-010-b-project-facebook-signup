@@ -35,6 +35,7 @@ function verificarRadio() {
   }
   return false;
 }
+
 function clickCadastro() {
   const verificaRadios = verificarRadio();
   const verificarInputs = verificaInput();
@@ -53,8 +54,6 @@ function desaparecerInput() {
   const pegaInput = document.getElementById('genero-opcional');
   pegaInput.style.display = 'none';
 }
-
-clickCadastro();
 
 verificaInput();
 
