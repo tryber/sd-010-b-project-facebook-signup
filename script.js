@@ -3,6 +3,7 @@ function emailTelephoneAlert() {
   alert(emailTel.value);
 }
 
+let clicked = false;
 function customGender() {
   if (clicked === false){
     const parent = document.getElementsByClassName('genders')[0];
