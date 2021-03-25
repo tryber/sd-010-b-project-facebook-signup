@@ -15,7 +15,6 @@ body {
   align-items: center;
 }
 
-
 #facebook-logo {
   width: 117px;
   height: 44px;
@@ -98,10 +97,10 @@ input {
 
 .radio-gender {
   display: flex;
+  width: 270px;
+  flex-wrap: wrap;
 }
 
 .hide {
   display: none;
-  flex-basis: auto;
-  flex-wrap: wrap;
 }

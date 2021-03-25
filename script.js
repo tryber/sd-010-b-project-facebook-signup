@@ -11,7 +11,6 @@ const femaleRadius = document.getElementById('userfemale');
 const maleRadius = document.getElementById('usermale');
 const optionRadius = document.getElementById('userother');
 
-
 function insertHide() {
   const name = document.getElementById('info');
   name.classList.add('hide');
@@ -26,7 +25,6 @@ function removeHide() {
 femaleRadius.addEventListener('click', insertHide);
 maleRadius.addEventListener('click', insertHide);
 optionRadius.addEventListener('click', removeHide);
-
 
 let valid;
 
