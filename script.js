@@ -67,6 +67,8 @@ botaoCadastro.addEventListener('click', (e) => {
   for (let index = 0; index < radioInput.length; index += 1) {
     if (radioInput[index].type === 'radio' && radioInput[index].checked) {
       validarCampos();
+    } else {
+      paragraph.innerText = ('Campos inválidos');
     }
   }
 });
