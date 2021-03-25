@@ -1,21 +1,16 @@
-let field = document.querySelector('#"button-login"');
-
-field.addEventListener('click', function () {
-  let first = document.querySelector('#user-email-phone').value;
-  let second = document.querySelector('#"user-password"');
-  if( first == '' || second == '') {
-    alert("Campos inválidos")
-    }
+document.querySelector('#button-login').addEventListener('click', function () {
+  const first = document.querySelector('#user-email-phone').value;
+    alert(first)
 });
 
 function checkForm() {
-  let fname = document.getElementById("firstname").value;
-  let lname = document.getElementById("lastname").value;
-  let phone = document.getElementById("phone_email").value;
-  let password = document.getElementById("password").value;
+  const fname = document.getElementById('firstname').value;
+  const lname = document.getElementById('lastname').value;
+  const phone = document.getElementById('phone_email').value;
+  const password = document.getElementById('password').value;
 
-  if (fname == '' || lname == '' || phone == '' || password == '') {
-    alert("Campos inválidos");
+  if (fname === '' || lname === '' || phone ==='' || password === '') {
+    alert('Campos inválidos');
     return false;
   }
 }
