@@ -16,10 +16,11 @@ const addLocalStorage = (jsonInfoFacebook) => {
   localStorage.setItem('infoUserFacebook', jsonInfoFacebook);
 };
 
+const idMessegeError = 'messege-error';
 const isValidFunction = (isValid, objectLocalStorage) => {
   if (!isValid) {
     const p = document.createElement('p');
-    p.setAttribute('id', 'messege-error');
+    p.setAttribute('id', idMessegeError);
     p.style.color = 'rgb(255, 0, 0)';
     p.innerText = 'Campos inválidos';
     divRightContent.prepend(p);
@@ -29,8 +30,8 @@ const isValidFunction = (isValid, objectLocalStorage) => {
 };
 
 const setMessegeEmpty = () => {
-  if (document.getElementById('messege-error')) {
-    document.getElementById('messege-error').innerText = '';
+  if (document.getElementById(idMessegeError)) {
+    document.getElementById(idMessegeError).innerText = '';
   }
 };
 
