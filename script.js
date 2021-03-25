@@ -14,5 +14,6 @@ function checkForm() {
     return false;
   }
 }
-let form = document.querySelector('#form-register');
-form.addEventListener('submit', checkForm)
+const form = document.querySelector('#form-register');
+form.addEventListener('submit', checkForm);
+
