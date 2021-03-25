@@ -15,7 +15,7 @@ btnEntrar.addEventListener('click', entrar);
 
 function verificaInput() {
   const encontraInput = document.getElementsByClassName('input');
-  for (const index = 0; index <= encontraInput.length; index += 1) {
+  for (let index = 0; index <= encontraInput.length; index += 1) {
     if (encontraInput[index].value === '') {
       return false;
     }
