@@ -29,7 +29,7 @@ buttonSubmitForm.addEventListener('click', validateForm);
 
 /* Requisito 19: */
 
-const genderCampos = genderPersonality.addEventListener('click', () => {
+genderPersonality.addEventListener('click', () => {
   const divPai = document.getElementById('campo-gender-personality');
   const input = document.createElement('input');
   input.type = 'text';
