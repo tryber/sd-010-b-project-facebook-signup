@@ -1,6 +1,7 @@
 const inputEmailPhone = document.getElementById('user-email-phone');
 const buttonGetIn = document.getElementById('button-login');
 const genderPersonality = document.getElementById('input-gender-personality');
+const divRightContent = document.getElementsByClassName('right-content')[0];
 
 function buttonIn() {
   alert(inputEmailPhone.value);
@@ -17,7 +18,10 @@ const addLocalStorage = (jsonInfoFacebook) => {
 
 const isValidFunction = (isValid, objectLocalStorage) => {
   if (!isValid) {
-    alert('Campos inválidos');
+    p = document.createElement('p');
+    p.style.color = 'rgb(255, 0, 0)'
+    p.innerText = 'Campos inválidos';
+    divRightContent.prepend(p);
   } else {
     addLocalStorage(JSON.stringify(objectLocalStorage));
   }
@@ -53,14 +57,12 @@ genderPersonality.addEventListener('click', () => {
 });
 
 /* Requisito 20: */
-const divRightContent = document.getElementsByClassName('right-content')[0];
 
 /* Se as informações foram preenchidas pelo usuário anteriormente, ele retorna uma mensagem na tela de login: */
 if (localStorage.getItem('infoUserFacebook')) {
   let info = localStorage.getItem('infoUserFacebook');
   console.log(info);
   info = JSON.parse(info);
-  /* console.log(divRightContent); */
   divRightContent.innerHTML = '';
   divRightContent.innerText = `Olá, ${info.firstname} ${info.lastname}
   ${info.phone_email}
