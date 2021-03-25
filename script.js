@@ -1,22 +1,10 @@
 // requisito button-login
 const btnLogin = document.getElementById('button-login');
-const inputEmailTel = document.querySelector('#user-email-phone');
-function alertLogin() {
+btnLogin.addEventListener('click', () => {
+  const inputEmailTel = document.querySelector('#user-email-phone');
   alert(inputEmailTel.value);
-}
+});
 
-btnLogin.addEventListener('click', alertLogin);
-
-function validar() {
-  const validInfoElem = document.querySelectorAll('.validInfo');
-  let valor;
-  for (let index = 0; index < validInfoElem.length; index += 1) {
-    if (validInfoElem[index].value === '') {
-      valor = false;
-    } else valor = true;
-  }
-  return valor;
-}
 // requisito genero personalizado (18)
 const newGenderElem = document.getElementById('form-container');
 const newGenderInput = document.createElement('input');
@@ -41,6 +29,7 @@ function getRadioValor() {
   return null;
 }
 // requisito 20 - mostrar informacoes cadastradas
+
 function changeContent() {
   const information = document.querySelectorAll('.validInfo');
   const informationBirthDate = document.querySelector('#birthdate').value;
@@ -57,6 +46,18 @@ function changeContent() {
 }
 
 // requisito facebook-register (18)
+
+function validar() {
+  const validInfoElem = document.querySelectorAll('.validInfo');
+  let valor;
+  for (let index = 0; index < validInfoElem.length; index += 1) {
+    if (validInfoElem[index].value === '') {
+      valor = false;
+    } else valor = true;
+  }
+  return valor;
+}
+
 const buttonRegister = document.querySelector('#facebook-register');
 buttonRegister.addEventListener('click', () => {
   const formCont = document.getElementById('form-container');
