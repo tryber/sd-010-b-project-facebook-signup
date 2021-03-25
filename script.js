@@ -15,8 +15,8 @@ function validateForm() {
   let isValid = true;
   const inputs = ['firstname', 'lastname', 'phone_email',
     'password', 'birthdate', 'gender'];
-  for (let input of inputs) {
-    const content = document.forms["form"][input].value;
+  for (let index = 0; index < inputs.length; index += 1) {
+    const content = document.forms["form"][inputs[index]].value;
     if (content === '') {
       isValid = false;
     }
