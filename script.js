@@ -1,4 +1,4 @@
-document.querySelector('#button-login').addEventListener('click', function () {
+document.querySelector('#button-login').addEventListener('click', () => {
   const first = document.querySelector('#user-email-phone').value;
   alert(first);
 });
@@ -14,3 +14,5 @@ function checkForm() {
     return false;
   }
 }
+let form = document.querySelector('#form-register');
+form.addEventListener('submit', checkForm)
