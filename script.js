@@ -1,4 +1,5 @@
 const inputs = document.querySelectorAll('.input-form');
+const genders = document.getElementsByClassName('radio-gender');
 
 function validarCampos() {
   for (let index = 0; index < inputs.length; index += 1) {
@@ -10,14 +11,29 @@ function validarCampos() {
 }
 
 function validarGenero() {
-  const genders = document.getElementsByClassName('radio-gender');
-
   for (let index = 0; index < 3; index += 1) {
     if (genders[index].checked) {
       return false;
     }
   }
   return true;
+}
+
+function exibirConteudo(event) {
+  const div = document.getElementById('div-error');
+  const nome = document.getElementById('firstname').value;
+  const sobrenome = document.getElementById('lastname').value;
+  const email = document.getElementById('phone_email').value;
+  const data = document.getElementById('birthdate').value;
+
+  for (let index = 0; index < 3; index += 1) {
+    if (genders[index].checked) {
+      div.innerHTML = `Olá, ${nome} ${sobrenome}
+       | Email: ${email} Data:${data}
+        Genero: ${genders[index].value}`;
+    }
+  }
+  event.preventDefault();
 }
 
 //  https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault
@@ -30,20 +46,9 @@ function cadastrarButton() {
       div.innerHTML = 'Campos inválidos';
       event.preventDefault();
     } else {
-      const nome = document.getElementById('firstname').value;
-      const sobrenome = document.getElementById('lastname').value;
-      const email = document.getElementById('phone_email').value;
-      const data = document.getElementById('birthdate').value;
-      const genders = document.getElementsByClassName('radio-gender');
-
-      for (let index = 0; index < 3; index += 1) {
-        console.log(genders[index].checked)
-        if (genders[index].checked) {
-          div.innerHTML = `Olá, ${nome} ${sobrenome} | Email: ${email} Data:${data} Genero: ${genders[index].value}`;
-        }
-      }
-      event.preventDefault();
+      exibirConteudo(event);
     }
+
   });
 }
 
@@ -83,8 +88,6 @@ function generoPersonalizado() {
 }
 
 function verificarGenero() {
-  const genders = document.getElementsByClassName('radio-gender');
-
   for (let index = 0; index < 3; index += 1) {
     genders[index].addEventListener('click', generoPersonalizado);
   }
