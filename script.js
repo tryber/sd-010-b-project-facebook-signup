@@ -29,10 +29,15 @@ addEventMaleFemale();
 
 const validarCampos = () => {
   const el = document.getElementById('formCadastro').querySelectorAll('input');
+  const verifRadio = document.getElementById('verifRadio');
+  const rd = verifRadio.querySelectorAll('input[name=gender]:checked');
   for (let index = 0; index < el.length; index += 1) {
     if (el[index].value === '') {
-      document.getElementById('pHidden').hidden = ''; // el[index].placeholder = 'Campos inválidos';
+      document.getElementById('pHidden').hidden = '';
     }
+  }
+  if (rd.length === 0) {
+    document.getElementById('pHidden').hidden = '';
   }
 };
 
