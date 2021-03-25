@@ -56,7 +56,7 @@
   width: 300px;
 }
 
-.nameFirst input[ type = 'text' ] {
+.nameFirst input {
   width: 100px;
 }
 
