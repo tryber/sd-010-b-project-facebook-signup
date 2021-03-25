@@ -20,7 +20,7 @@
         </div>
         <div class="form-group">
           <label id="user-password-label" for="user-password">Senha</label>
-          <input type="password" id="user-password">
+          <input type="password" id="user-password" autocomplete="off">
           <a href="#" id="reset">Esqueceu a conta?</a>
         </div>
         <div class="form-control">
@@ -48,30 +48,30 @@
       <p class="quick-easy">É rápido e fácil.</p>
       <form action="" method="get">
         <label id="form-user-name">
-          <input type="text" name="firstname" id="name" placeholder="Nome" class="checked">
-          <input type="text" name="lastname" id="subName" placeholder="Sobrenome" class="checked">
+          <input type="text" name="firstname" id="name" placeholder="Nome">
+          <input type="text" name="lastname" id="subName" placeholder="Sobrenome">
         </label>
         <label id="form-user-email-fone">
-          <input type="text" name="phone_email" id="phoneEmail" placeholder="Celular ou email" class="checked">
+          <input type="text" name="phone_email" id="phoneEmail" placeholder="Celular ou email">
         </label>
         <label for="form-userPassword">
-          <input type="password" name="password" id="userPassword" placeholder="Nova senha" class="checked">
+          <input type="password" name="password" id="userPassword" placeholder="Nova senha" autocomplete="off">
         </label>
         <label for="date-birthdate" id="label-birthdate">Data de nascimento</label>
-        <input type="date" name="birthdate" id="date-birthdate" placeholder="dd/mm/aaaa" class="checked">
+        <input type="date" name="birthdate" id="date-birthdate" placeholder="dd/mm/aaaa">
         <br>
         <label id="label-gender">Gênero</label>
         <div id="gender-container">
-          <input type="radio" name="gender" id="Fem" value="Feminino" class="checkedRadio">
+          <input type="radio" name="gender" id="Fem" value="Feminino">
           <label for="Fem" >Feminino</label>
-          <input type="radio" name="gender" id="Mas" value="Masculino" class="checkedRadio">
+          <input type="radio" name="gender" id="Mas" value="Masculino">
           <label for="Mas" >Masculino</label>
-          <input type="radio" name="gender" id="Per" value="Personalizado" class="checkedRadio">
+          <input type="radio" name="gender" id="Per" value="Personalizado">
           <label for="Per" >Personalizado</label>
         </div>
 
         <div id="genderPersonalizado">
-          <input type="text" name="gender-custom" id="" placeholder="Gênero (opcional)" required>
+          <input type="text" name="gender-custom" id="" placeholder="Gênero (opcional)">
         </div>
         <div>
           <button type="submit" id="facebook-register">Cadastre-se</button>

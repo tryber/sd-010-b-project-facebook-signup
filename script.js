@@ -20,66 +20,30 @@ buttonLogin.addEventListener('click', () => {
   alert(document.querySelector('#user-email-phone').value);
 });
 
-const inputText = document.querySelectorAll('.checked');
-const inputRadio = document.querySelectorAll('.checkedRadio');
+const inputCadastro = document.querySelectorAll('.right-content input');
+const inputRadio = document.querySelectorAll('#gender-container input');
 const cadastrar = document.querySelector('#facebook-register');
-let check = 0;
+let aux = [];
+let aux2 = false;
 cadastrar.addEventListener('click', () => {
-  for (let index = 0; index < inputText.length; index += 1) {
-    if (inputText[index] === '') {
-      check += 1;
+  for (let i = 0; i < inputCadastro.length -5; i += 1) {
+    aux.push(inputCadastro[i].value);
+  } 
+  for (let i = 0; i < inputRadio.length; i += 1) {
+    if (inputRadio[i].checked === true) {
+      aux2 = true;
     }
   }
-  for (let index = 0; index < inputRadio.length; index += 1) {
-    if (inputRadio[index].checked === false) {
-      check += 1;
-    }
-  }
-  if (check > 0) {
-    //Função lucas
-  } else {
+  printInvalido();
+});
+
+function printInvalido() {
+  if ((aux.length < 4) || (aux2 === false)) {
     const alerta = document.querySelector('footer');
     const p = document.createElement('p');
     p.innerHTML = 'Campos inválidos';
     p.style.fontSize = '25px';
     p.style.fontWeight = '900';
     alerta.appendChild(p);
-  }  
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// aqui
+  }
+}
