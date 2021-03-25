@@ -1,12 +1,12 @@
 let field = document.querySelector('#"button-login"');
 
-function emailOrPhone () {
-  let first = document.querySelector('#user-email-phone');
+field.addEventListener('click', function () {
+  let first = document.querySelector('#user-email-phone').value;
   let second = document.querySelector('#"user-password"');
   if( first == '' || second == '') {
     alert("Campos inválidos")
     }
-})
+});
 
 function checkForm() {
   let fname = document.getElementById("firstname").value;
