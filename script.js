@@ -24,15 +24,15 @@ const inputText = document.querySelectorAll('.validInput');
 const inputRadio = document.querySelectorAll('.validInputRadio');
 const cadastrar = document.querySelector('#facebook-register');
 
-function validFormInput(inputText) {
-  let value = [];
+function validFormInput() {
+  const value = [];
   for (let i = 0; i < inputText.length; i += 1) {
-    (inputText[i].value === '') ? value[i] = false : value[i] = true;
+  (inputText[i].value === '') ? value[i] = false : value[i] = true;
   }
   return value;
 }
 
-function validInputRadio(inputRadio) {
+function validInputRadio() {
   let value = -1;
   for (let i = 0; i < inputRadio.length; i += 1) {
     if (inputRadio[i].checked) {
@@ -52,7 +52,7 @@ function paremt (valid1, valid2) {
   if (aux[0] !== true) {
     aux[0] = false;
   }
-  (valid2 === -1) ? aux[1] = true : aux[1] = false;  
+  (valid2 === -1) ? aux[1] = true : aux[1] = false;
   if (valid2 === 2) {
     if (document.querySelector('.validInputRadioPersonalizado').value === '') {
       aux[1] = false;
@@ -69,12 +69,12 @@ function printCampo(paremt) {
     p.style.fontSize = '25px';
     p.style.fontWeight = '900';
     alerta.appendChild(p);
-  } 
+  }
 }
 
-cadastrar.addEventListener('click', () => {   
-  const valid1 = validFormInput(inputText);
-  const valid2 = validInputRadio(inputRadio);
+cadastrar.addEventListener('click', () => {
+  const valid1 = validFormInput();
+  const valid2 = validInputRadio();
   const parametro = paremt(valid1, valid2);
   printCampo(parametro);
 });
