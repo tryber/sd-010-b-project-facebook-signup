@@ -4,22 +4,26 @@ function emailTelephoneAlert() {
 }
 
 function customGender() {
-  const parent = document.getElementsByClassName('genders')[0];
-  const custom = document.createElement('input');
-  custom.name = 'gender-custom';
-  custom.placeholder = 'Gênero (opcional)';
-  custom.id = 'customGender';
-  parent.appendChild(custom);
+  if (clicked === false){
+    const parent = document.getElementsByClassName('genders')[0];
+    const custom = document.createElement('input');
+    custom.name = 'gender-custom';
+    custom.placeholder = 'Gênero (opcional)';
+    custom.id = 'customGender';
+    parent.appendChild(custom);
+    document.body.removeEventListener('click', customGender);
+  }
+  clicked = true;
 }
 
-function removeCustomGender() {
-  const fem = document.getElementById('feminino');
-  const masc = document.getElementById('masculino');
-  if ((fem.checked === true) || (masc.checked === true)) {
-    console.log('okay');
-    // const parent = document.getElementsByClassName('genders')[0];
-  }
-}
+// function removeCustomGender() {
+//   const fem = document.getElementById('feminino');
+//   const masc = document.getElementById('masculino');
+//   if ((fem.checked === true) || (masc.checked === true)) {
+//     console.log('okay');
+//     // const parent = document.getElementsByClassName('genders')[0];
+//   }
+// }
 
 window.onload = function () {
   const buttonLogin = document.getElementById('button-login');
@@ -28,9 +32,9 @@ window.onload = function () {
   const genderCustom = document.getElementById('custom-gender');
   genderCustom.addEventListener('click', customGender);
 
-  const feminino = document.getElementById('feminino');
-  feminino.addEventListener('click', removeCustomGender);
+  // const feminino = document.getElementById('feminino');
+  // feminino.addEventListener('click', removeCustomGender);
 
-  const masculino = document.getElementById('masculino');
-  masculino.addEventListener('click', removeCustomGender);
+  // const masculino = document.getElementById('masculino');
+  // masculino.addEventListener('click', removeCustomGender);
 };
