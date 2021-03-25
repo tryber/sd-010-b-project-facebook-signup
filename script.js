@@ -9,7 +9,7 @@ function buttonIn() {
 buttonGetIn.addEventListener('click', buttonIn);
 
 /* Requisito 18: verificando se algum dos campos é vazio: */
-buttonSubmitForm = document.getElementById('facebook-register');
+const buttonSubmitForm = document.getElementById('facebook-register');
 
 function validateForm() {
   let isValid = true;
