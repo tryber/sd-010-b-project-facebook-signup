@@ -35,7 +35,6 @@ function exibirConteudo(event) {
   event.preventDefault();
 }
 
-
 //  https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault
 function cadastrarButton() {
   const submitButton = document.getElementById('facebook-register');
