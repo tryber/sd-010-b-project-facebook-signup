@@ -13,7 +13,7 @@ function checkForm() {
   let lname = document.getElementById("lastname").value;
   let phone = document.getElementById("phone_email").value;
   let password = document.getElementById("password").value;
-  ​
+
   if (fname == '' || lname == '' || phone == '' || password == '') {
     alert("Campos inválidos");
     return false;
