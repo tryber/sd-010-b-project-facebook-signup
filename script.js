@@ -25,17 +25,6 @@ const inputRadio = document.querySelectorAll('#gender-container input');
 const cadastrar = document.querySelector('#facebook-register');
 let aux = [];
 let aux2 = false;
-cadastrar.addEventListener('click', () => {
-  for (let i = 0; i < inputCadastro.length -5; i += 1) {
-    aux.push(inputCadastro[i].value);
-  } 
-  for (let i = 0; i < inputRadio.length; i += 1) {
-    if (inputRadio[i].checked === true) {
-      aux2 = true;
-    }
-  }
-  printInvalido();
-});
 
 function printInvalido() {
   if ((aux.length < 4) || (aux2 === false)) {
@@ -47,3 +36,15 @@ function printInvalido() {
     alerta.appendChild(p);
   }
 }
+
+cadastrar.addEventListener('click', () => {
+  for (let i = 0; i < inputCadastro.length -5; i += 1) {
+    aux.push(inputCadastro[i].value);
+  }
+  for (let i = 0; i < inputRadio.length; i += 1) {
+    if (inputRadio[i].checked === true) {
+      aux2 = true;
+    }
+  }
+  printInvalido();
+});
