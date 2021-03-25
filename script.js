@@ -15,10 +15,9 @@ function customGender() {
 function removeCustomGender() {
   const fem = document.getElementById('feminino');
   const masc = document.getElementById('masculino');
-  if((fem.checked === true) || (masc.checked === true)) {
+  if ((fem.checked === true) || (masc.checked === true)) {
     console.log('okay');
-    const parent = document.getElementsByClassName('genders')[0];
-    
+    // const parent = document.getElementsByClassName('genders')[0];
   }
 }
 
