@@ -28,11 +28,13 @@ function addEventMaleFemale() {
 addEventMaleFemale();
 
 const validarCampos = () => {
-  const element = document.getElementById('formCadastro').querySelectorAll('input');
-  for (let index = 0; index < element.length; index += 1) {
-    if (element[index].value === '') {
-      element[index].placeholder = 'Campos inválidos';
+  const el = document.getElementById('formCadastro').querySelectorAll('input');
+  for (let index = 0; index < el.length; index += 1) {
+    if (el[index].value === '') {
+      el[index].placeholder = 'Campos inválidos';
     }
   }
-}
-document.getElementById('facebook-register').addEventListener('click', validarCampos);
+};
+
+const facebookRegister = document.getElementById('facebook-register');
+facebookRegister.addEventListener('click', validarCampos);
