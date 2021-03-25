@@ -21,4 +21,3 @@ function valida() {
 
 document.getElementById('button-login').addEventListener('click', alerta);
 document.getElementById('facebook-register').addEventListener('click', valida);
-

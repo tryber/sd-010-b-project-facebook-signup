@@ -78,7 +78,8 @@ input {
   margin: 5px;
 }
 
-#user-email-phone , #user-password {
+#user-email-phone,
+#user-password {
   height: 30px;
   padding-left: 2px;
   font-size: 15px;
@@ -86,7 +87,8 @@ input {
   border-radius: 8px;
 }
 
-#firstname , #lastname {
+#firstname,
+#lastname {
   height: 30px;
   padding-left: 10px;
   font-size: 15px;
@@ -94,7 +96,10 @@ input {
   border-radius: 8px;
 }
 
-#phone_email , #password , #birthdate , #gender-custom {
+#phone_email,
+#password,
+#birthdate,
+#gender-custom {
   height: 30px;
   padding-left: 10px;
   font-size: 15px;
