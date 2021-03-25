@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.top-bar-container {
+  background-color: rgb(66, 103, 178);
+  height: 82px;
+  display: flex;
+  justify-content: center;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.facebook-login {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  color: white;
+  width: 392px;
+}
+
+input {
+  padding: 5px;
+  margin: 4px 0;
+  width: 100%;
+  font-size: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 13px 0 0;
+  font-size: small;
+}
+
+.form-group label {
+  padding-bottom: 4px;
+}
+
+.form-group input {
+  margin: 0;
+  border: 1px solid #ccd0d5;
+  padding: 3px 3px 4px;
+  height: 23px;
+  width: 150px;
+}
+
+.form-line-fill {
+  padding-bottom: 19px;
+}
+
+.form-group a {
+  color: rgb(156, 180, 216);
+  text-decoration: none;
+  opacity: 0.5;
+  padding-top: 4px;
+}
+
+.form-group a:hover {
+  opacity: 1;
+}
+
+.form-group a:visited , .form-group a:hover , .form-group a:active {
+  color: inherit;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 25px;
+  font-size: small;
+  align-self: flex-end;
+}
+
+#button-login {
+  background-color: rgb(124, 154, 234);
+  border: 1px solid #29487d;
+  padding: 4px;
+  border-radius: 2px;
+  color: white;
+  font-weight: 900;
+
+  /* A 20% lighter version of the original color rgb(66, 103, 178)
+  https://convertingcolors.com/rgb-color-66_103_178.html */
+}
+
+#button-login:hover {
+  background-color: rgb(66, 103, 178);
+}
+
+.main-content {
+  display: flex;
+  flex: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: auto;
+  background-image: linear-gradient(white, rgb(236, 236, 236));
+}
+
+.left-content {
+  margin: 50px 0;
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#facebook-slogan {
+  font-size: 24px;
+  font-weight: 800;
+  color: rgb(22, 60, 136);
+  width: 70%;
+}
+
+#facebook-networking {
+  width: 80%;
+}
+
+.right-content {
+  width: 300px;
+  margin: 50px 0;
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: rgb(41, 41, 41);
+  font-weight: 800;
+}
+
+.quick-easy {
+  margin-bottom: 15px;
+}
+
+#name {
+  display: flex;
+  flex: column;
+}
+
+.radio-btn {
+  display: inline;
+  font-size: 15px;
+  margin: 0;
+}
+
+.radio {
+  margin: 10px 0;
+  width: 20px;
+}
+
+#firstname {
+  width: 50%;
+  margin-right: 2px;
+}
+
+#lastname {
+  width: 50%;
+  margin-left: 2px;
+}
+
+#password , #birthdate {
+  margin-bottom: 20px;
+}
+
+#label-birthdate , #label-gender {
+  font-size: 20px;
+}
+
+#gender {
+  display: flex;
+  flex-direction: row;
+}
+
+#facebook-register {
+  background-image: linear-gradient(rgb(96, 158, 96), rgb(55, 99, 55));
+  color: white;
+  border-radius: 4px;
+  margin-top: 20px;
+  width: 50%;
+  padding: 6px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+#error-message {
+  color: red;
+  font-weight: 800;
+  padding: 10px 0;
+  font-size: 20px;
+}
