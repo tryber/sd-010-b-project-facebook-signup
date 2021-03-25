@@ -73,3 +73,7 @@
 #genero-opcional {
   display: none;
 }
+
+#cadastro-invalito {
+  display: none;
+}

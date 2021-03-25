@@ -48,32 +48,32 @@
             <p class="quick-easy">É rápido e fácil.</p>
             <form action="" class="form-cadastro">
                 <div class="cadastro-nome">
-                <input required type="text" name="firstname" placeholder="Nome" >
-                <input required type="text" name="lastname" placeholder="Sobrenome">
+                <input class="input" type="text" name="firstname" placeholder="Nome" >
+                <input class="input" type="text" name="lastname" placeholder="Sobrenome">
             </div>
                 <div class="cadastro-email">
-                <input required type="text" name="phone_email" placeholder="Celular ou email">
-                <input required type="password" name="password" placeholder="Nova senha">
+                <input class="input" type="text" name="phone_email" placeholder="Celular ou email">
+                <input class="input" type="password" name="password" placeholder="Nova senha">
             </div>
                
                 
                     <label for="" id="label-birthdate"> Data de nascimento</label>
-                <input required type="text" name="birthdate" placeholder="dd/mm/aaaa">
+                <input class="input" type="text" name="birthdate" placeholder="dd/mm/aaaa">
 
                 <div class="gender-container">
                     <label for="gender" id="label-gender">Gênero</label>
                     <div class="label-gender-content">
-                      <input type="radio"  onclick="desaparecerInput()" name="gender" id="feminino" value="Feminino">
+                      <input  type="radio"  onclick="desaparecerInput()" name="gender" id="feminino" value="Feminino">
                       <label for="feminino" id="label-feminino">Feminino</label>
-                      <input type="radio"  onclick="desaparecerInput()" name="gender" id="masculino" value="Masculino">
+                      <input  type="radio"  onclick="desaparecerInput()" name="gender" id="masculino" value="Masculino">
                       <label for="masculino" id="label-masculino">Masculino</label>
-                      <input type="radio"  onclick="aparecerInput()" name="gender" id="personalizado" value="Personalizado">
+                      <input  type="radio"  onclick="aparecerInput()" name="gender" id="personalizado" value="Personalizado">
                       <label for="personalizado" id="label-personalizado">Personalizado</label>
                     </div>
-                    <input type="text" name="gender-custom" id="genero-opcional" placeholder="Gênero (opcional)">
+                    <input class="input" type="text" name="gender-custom" id="genero-opcional" placeholder="Gênero (opcional)">
                   </div>
-
-                <button type="submit" id="facebook-register">Cadastre-se</button>
+                  <p id="cadastro-invalito">Campos inválidos</p>cancelado
+                <button type="" id="facebook-register" onclick="clickCadastro()">Cadastre-se</button>
             </form>
         </div>
     </div>

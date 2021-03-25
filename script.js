@@ -13,6 +13,42 @@ function entrar() {
 }
 btnEntrar.addEventListener('click', entrar);
 
+function clickCadastro() {
+  const verificaRadios = verificarRadio();
+  const verificarInputs = verificaInput(); 
+  console.log("entrou para verificar os inputs")
+  if (verificaRadios === false || verificarInputs === false) {
+    const encontraP = document.getElementById('cadastro-invalito');
+    encontraP.style.display = 'block';
+    console.log("entrou no if")
+  }
+}
+
+function verificaInput() {
+  const encontraInput = document.getElementsByClassName('input');
+  for (const index in encontraInput) {
+    if(encontraInput.value == '') {
+      return false;
+    }
+  }
+}
+
+function verificarRadio() {
+  const pegaRadios = document.getElementsByName('gender');
+  if (pegaRadios[0].checked) {
+    return true;
+  }
+  else if (pegaRadios[1].checked) {
+    return true;
+  }
+  else if (pegaRadios[2].checked) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
 function aparecerInput() {
   const pegaInput = document.getElementById('genero-opcional');
   pegaInput.style.display = 'block';
