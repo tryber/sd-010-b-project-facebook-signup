@@ -55,6 +55,8 @@ function desaparecerInput() {
   pegaInput.style.display = 'none';
 }
 
+clickCadastro();
+
 verificaInput();
 
 verificarRadio();
