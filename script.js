@@ -19,3 +19,67 @@ const buttonLogin = document.querySelector('#button-login');
 buttonLogin.addEventListener('click', () => {
   alert(document.querySelector('#user-email-phone').value);
 });
+
+const inputText = document.querySelectorAll('.checked');
+const inputRadio = document.querySelectorAll('.checkedRadio');
+const cadastrar = document.querySelector('#facebook-register');
+let check = 0;
+cadastrar.addEventListener('click', () => {
+  for (let index = 0; index < inputText.length; index += 1) {
+    if (inputText[index] === '') {
+      check += 1;
+    }
+  }
+  for (let index = 0; index < inputRadio.length; index += 1) {
+    if (inputRadio[index].checked === false) {
+      check += 1;
+    }
+  }
+  if (check > 0) {
+    //Função lucas
+  } else {
+    const alerta = document.querySelector('footer');
+    const p = document.createElement('p');
+    p.innerHTML = 'Campos inválidos';
+    p.style.fontSize = '25px';
+    p.style.fontWeight = '900';
+    alerta.appendChild(p);
+  }  
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// aqui
