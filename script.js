@@ -34,7 +34,6 @@ function exibirConteudo() {
   Email ou Telefone: ${email} 
   Data de Nascimento:${data}
   Gênero: ${genero}`;
-  
   content.appendChild(divShow);
 }
 
