@@ -21,7 +21,7 @@ function validarGenero() {
 
 function exibirConteudo(event) {
   const content = document.getElementById('right-content');
-  const divShow = document.createElement('p');
+  const divShow = document.createElement('div');
   const nome = document.getElementById('firstname').value;
   const sobrenome = document.getElementById('lastname').value;
   const email = document.getElementById('phone_email').value;
@@ -33,7 +33,6 @@ function exibirConteudo(event) {
   Data de Nascimento:${data}
   Gênero: ${genero}`;
   content.appendChild(divShow);
-  event.preventDefault();
 }
 
 //  https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault
