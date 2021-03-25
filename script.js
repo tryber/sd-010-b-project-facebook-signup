@@ -93,7 +93,7 @@ const slogan = document.createElement('p');
 slogan.id = 'facebook-slogan';
 //  SLINT SUCKS
 let stext = 'O Facebook ajuda você a se conectar e compartilhar ';
-stext = `${stext} + ' com as pessoas que fazem parte da sua vida.'`;
+stext = `${stext} com as pessoas que fazem parte da sua vida.`;
 //  ):<
 slogan.innerText = stext;
 const simage = document.createElement('img');
