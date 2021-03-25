@@ -14,7 +14,6 @@ const optionRadius = document.getElementById('userother');
 function insertHide() {
   const name = document.getElementById('info');
   name.classList.add('hide');
-  name.innerText = 'a';
 }
 
 function removeHide() {
