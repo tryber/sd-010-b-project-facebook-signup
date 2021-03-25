@@ -27,7 +27,17 @@ function addEventMaleFemale() {
 }
 addEventMaleFemale();
 
-const validarCampos = () => {
+const confirm = () => {
+  const rightContent = document.querySelector('.right-content');
+  const name = document.querySelectorAll('input')[2].value;
+  const lastName = document.querySelectorAll('input')[3].value;
+  const email = document.querySelectorAll('input')[4].value;
+  const date = document.querySelectorAll('input')[7].value;
+  rightContent.innerHTML = `Olá ${name} ${lastName}, ${email}, ${date}`;
+};
+
+const validarCampos = (event) => {
+  event.preventDefault();
   const el = document.getElementById('formCadastro').querySelectorAll('input');
   const verifRadio = document.getElementById('verifRadio');
   const rd = verifRadio.querySelectorAll('input[name=gender]:checked');
@@ -39,14 +49,9 @@ const validarCampos = () => {
   if (rd.length === 0) {
     document.getElementById('pHidden').hidden = '';
   } else {
-    const formCadastro = document.getElementById('formCadastro');
-    const name = document.querySelectorAll('input')[2].value;
-    const lastName = document.querySelectorAll('input')[3].value;
-    const email = document.querySelectorAll('input')[4].value;
-    const date = document.querySelectorAll('input')[7].value;
-    formCadastro.innerHTML = `Olá ${name} ${lastName}, ${email}, ${date}`;
+    confirm();
   }
 };
 
-const facebookRegister = document.getElementById('facebook-register');
-facebookRegister.addEventListener('click', validarCampos);
+const facebookRegister = document.getElementById('formCadastro');
+facebookRegister.addEventListener('submit', validarCampos);
