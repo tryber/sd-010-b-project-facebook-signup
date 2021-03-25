@@ -43,8 +43,8 @@ const validarCampos = (event) => {
     if (el[index].value === '') {
       document.getElementById('pHidden').hidden = '';
     }
-    confirm();
   }
+  confirm();
 };
 
 const facebookRegister = document.getElementById('formCadastro');
