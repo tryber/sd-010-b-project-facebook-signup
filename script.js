@@ -10,12 +10,16 @@ buttonGetIn.addEventListener('click', buttonIn);
 
 /* Requisito 18: verificando se algum dos campos é vazio: */
 const buttonSubmitForm = document.getElementById('facebook-register');
+/* Função para adicionar informações ao localStorage: */
+const addLocalStorage = (jsonInfoFacebook) => {
+  localStorage.setItem('infoUserFacebook', jsonInfoFacebook);
+}
 
-const isValidFunction = (isValid) => {
+const isValidFunction = (isValid, objectLocalStorage) => {
   if (!isValid) {
     alert('Campos inválidos');
   } else {
-    addLocalStorage(JSON.stringify(objectLocalStorage))
+    addLocalStorage(JSON.stringify(objectLocalStorage));
   }
 }
 function validateForm(event) {
@@ -32,7 +36,7 @@ function validateForm(event) {
       objectLocalStorage[field] = content;
     }
   }
-  isValidFunction(isValid);
+  isValidFunction(isValid, objectLocalStorage);
 }
 
 buttonSubmitForm.addEventListener('click', validateForm);
@@ -50,10 +54,6 @@ genderPersonality.addEventListener('click', () => {
 
 /* Requisito 20: */
 let divRightContent = document.getElementsByClassName('right-content')[0];
-
-const addLocalStorage = (jsonInfoFacebook) => {
-  localStorage.setItem('infoUserFacebook', jsonInfoFacebook);
-}
 
 /* Se as informações foram preenchidas pelo usuário anteriormente, 
 ele retorna uma mensagem na tela de login: */
