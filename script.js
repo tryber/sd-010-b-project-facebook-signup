@@ -6,6 +6,8 @@ const getTextInput = document.getElementsByClassName('inputForm');
 const formButton = document.getElementById('facebook-register');
 const textCamp = document.getElementById('divId');
 const optionalGender = document.createElement('input');
+const inputGender = document.getElementsByClassName('inputGender');
+const content = document.getElementsByClassName('right-content');
 
 function validateText() {
   let emptyInput = false;
@@ -29,30 +31,30 @@ document.getElementById('personal').addEventListener('click', () => {
 
 function getGender() {
   let gender = '';
-  for (let x = 0; x < document.getElementsByClassName('inputGender').length; x += 1) {
-    if (document.getElementsByClassName('inputGender')[x].checked) {
-    gender = (document.getElementsByClassName('inputGender')[x].value);  
+  for (let x = 0; x < inputGender.length; x += 1) {
+    if (inputGender[x].checked) {
+      gender = (inputGender[x].value);
     }
   }
   return (gender);
-};
+}
 
 function createPhrase() {
   let phrase = '';
-  const firstname = document.getElementsByClassName('inputForm')[0];
-  const lastname = document.getElementsByClassName('inputForm')[1];
-  const email = document.getElementsByClassName('inputForm')[2];
-  const birhtdate = document.getElementsByClassName('inputForm')[4];
-  const gender = getGender();
-  phrase = `Olá, ${firstname} ${lastname} ${email} ${birhtdate} ${gender}`
+  const nome = document.getElementById('nome').value;
+  const sobrenome = document.getElementById('sobrenome').value;
+  const foneMail = document.getElementById('foneMail').value;
+  const data = document.getElementById('data').value;
+  const genero = getGender();
+  phrase = `Olá, ${nome} ${sobrenome} ${foneMail} ${data} ${genero}.`
   return (phrase);
-};
+}
 
 formButton.addEventListener('click', (e) => {
   e.preventDefault();
   if (validateText()) {
     document.getElementById('erro').innerText = 'Campos inválidos';
   } else {
-    document.getElementsByClassName('right-content')[0].innerHTML = createPhrase();
+    content[0].innerHTML = createPhrase();
   }
 });
