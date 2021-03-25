@@ -31,7 +31,7 @@ const validarCampos = () => {
   const el = document.getElementById('formCadastro').querySelectorAll('input');
   for (let index = 0; index < el.length; index += 1) {
     if (el[index].value === '') {
-      return alert('Campos inválidos'); // el[index].placeholder = 'Campos inválidos';
+      document.getElementById('pHidden').hidden = ''; // el[index].placeholder = 'Campos inválidos';
     }
   }
 };
