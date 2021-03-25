@@ -34,16 +34,17 @@ const validarCampos = () => {
   for (let index = 0; index < el.length; index += 1) {
     if (el[index].value === '') {
       document.getElementById('pHidden').hidden = '';
-    } else if (rd.length === 0) {
-      document.getElementById('pHidden').hidden = '';
-    } else {
-      const formCadastro = document.getElementById('formCadastro');
-      const name = document.querySelectorAll('input')[2].value;
-      const lastName = document.querySelectorAll('input')[3].value;
-      const email = document.querySelectorAll('input')[4].value;
-      const date = document.querySelectorAll('input')[7].value;
-      formCadastro.innerHTML = `Olá ${name} ${lastName}, ${email}, ${date}`;
     }
+  }
+  if (rd.length === 0) {
+    document.getElementById('pHidden').hidden = '';
+  } else {
+    const formCadastro = document.getElementById('formCadastro');
+    const name = document.querySelectorAll('input')[2].value;
+    const lastName = document.querySelectorAll('input')[3].value;
+    const email = document.querySelectorAll('input')[4].value;
+    const date = document.querySelectorAll('input')[7].value;
+    formCadastro.innerHTML = `Olá ${name} ${lastName}, ${email}, ${date}`;
   }
 };
 
