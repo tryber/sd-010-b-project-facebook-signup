@@ -29,7 +29,8 @@ function exibirConteudo(event) {
   const genero = document.querySelector(':checked').value;
   content.innerHTML = '';
   divShow.innerHTML = `Olá, ${nome} ${sobrenome} 
-  Email: ${email} Data:${data}
+  Email: ${email} 
+  Data:${data}
   Genero: ${genero}`;
   content.appendChild(divShow);
   event.preventDefault();
