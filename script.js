@@ -13,8 +13,7 @@ const buttonSubmitForm = document.getElementById('facebook-register');
 
 function validateForm(event) {
   event.preventDefault();
-  let isValid = true;
-  const objectLocalStorage = {};
+  let isValid = true; const objectLocalStorage = {};
   const inputs = ['firstname', 'lastname', 'phone_email',
     'password', 'birthdate', 'gender'];
   for (let index = 0; index < inputs.length; index += 1) {
