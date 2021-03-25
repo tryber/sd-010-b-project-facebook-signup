@@ -5,8 +5,15 @@ function alerta() {
 
 document.getElementById('button-login').addEventListener('click', alerta);
 
- function validaDados( event) {
-const name  = document.getElementById('firstname');
-
+ function validar_form_contato() {
+ const nome = formcontato.firstname.value;
+ const sobreNome = formcontato.lastname.value;
+ const email = formcontato.phone_email.value;
+ const senha = formcontato.password.value;
+ const texto = "Nome: " +nome + " "+ sobreNome + "; Email: "+email;
+ alert(texto) 
+ return true;
  }
- document.getElementById('facebook-register').addEventListener('click',validaDados)
+ 
+ 
+

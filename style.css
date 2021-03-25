@@ -9,6 +9,8 @@
 } */
 
 .top-bar {
+  padding-top: 10px;
+  height: 100%;
   background-color: rgb(66, 103, 178);
   display: flex;
   align-items: center;
@@ -26,17 +28,31 @@
 .form-group {
   display: flex;
   flex-direction: column;
-  padding-left: 5px;
+  padding-right: 5px;
+}
+
+h1 {
+  margin: 10px;
+  height: 5px;
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 12px;
 }
 
 .form-control {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   padding: 5px;
-  align-self: flex-end;
 }
 
 .main-content {
   display: flex;
   justify-content: flex-start;
+  background-color: #cecece;
+  height: 400px;
 }
 
 .left-content {
@@ -44,19 +60,56 @@
 }
 
 .right-content {
-  width: 300px;
+  width: 400px;
+  height: 400px;
 }
 
 #nome-completo {
   display: flex;
 }
 
-#data-nascimento {
-  display: flex;
-  flex-direction: column;
+input {
+  width: 100%;
+  margin: 5px;
 }
 
-.label-gender {
+#tipo-genero {
   display: flex;
-  justify-content: space-between;
+  margin: 5px;
+}
+
+#user-email-phone , #user-password {
+  height: 30px;
+  padding-left: 2px;
+  font-size: 15px;
+  border: 1px solid #a5dcff;
+  border-radius: 8px;
+}
+
+#firstname , #lastname {
+  height: 30px;
+  padding-left: 10px;
+  font-size: 15px;
+  border: 1px solid #a5dcff;
+  border-radius: 8px;
+}
+
+#phone_email , #password , #birthdate , #gender-custom {
+  height: 30px;
+  padding-left: 10px;
+  font-size: 15px;
+  border: 1px solid #a5dcff;
+  border-radius: 8px;
+}
+
+#facebook-register {
+  height: 40px;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
 }

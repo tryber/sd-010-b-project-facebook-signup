@@ -38,23 +38,25 @@
             <img id="facebook-networking" src="imgs/networking.png" alt="">
         </div>
         <div class="right-content borda">
-            <h1>Abra uma conta</h1>
-            <h3 class="quick-easy">É rápido e fácil.</h3>
+            <h1>Abra uma conta</h1><br>
+            <h2 class="quick-easy">É rápido e fácil</h2>
 
-            <form class="borda" action=""  method="GET" >
+            <form class="borda" action="/" name="formcontato" method="GET">
                 <div id="nome-completo">
                     <input type="text" name="firstname" id="firstname" placeholder="Nome" >
                     <input type="text" name="lastname" id="lastname" placeholder="Sobrenome" >
                 </div>
-                <input type="text" name="phone_email" id="phone_email" placeholder="Celular ou email" >
+                <div>
+                <input type="text" name="phone_email" id="phone_email" placeholder="Celular ou email" ><br>
                 <input type="password" name="password" id="password" placeholder="Nova senha" >
+                </div>
                 <div id="data-nascimento">
-                    <label id="label-birthdate" for="">Data de nascimento</label>
+                    <label id="label-birthdate" for=""><h3>Data de nascimento</h3></label>
                     <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa" >
                 </div>
-                <div>
-                    <label id="label-gender">Gênero</label><br>
-                    <input type="radio" name="gender"  id= "feminino" value="f">  
+                <div id="tipo-genero">
+                    <label id="label-gender"><h3>Gênero</h3></label>
+                    <input type="radio" name="gender"  id= "feminino" value="f" checked>  
                     <label for="feminino">Feminino</label>
                     <input type="radio" name="gender"  id = "masculino" value="m">
                     <label for="masculino">Masculino</label>
@@ -62,16 +64,16 @@
                     <label for="personalizado">Personalizado</label>
                 </div>
                 <div>
-                    <input type="text" name="gender-custom" id="" placeholder="Gênero (opcional)" >
+                    <input type="text" name="gender-custom" id="gender-custom" placeholder="Gênero (opcional)" >
                 </div>
                 <div>
-                    <button  name="" id="facebook-register" >Cadastre-se</button>
+                    <button type="submit" name="" id="facebook-register" onclick="return validar_form_contato()" >Cadastre-se</button>
                 </div>
                 <div id="campo-obrigatorio">
 
                 </div>
 
-                    </div>
+                </div>
                 </div>
             </form>
         </div>
