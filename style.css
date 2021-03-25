@@ -56,8 +56,8 @@
   width: 300px;
 }
 
-.nameFirst input[type="text"]{
-  width: 30%;
+.nameFirst input[ type = 'text' ] {
+  width: 100px;
 }
 
 h1 {
