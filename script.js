@@ -10,7 +10,7 @@ function botaoEntrar() {
 buttonEntrar.addEventListener('click', botaoEntrar);
 
 // Validações
-function invalid () {
+function invalid() {
 
   const errorMessage = document.querySelector('.error-message');
   errorMessage.innerText = 'Campo inválido - confira seus dados!';
@@ -18,10 +18,8 @@ function invalid () {
 
 const getForms = document.getElementById('forms');
 
-
-function validate (event) {
+function validate(event) {
   event.preventDefault();
-  console.log('entrou validate')
   const arrayInfoUser = document.querySelectorAll('.info-user');
 
   for (let index = 0; index < arrayInfoUser.length; index += 1) {
