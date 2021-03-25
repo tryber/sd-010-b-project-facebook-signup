@@ -9,6 +9,8 @@ function buttonIn() {
 buttonGetIn.addEventListener('click', buttonIn);
 
 /* Requisito 18: verificando se algum dos campos é vazio: */
+buttonSubmitForm = document.getElementById('facebook-register');
+
 function validateForm() {
   let isValid = true;
   const inputs = ['firstname', 'lastname', 'phone_email', 'password', 'birthdate', 'gender'];
@@ -21,6 +23,10 @@ function validateForm() {
   if (!isValid) alert('Campos inválidos');
   return false;
 }
+
+buttonSubmitForm.addEventListener('click', validateForm);
+
+/* Requisito 19: */
 
 const genderCampos = genderPersonality.addEventListener('click', () => {
   const divPai = document.getElementById('campo-gender-personality');
