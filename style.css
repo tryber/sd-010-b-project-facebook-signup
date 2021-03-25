@@ -45,21 +45,25 @@
 }
 
 #user-email-phone , #user-password {
-  background-color: #F5F6F7;
+  background-color: rgb(245, 246, 247);
   width: auto;
   height: auto;
   border: black 1px solid;
 }
 
+#user-email-phone::placeholder , #user-password::placeholder {
+  color: transparent;
+}
 
-#responsive-article, #conect-div {
+#responsive-article , #conect-div {
   display: none;
 }
 
 @media screen and ( max-width : 486px ) {
 
   /* tudo */
-  * { 
+  * {
+    font-family: Lato, sans-serif;
     margin: 0;
     padding: 0;
     border: 0;
@@ -99,42 +103,53 @@
     display: flex;
     align-items: center;
     color: #a89939;
-    border-bottom: 2px solid #a89939;
-    background: #FFFBE2;
-    height: 5vh;
+    border-bottom: 1px solid #f1db46;
+    background: rgb(255, 251, 226);
     width: 100vw;
+    font-weight: 500;
+    padding: 5px 15px;
   }
 
   #user-email-phone , #user-password {
-    background-color: #F5F6F7;
+    background-color: rgb(245, 246, 247);
     width: 90vw;
     height: 50px;
-    border: black 1px solid;
+    border: rgb(138, 138, 138) 1px solid;
+  }
+
+  #user-email-phone::placeholder , #user-password::placeholder {
+    color: gray;
+    padding-left: 10px;
+    font-size: 15px;
   }
 
   #user-email-phone {
     margin-top: 20px;
-    border-radius: 3px 3px 0 0 ;
+    border-radius: 3px 3px 0 0;
   }
 
   #user-password {
     border-radius: 0 0 3px 3px;
+    border-top: none;
+  }
+
+  button {
+    font-size: 15px;
   }
 
   #button-login {
-    margin: 20px 0 20px 0;
-    background-color: #1877F2;
+    margin: 20px 0 5px;
+    background-color: rgb(24, 119, 242);
+    border-radius: 5px;
     width: 90vw;
     height: 50px;
+    font-weight: 900;
+    color: white;
   }
 
   .form-control {
     margin-left: auto;
     margin-right: auto;
-  }
-
-  #create-account {
-    display: block;
   }
 
   #create-account {
@@ -145,14 +160,16 @@
   }
 
   #create-account button {
+    font-weight: 900;
+    color: white;
     height: 8vh;
-    width: 40vw;
+    width: 35vw;
     border-radius: 5px;
-    background-color: #00A401;
+    background-color: #00a401;
   }
 
   #create-account a {
-    margin: 10px 0 0 0;
+    margin: 10px 0 0;
     text-decoration: none;
     color: #3974d3;
   }
@@ -161,13 +178,15 @@
     display: flex;
     justify-content: center;
   }
-  #right ul, #left ul {
+
+  #right ul , #left ul {
     list-style-type: none;
   }
 
   #right , #left {
-    margin-top: 15vh;
-    color: rgb(77, 77, 231);
+    font-size: 13px;
+    margin-top: 8vh;
+    color: rgb(66, 103, 178);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -175,12 +194,13 @@
 
   #mais {
     display: inline-block;
-    border: 1px solid rgb(77, 77, 231);
+    border: 1px solid rgb(66, 103, 178);
     height: 20px;
     width: 20px;
     font-weight: 900;
-    color: gray
+    color: gray;
   }
+
   #languages {
     display: flex;
     justify-content: space-around;
@@ -191,5 +211,29 @@
     margin-top: 10px;
     text-align: center;
     color: gray;
+    font-size: 13px;
+  }
+
+  #ou-div p {
+    display: inline-block;
+    margin: 10px;
+    color: #4d4d4d;
+  }
+
+  #ou-div hr {
+    display: inline-block;
+    width: 40vw;
+    height: 1px;
+    border: none;
+    background-color: #4d4d4d;
+  }
+
+  #ou-div {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
   }
 }
