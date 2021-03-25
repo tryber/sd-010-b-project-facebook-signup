@@ -7,7 +7,7 @@
   display: flex;
   background-color: rgb(66, 103, 178);
   justify-content: space-between;
-  width: 1200px;
+  width: 1050px;
   margin: auto;
 }
 
@@ -37,7 +37,13 @@
 .main-content {
   display: flex;
   justify-content: center;
+  margin-right: 220px;
 }
+
+.main-content-container {
+  background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(66, 103, 178, 0.6) 150%);
+}
+
 
 .left-content {
   width: 800px;
@@ -48,12 +54,16 @@
   line-height: 29px;
   margin-top: 40px;
   word-spacing: -1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .left-content p {
-  max-width: 500px;
+  max-width: 450px;
   padding-bottom: 30px;
   font-family: sans-serif;
+  text-align: left;
 }
 
 .right-content {
@@ -89,7 +99,7 @@
 
 ul , li , h3 {
   color: #0e385f;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 900;
   line-height: 29px;
   margin-top: 5px;
@@ -104,7 +114,7 @@ ul , li , h3 {
 }
 
 input , button {
-  padding: 5px 8px;
+  padding: 4px 6px;
   margin: 5px 4px 8px 0;
   border-radius: 3px;
   border: 1px solid gray;
@@ -115,10 +125,11 @@ input , button {
   border: 1px solid white;
   color: white;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .frescura {
-  width: 266.5px;
+  width: 271px;
 }
 
 #facebook-register {
@@ -131,4 +142,34 @@ input , button {
   color: white;
   font-weight: 900;
   letter-spacing: 1px;
+  cursor: pointer;
+}
+
+#label-birthdate , #label-gender {
+  color: #90949c;
+  font-weight: 900;
+}
+
+#birthdate , #password {
+  margin-bottom: 20px;
+}
+
+.right-content button {
+  font-size: 18px;
+  padding: 8px 10px;
+  margin: 5px 4px 8px 0;
+  border-radius: 3px;
+  border: 1px solid gray;
+}
+
+.right-content input {
+  font-size: 18px;
+  padding: 8px 10px;
+  margin: 5px 4px 8px 0;
+  border-radius: 3px;
+  border: 1px solid gray;
+}
+
+input [ name = 'gender' ] {
+  margin-right: 4.5px;
 }
