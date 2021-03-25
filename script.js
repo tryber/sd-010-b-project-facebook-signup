@@ -7,6 +7,27 @@ function alertMessage(evento) {
 
 entrarButton.addEventListener('click', alertMessage);
 
+const femaleRadius = document.getElementById('userfemale');
+const maleRadius = document.getElementById('usermale');
+const optionRadius = document.getElementById('userother');
+
+
+function insertHide() {
+  const name = document.getElementById('info');
+  name.classList.add('hide');
+  name.innerText = 'a';
+}
+
+function removeHide() {
+  const name = document.getElementById('info');
+  name.classList.remove('hide');
+}
+
+femaleRadius.addEventListener('click', insertHide);
+maleRadius.addEventListener('click', insertHide);
+optionRadius.addEventListener('click', removeHide);
+
+
 let valid;
 
 function validate() {
