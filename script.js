@@ -48,7 +48,6 @@ function cadastrarButton() {
     } else {
       exibirConteudo(event);
     }
-
   });
 }
 
