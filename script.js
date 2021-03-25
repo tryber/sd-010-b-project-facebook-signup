@@ -23,8 +23,7 @@ buttonLogin.addEventListener('click', () => {
 const inputCadastro = document.querySelectorAll('.right-content input');
 const inputRadio = document.querySelectorAll('#gender-container input');
 const cadastrar = document.querySelector('#facebook-register');
-let aux;
-aux = [];
+const aux = [];
 let aux2 = false;
 
 function printInvalido() {
