@@ -23,7 +23,8 @@ buttonLogin.addEventListener('click', () => {
 const inputCadastro = document.querySelectorAll('.right-content input');
 const inputRadio = document.querySelectorAll('#gender-container input');
 const cadastrar = document.querySelector('#facebook-register');
-let aux = [];
+let aux;
+aux = [];
 let aux2 = false;
 
 function printInvalido() {
@@ -38,7 +39,7 @@ function printInvalido() {
 }
 
 cadastrar.addEventListener('click', () => {
-  for (let i = 0; i < inputCadastro.length -5; i += 1) {
+  for (let i = 0; i < inputCadastro.length - 5; i += 1) {
     aux.push(inputCadastro[i].value);
   }
   for (let i = 0; i < inputRadio.length; i += 1) {
