@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook - entre ou cadastre-se</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <main>
+      <header class="top-bar">
+        <div class="logo-box">
+          <a href="index.html"><img class="facebook-logo" src="imgs/facebook-logo.png" alt="logo do facebook"></a>
+        </div>        
+        <form class="facebook-login" action="">
+            <div class="form-group">
+              <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
+              <input type="text" name="user" id="user-email-phone">
+            </div>
+            <div class="form-group">
+              <label id="user-password-label" for="user-password">Senha</label>
+              <input type="password" name="pass" id="user-password">
+            </div>
+            <div class="form-control">
+              <button type="submit" id="button-login">Entrar</button>
+            </div>       
+        </form>
+      </header>
+
+    <section class="main-content">
+
+      <section class="left-content">
+        <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+        <img id="facebook-networking" src="imgs/networking.png" alt="conectando pessoas">
+      </section>
+
+      <section class="right-content">
+        <div class="cad-content">
+          <h1>Abra uma conta</h1>
+          <p class="quick-easy form-dist">É rápido e fácil.</p>
+          <form action="" class="cadastro">
+            <section class="name">
+              <input type="text" id="first-name" name="firstname" class="names form-dist campo" placeholder="Nome">
+              <input type="text" id="last-name" name="lastname" class="names form-dist last-name campo" placeholder="Sobrenome">
+            </section>
+
+            <input type="text" id="email" name="phone_email" placeholder="Celular ou email" class="campo">
+            <input class="Nova-senha campo" id="senha" type="password" name="password" placeholder="Nova senha"><br>
+            <label id="label-birthdate" for="birthdate">Data de nascimento</label><br>
+            <input type="text" id="birthdate" name="birthdate" placeholder="dd/mm/aaaa" class="form-dist campo"><br>
+
+            <label for="gender" id="label-gender" class="form-dist campo">Gênero</label>
+            <section class="gender-radio">
+            <input class="form-dist" type="radio" name="gender" id="F" value="Feminino">
+            <label id="label-gender" for="F">Feminino</label>
+
+            <input class="form-dist" type="radio" name="gender" id="M" value="Masculino" checked>
+            <label id="label-gender" for="M">Masculino</label>
+
+            <input class="form-dist" type="radio" name="gender" id="P" value="Personalizado">
+            <label id="label-gender" for="P">Personalizado</label>
+            </section>
+
+            <input class="alter-gender form-dist campo2" name="gender-custom" id="gender-custom" type="text" placeholder="Gênero (opcional)">
+
+            <button type="submit" id="facebook-register" >Cadastre-se</button>
+            <p id='error' class="return-form">Campos inválidos</p>
+
+          </form>
+        </div>
+      </section>
+
+    </section>
+
+    <footer>
+      <div> Facebook © 2021</div>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
