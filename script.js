@@ -4,8 +4,6 @@ const genderPersonality = document.getElementById('input-gender-personality');
 const divRightContent = document.getElementsByClassName('right-content')[0];
 const formOpenAccount = document.querySelector('[name="form"]');
 
-console.log(formOpenAccount);
-
 function buttonIn() {
   alert(inputEmailPhone.value);
 }
@@ -39,6 +37,7 @@ const setMessegeEmpty = () => {
 };
 
 function validateForm(event) {
+  console.log(event)
   event.preventDefault();
   setMessegeEmpty();
   let isValid = true; const objectLocalStorage = {};
@@ -70,7 +69,6 @@ genderPersonality.addEventListener('click', () => {
 });
 
 /* Requisito 20: */
-
 /* Se as informações foram preenchidas pelo usuário anteriormente, ele retorna uma mensagem na tela de login: */
 if (localStorage.getItem('infoUserFacebook')) {
   let info = localStorage.getItem('infoUserFacebook');
