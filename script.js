@@ -5,7 +5,7 @@ buttomLogin.addEventListener('click', () => {
 });
 
 const cadastro = document.getElementById('facebook-register');
-const radioValue = document.querySelector('input[name="gender"]:checked');
+// const radioValue = document.querySelector('input[name="gender"]:checked');
 
 const verificaNull = () => {
   const invalidos = document.querySelectorAll('.camposInvalidos');
@@ -34,7 +34,7 @@ cadastro.addEventListener('click', (event) => {
 });
 
 const personalizado = document.querySelector('#pers');
-personalizado.addEventListener ('click', () => {
+personalizado.addEventListener('click', () => {
   const inputPers = document.createElement('input');
   inputPers.setAttribute('name', 'gender-custom');
   inputPers.setAttribute('placeholder', 'Gênero (opcional)');
