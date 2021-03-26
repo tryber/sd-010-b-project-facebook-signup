@@ -23,4 +23,4 @@ window.onload = function () {
 
   const genderCustom = document.getElementById('custom-gender');
   genderCustom.addEventListener('click', customGender);
-};
+}; //vqv
