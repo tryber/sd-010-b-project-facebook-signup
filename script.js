@@ -56,8 +56,8 @@ function paremt(valid1, valid2) {
 
 function printCampo(parametro) {
   if (parametro === false) {
-    const alerta = document.querySelector('footer');
-    const p = document.createElement('span');
+    const alerta = document.querySelector('#alertError');
+    const p = document.createElement('p');
     p.innerHTML = 'Campos inválidos';
     p.style.fontSize = '25px';
     p.style.fontWeight = '900';
