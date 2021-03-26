@@ -1,0 +1,82 @@
+body {
+  margin: 0; /* eliminates all margin */
+}
+
+.top-bar {
+  display: flex;
+  background-color: rgb(66, 103, 178);
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.facebook-login {
+  display: flex;
+  color: white;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.name-surname {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.name-surname #input-name {
+  width: 134px;
+}
+
+.name-surname #input-lastname {
+  width: 134px;
+}
+
+.rest-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#input-phone-email {
+  margin-bottom: 10px;
+}
+
+#input-password {
+  margin-bottom: 10px;
+}
+
+#facebook-register {
+  margin-top: 20px;
+}
+
+#label-gender {
+  margin-top: 10px;
+}
+
+#gender-container {
+  display: block;
+  margin-top: 10px;
+}
+
+.input-gender {
+  margin: 0;
+}
