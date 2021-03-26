@@ -27,7 +27,11 @@ const cadastrar = document.querySelector('#facebook-register');
 function validFormInput() {
   const value = [];
   for (let i = 0; i < inputText.length; i += 1) {
-    (inputText[i].value === '') ? value[i] = false : value[i] = true;
+    if (inputText[i].value === '') {
+      value[i] = false;
+    } else {
+      value[i] = true;
+    }   
   }
   return value;
 }
@@ -43,24 +47,27 @@ function validInputRadio() {
 }
 
 function paremt (valid1, valid2) {
-  const aux = [];
+  let resultInput = true;
+  let resultRadio;
   for (let i = 0; i < valid1.length; i += 1) {
     if (valid1[i] === false) {
-      aux[0] = true;
+      resultInput = false;
     }
   }
-  if (aux[0] !== true) {
-    aux[0] = false;
-  }
-  (valid2 === -1) ? aux[1] = true : aux[1] = false;
-  if ((valid2 === 2) && (document.querySelector('.validInputRadioPersonalizado').value === '')) {
-    aux[1] = false;
-  }
-  return aux;
+  if (valid2 === -1) {
+    resultRadio = false;
+  } else if (valid2 >= 0) {
+    resultRadio = true;
+  } 
+  if ((resultInput === true) && (resultRadio === true)) {
+    return true;
+  } else {
+    return false;
+  } 
 }
 
 function printCampo(parametro) {
-  if ((parametro[0] === true) || (parametro[1] === true)) {
+  if (parametro === false) {
     const alerta = document.querySelector('footer');
     const p = document.createElement('span');
     p.innerHTML = 'Campos inválidos';
