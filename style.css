@@ -1,4 +1,3 @@
-  
 * {
   margin: 0;
   padding: 0;
@@ -138,12 +137,12 @@
   height: 50px;
 }
 
-#campoInvalido{
-  color:red;
+#campoInvalido {
+  color: red;
   font-size: 20px;
 }
 
-#inputGeneroNovo{
+#inputGeneroNovo {
   border-radius: 5px;
   border: git1px solid;
   font-size: 20px;
@@ -153,3 +152,4 @@
   border-color: rgb(206, 210, 214);
   text-align: start;
 }
+  
