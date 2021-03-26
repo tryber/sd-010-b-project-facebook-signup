@@ -52,8 +52,8 @@ function mostraInfos() {
   const nascimento = document.getElementById('birthdate').value;
   const genero = document.formulario.gender;
   if (valida() === true) {
-    container.innerHTML = `<h1>Olá, ${nome} ${sobrenome}</h1>
-    <p>${contato}; ${nascimento}; ${genero.value}</p>`;
+    container.innerText = `Olá, ${nome} ${sobrenome}
+    ${contato}; ${nascimento}; ${genero.value}`;
   }
 }
 
