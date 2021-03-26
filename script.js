@@ -32,8 +32,14 @@ const confirm = () => {
   const name = document.querySelectorAll('input')[2].value;
   const lastName = document.querySelectorAll('input')[3].value;
   const email = document.querySelectorAll('input')[4].value;
-  const date = document.querySelectorAll('input')[7].value;
-  rightContent.innerHTML = `Olá, ${name} ${lastName}, ${email}, ${date}`;
+  const date = document.querySelectorAll('input')[6].value;
+  const gender = document.querySelector('input[name="gender"]:checked').value;
+  rightContent.innerHTML = ` 
+    Olá, ${name} ${lastName},
+    ${email}, 
+    ${date},
+    ${gender}
+  `;
 };
 
 const validarCampos = (event) => {

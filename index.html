@@ -40,21 +40,21 @@
       </div>
       <form id="formCadastro" action=""><p id="pHidden" hidden>Campos inválidos</p>
         <div id="nome-sobrenome">
-          <input type="text" name="firstname" placeholder="Nome" required>
-          <input type="text" name="lastname" placeholder="Sobrenome" required>
+          <input type="text" name="firstname" id="firstname" placeholder="Nome" required>
+          <input type="text" name="lastname" id="lastname" placeholder="Sobrenome" required>
         </div>
-        <input type="text" name="phone_email" placeholder="Celular ou email" id="cell-input" required>
-        <input type="password" name="password" placeholder="Nova senha" id="new-password" required>
+        <input type="text" name="phone_email" id="phone_email" placeholder="Celular ou email" id="cell-input" required>
+        <input type="password" name="password" id="password" placeholder="Nova senha" id="new-password" required>
 
         <div class="vertical">
           <label id="label-birthdate">Data de nascimento</label>
-          <input type="text" name="birthdate" placeholder="dd/mm/aaaa" required>
+          <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa" required>
         </div>
 
         <div class="coluna">
           <label id="label-gender">Gênero</label> <br>
           <div id="verifRadio" class="linha">
-            <input type="radio" id="female" name="gender" value="Feminino" checked>
+            <input type="radio" id="female" name="gender" value="Feminino">
             <label for="female"> Feminino </label>
             <input type="radio" id="male" name="gender" value="Masculino">
             <label for="male"> Masculino </label>
