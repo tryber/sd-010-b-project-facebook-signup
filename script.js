@@ -82,7 +82,7 @@ registerButton.addEventListener('click', (event) => {
 pegaRadio.addEventListener('click', () => {
   const criaInput = document.createElement('input');
   criaInput.name = 'gender-custom';
-  // criaInput.id = 'gender-input';
+  criaInput.id = 'gender-input';
   criaInput.placeholder = 'Gênero (opcional)';
   pegaContainer.appendChild(criaInput);
 });
