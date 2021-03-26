@@ -25,17 +25,22 @@ function verificaInput() {
 function verificarRadio() {
   const pegaRadios = document.getElementsByName('gender');
   if (pegaRadios[0].checked) {
-    const encontraValor0 = document.getElementById('feminino').value;
-    return encontraValor0;
+    return true;
   } else if (pegaRadios[1].checked) {
-    const encontraValor1 = document.getElementById('masculino').value;
-    return encontraValor1;
+    return true;
   } else if (pegaRadios[2].checked) {
-    const encontraValor2 = document.getElementById('genero-opcional').value;
-    return encontraValor2;
-  }
-  else {
+    return true;
+  } else {
     return false;
+  }
+}
+
+function checked() {
+  const encontraSelecionado = document.getElementsByName('gender');
+  for(let index in encontraSelecionado) {
+    if(encontraSelecionado[index].checked) {
+      return encontraSelecionado.value;
+    }
   }
 }
 
@@ -52,9 +57,10 @@ function clickCadastro() {
     const encontraSobrenome = document.getElementsByName('lastname').value;
     const encontraEmail = document.getElementsByName('phone_email').value;
     const encontraData = document.getElementsByName('birthdate').value;
+    const encotraGender = checked();
     encontraP.style.display = 'block';
     encontraP.innerText = encontraNome + encontraSobrenome;
-    encontraP.innerText = encontraEmail + encontraData + verificaRadios;
+    encontraP.innerText = encontraEmail + encontraData + encotraGender;
     encontraForm.style.display = 'none';
   }
 }
