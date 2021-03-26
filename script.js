@@ -27,7 +27,7 @@ function verificarRadio() {
   if (pegaRadios[0].checked || pegaRadios[1].checked || pegaRadios[2].checked) {
     let teste = 0
     const teste2 = 1
-    teste = teste + 2;
+    teste = teste + teste2;
   } else {
     return false;
   }
