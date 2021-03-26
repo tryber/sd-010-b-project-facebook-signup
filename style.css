@@ -1,3 +1,4 @@
+  
 * {
   margin: 0;
   padding: 0;
@@ -12,21 +13,6 @@
   justify-content: space-between;
 }
 
-<<<<<<< HEAD
-.forms {
-  float: right;
-  width: 100%;
-  margin-top: 15px;
-  color: white;
-  display: flex;
-  justify-content: flex-end;
- 
- 
-}
-
-.form-group {
-  float: right;
-=======
 .facebook-login {
   display: flex;
   color: white;
@@ -38,7 +24,6 @@
   flex-direction: column;
   margin-top: 15px;
   padding-left: 5px;
->>>>>>> 2adbbedafe9a73b016bc2a4d3aee5cbe2fe357e9
   color: white;
   font-size: 12px;
 }
@@ -46,41 +31,19 @@
 .form-group a {
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
-=======
   align-self: left;
   margin-top: 5px;
   color: white;
   text-decoration: none;
   opacity: 0.5;
->>>>>>> 2adbbedafe9a73b016bc2a4d3aee5cbe2fe357e9
 }
 
 .form-control {
   padding: 5px;
   align-self: flex-end;
-<<<<<<< HEAD
-  
-}
-
-#button-login {
-  color: white;
-  background-color: #4267b2;
-  align-self: flex-end;
-  float: right;
-}
-
-.forget {
-  color: white;
-  font-size: 10px;
-  text-align: center;
-  margin-top: 50px;
-  margin-right: 200px;
-=======
   margin-bottom: 25px;
   color: white;
   background-color: #4267b2;
->>>>>>> 2adbbedafe9a73b016bc2a4d3aee5cbe2fe357e9
 }
 
 .main-content {
@@ -132,7 +95,7 @@
   font-weight: 700;
 }
 
-.quadrogenero {
+#quadrogenero {
   margin-top: 10px;
   margin-bottom: 5px;
   font-size: 18px;
@@ -173,4 +136,20 @@
   border-radius: 5px;
   width: 200px;
   height: 50px;
+}
+
+#campoInvalido{
+  color:red;
+  font-size: 20px;
+}
+
+#inputGeneroNovo{
+  border-radius: 5px;
+  border: git1px solid;
+  font-size: 20px;
+  padding: 5px;
+  margin: 5px;
+  width: 350px;
+  border-color: rgb(206, 210, 214);
+  text-align: start;
 }
