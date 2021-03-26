@@ -62,7 +62,7 @@ function showData(generCustom) {
   const gener1 = bulletGener[0].value;
   const gener2 = bulletGener[1].value;
   rgContent.innerHTML = `
-    <h1> Olá ${inpFName[0].value} ${inpLName[0].value}</h1>
+    <h1> Olá, ${inpFName[0].value} ${inpLName[0].value}</h1>
     <p>Email-Telefone: ${inpPEmail[0].value}</p>
     <p>Data de Nascimento: ${inpBirthdate[0].value}<p>
   `;
