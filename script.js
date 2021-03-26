@@ -30,7 +30,7 @@ function validFormInput() {
     if (inputText[i] === false) {
       resultInput = false;
     }
-  }    
+  }
   return resultInput;
 }
 
@@ -39,17 +39,19 @@ function validInputRadio() {
   for (let i = 0; i < inputRadio.length; i += 1) {
     if (inputRadio[i].checked) {
       resultRadio = true;
-    } 
+    }
   }
   return resultRadio;
 }
 
-function paremt (valid1, valid2) {    
+function paremt (valid1, valid2) {
+  let value;
   if ((valid1 === true) && (valid2 === true)) {
-    return true;
+    value = true;
   } else {
-    return false;
-  } 
+    value = false;
+  }
+  return value;
 }
 
 function printCampo(parametro) {
