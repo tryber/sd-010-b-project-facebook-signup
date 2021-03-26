@@ -41,33 +41,33 @@
         <p class="quick-easy">É rápido e fácil.</p>
 
         <form id="main-form">
-          <input class="names" type="text" name="firstname" placeholder="Nome">
+          <input class="names" type="text" name="firstname" placeholder="Nome" required>
 
-          <input class="names" type="text" name="lastname" placeholder="Sobrenome">
+          <input class="names" type="text" name="lastname" placeholder="Sobrenome" required>
 
-          <input type="text" name="phone_email" placeholder="Celular ou email">
+          <input type="text" name="phone_email" placeholder="Celular ou email" required>
 
-          <input type="password" name="password" placeholder="Nova senha">
+          <input type="password" name="password" placeholder="Nova senha" required>
 
           <label id="label-birthdate">Data de nascimento</label>
-          <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+          <input type="text" name="birthdate" placeholder="dd/mm/aaaa" required>
 
           <label id="label-gender">Gênero</label> 
 
           <div class="genders">
             <div class="gender-container">
               <label>Feminino</label>
-              <input type="radio" name="gender" value="Feminino" id="feminino" class="femMasc">
+              <input type="radio" name="gender" value="Feminino" id="feminino" class="femMasc" required>
             </div>
 
             <div class="gender-container">
               <label>Masculino</label>
-              <input type="radio" name="gender" value="Masculino" id="masculino" class="femMasc">
+              <input type="radio" name="gender" value="Masculino" id="masculino" class="femMasc" required>
             </div>
 
             <div class="gender-container">
               <label>Personalizado</label>
-              <input id="custom-gender" type="radio" name="gender" value="Personalizado">
+              <input id="custom-gender" type="radio" name="gender" value="Personalizado" required>
             </div>
           </div>
 
