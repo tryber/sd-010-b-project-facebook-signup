@@ -64,7 +64,7 @@ consRadio.addEventListener('click', () => {
   auxContainer.appendChild(auxInput);
 });
 
-document.querySelector('#masculino').onclick = () => {
+/* document.querySelector('#masculino').onclick = () => {
   const aux = document.querySelector('#eai');
   auxContainer.removeChild(aux);
 };
@@ -73,9 +73,4 @@ document.querySelector('#feminino').addEventListener('click', () => {
   const aux = document.querySelector('#eai');
   auxContainer.removeChild(aux);
 });
-/* consMas.addEventListener('click', () => {
-  if (consMas.checked) {
-    const aux = document.querySelector('#eai');
-    auxContainer.removeChild(aux);
-  }
-}); */
+ */
