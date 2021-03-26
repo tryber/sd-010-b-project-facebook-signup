@@ -1,0 +1,156 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#fefefe 25%, #e8ebf3 35%, #e3e6f1 35%, #fefefe 95%);
+}
+
+.top-bar {
+  display: flex;
+  margin-top: 0;
+  flex-direction: row;
+  background-color: rgb(66, 103, 178);
+  height: 80px;
+  justify-content: space-between;
+}
+
+.facebook-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.facebook-login {
+  display: flex;
+  justify-content: space-between;
+}
+
+#forget-account {
+  color: #9cb4d8;
+  text-decoration: none;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  flex-flow: column;
+  color: white;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 18px;
+  padding: 2px 6px;
+}
+
+.btn-login {
+  background-color: #4267b2;
+  border-color: #29487d;
+  border: 0;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  padding: 2px 6px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: none;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.btn-login:hover {
+  border: 1px solid gray;
+  background-color: #3b5999;
+}
+
+#facebook-slogan {
+  color: #0e385f;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 29px;
+  margin-top: 40px;
+  width: 450px;
+  word-spacing: -1px;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  color: #333;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1d2129;
+  font-size: 19px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-content {
+  margin-left: 50px;
+  width: 800px;
+}
+
+.right-content {
+  margin-right: 50px;
+  width: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-data .gender-customized {
+  border-color: #bdc7d8;
+  border-radius: 5px;
+  border: 1px solid #ccd0d5;
+}
+
+.name-lastname {
+  display: flex;
+}
+
+.name-lastname input {
+  max-width: 40%;
+}
+
+#label-gender {
+  color: #90949c;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+#label-birthdate {
+  color: #90949c;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+#facebook-register {
+  font-family: Freight Sans Bold, Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  background: linear-gradient(#67ae55, #578843);
+  background-color: #69a74e;
+  box-shadow: inset 0 1px 1px #a4e388;
+  border-color: #3b6e22 #3b6e22 #2c5115;
+  border: 1px solid;
+  border-radius: 5px;
+  color: white;
+  text-shadow: 0 1px 2px rgb(0 0 0 / 50%);
+}
