@@ -6,8 +6,8 @@ const pegaRadio = document.querySelector('#custom');
 const divRight = document.querySelector('.right-content');
 const gender = document.querySelectorAll('.input-gender');
 const pegaContainer = document.querySelector('#gender-container');
-const pegaFem = document.querySelector('#female');
-const pegaMasc = document.querySelector('#male');
+// const pegaFem = document.querySelector('#female');
+// const pegaMasc = document.querySelector('#male');
 
 buttonLogin.addEventListener('click', () => {
   if (catchValueInput.value !== '') {
@@ -82,17 +82,17 @@ registerButton.addEventListener('click', (event) => {
 pegaRadio.addEventListener('click', () => {
   const criaInput = document.createElement('input');
   criaInput.name = 'gender-custom';
-  criaInput.id = 'gender-input';
+  // criaInput.id = 'gender-input';
   criaInput.placeholder = 'Gênero (opcional)';
   pegaContainer.appendChild(criaInput);
 });
 
-pegaMasc.addEventListener('click', () => {
-  const catInput = document.querySelector('#gender-input');
-  pegaContainer.removeChild(catInput);
-});
+// pegaMasc.addEventListener('click', () => {
+//   const catInput = document.querySelector('#gender-input');
+//   pegaContainer.removeChild(catInput);
+// });
 
-pegaFem.addEventListener('click', () => {
-  const catInput = document.querySelector('#gender-input');
-  pegaContainer.removeChild(catInput);
-});
+// pegaFem.addEventListener('click', () => {
+//   const catInput = document.querySelector('#gender-input');
+//   pegaContainer.removeChild(catInput);
+// });
