@@ -2,13 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 100%;
 }
 
+/* ------- box header ------ */
 .top-bar {
   background-color: rgb(66, 103, 178);
-  margin: 0 auto;
-  padding: 10px 60px; /* padding-top, padding-left, padding-bottom, padding-right */
+  padding: 10px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,6 +21,10 @@
   display: flex;
 }
 
+.form-control {
+  align-self: flex-end;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
@@ -30,23 +33,34 @@
   border: 0 solid #ccd0d5;
 }
 
-.form-control {
-  align-self: flex-end;
+/* ------ box main content ------- */
+.main-content {
+  display: flex;
+  padding-top: 25px;
+  justify-content: center;
 }
 
-#facebook-slogan { /* Isso não é o mesmo que está na linha 45? */
+.left-content {
+  flex-basis: 800px;
+}
+
+.right-content {
+  flex-basis: 300px;
+}
+
+#facebook-slogan {
   font-size: 20px;
 }
 
 .signup-form {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
-/* Não apagues essa linha vazia antes e depois desse ponto,
-o final do código tem de ter sempre uma linha vazia! */
+.name-width {
+  width: 49%;
+}
 
-/* dennis */
 .hide {
   display: none;
 }
