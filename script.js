@@ -25,41 +25,27 @@ const inputRadio = document.querySelectorAll('.validInputRadio');
 const cadastrar = document.querySelector('#facebook-register');
 
 function validFormInput() {
-  const value = [];
+  let resultInput = true;
   for (let i = 0; i < inputText.length; i += 1) {
-    if (inputText[i].value === '') {
-      value[i] = false;
-    } else {
-      value[i] = true;
-    }   
-  }
-  return value;
+    if (inputText[i] === false) {
+      resultInput = false;
+    }
+  }    
+  return resultInput;
 }
 
 function validInputRadio() {
-  let value = -1;
+  let resultRadio = false;
   for (let i = 0; i < inputRadio.length; i += 1) {
     if (inputRadio[i].checked) {
-      value = i;
-    }
+      resultRadio = true;
+    } 
   }
-  return value;
+  return resultRadio;
 }
 
-function paremt (valid1, valid2) {
-  let resultInput = true;
-  let resultRadio;
-  for (let i = 0; i < valid1.length; i += 1) {
-    if (valid1[i] === false) {
-      resultInput = false;
-    }
-  }
-  if (valid2 === -1) {
-    resultRadio = false;
-  } else if (valid2 >= 0) {
-    resultRadio = true;
-  } 
-  if ((resultInput === true) && (resultRadio === true)) {
+function paremt (valid1, valid2) {    
+  if ((valid1 === true) && (valid2 === true)) {
     return true;
   } else {
     return false;
