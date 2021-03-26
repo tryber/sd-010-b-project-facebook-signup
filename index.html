@@ -41,7 +41,7 @@
             <h1>Abra uma conta</h1><br>
             <h2 class="quick-easy">É rápido e fácil.</h2>
 
-            <form class="borda" action="/" name="formcontato" method="GET">
+            <form class="borda" action="/" name="formcontato" id="formcontato" method="GET">
 
                 <div id="nome-completo">
                     <input class="verifica" type="text" name="firstname" id="firstname" placeholder="Nome">
@@ -49,14 +49,15 @@
                 </div>
 
                 <div>
-                    <input type="text" name="phone_email" id="phone_email" placeholder="Celular ou email"><br>
-                    <input type="password" name="password" id="password" placeholder="Nova senha">
+                    <input class="verifica" type="text" name="phone_email" id="phone_email"
+                        placeholder="Celular ou email"><br>
+                    <input class="verifica" type="password" name="password" id="password" placeholder="Nova senha">
                 </div>
                 <div id="data-nascimento">
                     <label id="label-birthdate" for="">
                         <h3>Data de nascimento</h3>
                     </label>
-                    <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa">
+                    <input class="verifica" type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa">
                 </div>
                 <div>
                     <label id="label-gender">Gênero</label>
@@ -82,19 +83,9 @@
                         onclick="return validar_form_contato()">Cadastre-se</button>
 
                 </div>
-
                 <div id="campo-obrigatorio"></div>
-
-
-        </div>
-        </div>
-
         </div>
     </section>
-
-
-
-
     <script src="/script.js"></script>
 </body>
 

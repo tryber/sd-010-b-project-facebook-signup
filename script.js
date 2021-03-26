@@ -3,7 +3,11 @@ function alerta() {
   alert(email);
 }
 
-function valida() {
+function para(event) {
+  event.preventDefault();
+}
+
+function valida(event) {
   const array = document.getElementsByClassName('verifica');
   let cont = 0;
   for (let i = 0; i < array.length; i += 1) {
@@ -16,6 +20,7 @@ function valida() {
     const p = document.createElement('p');
     p.innerHTML = 'Campos inválidos';
     pai.appendChild(p);
+    para(event);
   }
 }
 
