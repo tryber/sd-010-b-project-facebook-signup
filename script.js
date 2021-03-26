@@ -20,12 +20,16 @@ const verificaNull = () => {
   return valido;
 };
 
+let cont = 0;
 cadastro.addEventListener('click', (event) => {
-  event.preventDefault()
+  event.preventDefault();
   const contaneirForms = document.querySelector('.thingamagig');
-  const text = document.createElement('p');
+  const text = document.createElement('p')
+  text.className = 'invalido';
   text.innerText = 'Campos inválidos';
-  if (verificaNull()) {
+  if (verificaNull() && cont === 0) {
+    cont += 1;
     contaneirForms.appendChild(text);
+    
   }
 });
