@@ -24,12 +24,8 @@ function verificaInput() {
 
 function verificarRadio() {
   const pegaRadios = document.getElementsByName('gender');
-  if (pegaRadios[0].checked) {
-    return true;
-  } else if (pegaRadios[1].checked) {
-    return true;
-  } else if (pegaRadios[2].checked) {
-    return true;
+  if (pegaRadios[0].checked || pegaRadios[1].checked || pegaRadios[2].checked) {
+    
   } else {
     return false;
   }
