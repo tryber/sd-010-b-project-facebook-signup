@@ -5,7 +5,7 @@ buttomLogin.addEventListener('click', () => {
 });
 
 const cadastro = document.getElementById('facebook-register');
-// const radioValue = document.querySelector('input[name="gender"]:checked');
+const radioValue = document.querySelector('input[name="gender"]:checked');
 
 const verificaNull = () => {
   const invalidos = document.querySelectorAll('.camposInvalidos');
@@ -31,4 +31,13 @@ cadastro.addEventListener('click', (event) => {
     cont += 1;
     contaneirForms.appendChild(text);
   }
+});
+
+const personalizado = document.querySelector('#pers');
+personalizado.addEventListener ('click', () => {
+  const inputPers = document.createElement('input');
+  inputPers.setAttribute('name', 'gender-custom');
+  inputPers.setAttribute('placeholder', 'Gênero (opcional)');
+  const contaneirForms = document.querySelector('.thingamagig');
+  contaneirForms.appendChild(inputPers);
 });
