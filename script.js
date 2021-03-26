@@ -37,8 +37,8 @@ function verificarRadio() {
 
 function checked() {
   const encontraSelecionado = document.getElementsByName('gender');
-  for(let index in encontraSelecionado) {
-    if(encontraSelecionado[index].checked) {
+  for (let index = 0;index <= encontraSelecionado.length;index += 1) {
+    if (encontraSelecionado[index].checked) {
       return encontraSelecionado.value;
     }
   }
