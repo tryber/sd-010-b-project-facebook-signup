@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.top-bar {
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  display: flex;
+  background-color: rgb(66, 103, 178);
+}
+
+.facebook-login {
+  font-size: 15px;
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.main-content {
+  box-sizing: border-box;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.name {
+  max-width: 140px;
+}
+
+.phone-mail {
+  width: 290px;
+}
+
+.right-content form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.genero {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.error {
+  outline: 1px solid tomato;
+}
+
+.error::placeholder {
+  color: tomato;
+}
