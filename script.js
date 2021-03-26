@@ -24,12 +24,11 @@ let cont = 0;
 cadastro.addEventListener('click', (event) => {
   event.preventDefault();
   const contaneirForms = document.querySelector('.thingamagig');
-  const text = document.createElement('p')
+  const text = document.createElement('p');
   text.className = 'invalido';
   text.innerText = 'Campos inválidos';
   if (verificaNull() && cont === 0) {
     cont += 1;
     contaneirForms.appendChild(text);
-    
   }
 });
