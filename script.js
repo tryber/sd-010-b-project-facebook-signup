@@ -21,7 +21,7 @@ const verificaNull = () => {
 
 cadastro.addEventListener('click', () => {
   const text = document.createElement('div');
-  text.innerText = 'Campos invalidos';
+  text.innerText = 'Campos inválidos';
   if (verificaNull()) {
     contaneirForms.appendChild(text);
   }
