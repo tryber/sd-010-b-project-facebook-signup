@@ -1,5 +1,7 @@
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -10,6 +12,7 @@
   justify-content: space-between;
 }
 
+<<<<<<< HEAD
 .forms {
   float: right;
   width: 100%;
@@ -23,15 +26,40 @@
 
 .form-group {
   float: right;
+=======
+.facebook-login {
+  display: flex;
   color: white;
   font-size: 12px;
+}
+
+.form-group {
   display: flex;
   flex-direction: column;
+  margin-top: 15px;
+  padding-left: 5px;
+>>>>>>> 2adbbedafe9a73b016bc2a4d3aee5cbe2fe357e9
+  color: white;
+  font-size: 12px;
+}
+
+.form-group a {
+  display: flex;
+  flex-direction: column;
+<<<<<<< HEAD
+=======
+  align-self: left;
+  margin-top: 5px;
+  color: white;
+  text-decoration: none;
+  opacity: 0.5;
+>>>>>>> 2adbbedafe9a73b016bc2a4d3aee5cbe2fe357e9
 }
 
 .form-control {
-  display: flex;
+  padding: 5px;
   align-self: flex-end;
+<<<<<<< HEAD
   
 }
 
@@ -48,6 +76,11 @@
   text-align: center;
   margin-top: 50px;
   margin-right: 200px;
+=======
+  margin-bottom: 25px;
+  color: white;
+  background-color: #4267b2;
+>>>>>>> 2adbbedafe9a73b016bc2a4d3aee5cbe2fe357e9
 }
 
 .main-content {
