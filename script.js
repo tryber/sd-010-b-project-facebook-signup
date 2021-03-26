@@ -34,6 +34,16 @@ function validaRadioButton() {
   }
 }
 
+// Se algum campo não estiver preenchido paramos a ação padrão do botão de cadastrar e mostrarmos a mensagem "Campos invalidos".
+
+function valida(event) {
+  if (validaInput() === true || validaRadioButton() === true) {
+    event.preventDefault();
+    textoCamposInvalidos.innerHTML = 'Campos inválidos';
+  }
+  return true;
+}
+
 function mostraInfos() {
   const container = document.querySelector('.right-content');
   const nome = document.getElementById('firstname').value;
@@ -41,18 +51,9 @@ function mostraInfos() {
   const contato = document.getElementById('phone_email').value;
   const nascimento = document.getElementById('birthdate').value;
   const genero = document.formulario.gender;
-  container.innerHTML = `<h1>Olá, ${nome} ${sobrenome}</h1>
-  <p>${contato}; ${nascimento}; ${genero.value}</p>`;
-}
-
-// Se algum campo não estiver preenchido paramos a ação padrão do botão de cadastrar e mostrarmos a mensagem "Campos invalidos".
-
-function valida(event) {
-  if (validaInput() === true || validaRadioButton() === true) {
-    event.preventDefault();
-    textoCamposInvalidos.innerHTML = 'Campos inválidos';
-  } else {
-    mostraInfos();
+  if (valida() === true) {
+    container.innerHTML = `<h1>Olá, ${nome} ${sobrenome}</h1>
+    <p>${contato}; ${nascimento}; ${genero.value}</p>`;
   }
 }
 
