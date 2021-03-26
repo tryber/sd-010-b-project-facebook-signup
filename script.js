@@ -1,6 +1,5 @@
 const login = document.getElementById('button-login');
 const message = document.getElementById('user-email-phone');
-const cadastreSe = document.getElementById('button-login');
 
 function clickLogin() {
   alert(message.value);
@@ -10,9 +9,9 @@ login.addEventListener('click', clickLogin);
 
 function validando() {
   const cadastreSe = document.getElementById('facebook-register');
-  const input = document.querySelectorAll('.inputs'); 
+  const input = document.querySelectorAll('.inputs');
   const pai = document.getElementById('formulario');
-  cadastreSe.addEventListener('click', function (event) {
+  cadastreSe.addEventListener('click', function () {
     for (let index = 0; index < input.length; index += 1) {
       if (input[index].value === '') {
         const invalido = document.createElement('p');
@@ -22,7 +21,7 @@ function validando() {
         break;
       }
     }
-  } );
+  });
 }
 validando();
 
@@ -52,7 +51,3 @@ generos.addEventListener('click', (e) => {
     }
   }
 });
-
-
-
-
