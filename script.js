@@ -44,7 +44,7 @@ function validInputRadio() {
   return resultRadio;
 }
 
-function paremt (valid1, valid2) {
+function paremt(valid1, valid2) {
   let value;
   if ((valid1 === true) && (valid2 === true)) {
     value = true;
