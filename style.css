@@ -47,7 +47,7 @@ header input {
 main input {
   border: solid 1px grey;
   height: 25px;
-  margin: 5px 5px 5px 5px;
+  margin: 5px;
   border-radius: 5%;
 }
 
@@ -93,7 +93,7 @@ main input {
   width: auto;
 }
 
-#genders{
+#genders {
   display: flex;
   width: auto;
   align-items: center;

@@ -34,24 +34,24 @@
       <p class="quick-easy">É rápido e fácil.</p>
       <form id="formulario" action="" method="GET">
         <div id="cadastro-nome">
-          <input id="name" type="text" name="firstname" placeholder="Nome" >
-          <input id="sName" type="text" name="lastname" placeholder="Sobrenome">
+          <input id="name" type="text" name="firstname" placeholder="Nome" required>
+          <input id="sName" type="text" name="lastname" placeholder="Sobrenome" required>
         </div>
         <div id="cadastro-email-senha">
-          <input id="foEmail" type="text" name="phone_email" placeholder="Celular ou email">
-          <input id="foSenha" type="password" name="password" placeholder="Nova senha">
+          <input id="foEmail" type="text" name="phone_email" placeholder="Celular ou email" required>
+          <input id="foSenha" type="password" name="password" placeholder="Nova senha" required>
         </div>
         <div id="birthdate">
           <label id="label-birthdate" for="birthdate">Data de nascimento</label>
-          <input id="label-birthdatee" type="text" name="birthdate" placeholder="dd/mm/aaaa" >
+          <input id="label-birthdatee" type="text" name="birthdate" placeholder="dd/mm/aaaa" required>
         </div>
         <label id="label-gender" for="gender">Gênero</label>
         <div id="genders">
-          <input type="radio" id="female" name="gender" value="Feminino" >
+          <input type="radio" id="female" name="gender" value="Feminino" required>
           <label for="female">Feminino</label>
-          <input type="radio" id="male" name="gender" value="Masculino" >
+          <input type="radio" id="male" name="gender" value="Masculino" required>
           <label for="male">Masculino</label>
-          <input id="other" type="radio" name="gender" value="Personalizado" >
+          <input id="other" type="radio" name="gender" value="Personalizado" required>
           <label for="other">Personalizado</label>
         </div>
         <button id="facebook-register" type="submit">Cadastre-se</button>
