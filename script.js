@@ -37,7 +37,7 @@ const setMessegeEmpty = () => {
 };
 
 function validateForm(event) {
-  console.log(event)
+  console.log(event);
   event.preventDefault();
   setMessegeEmpty();
   let isValid = true; const objectLocalStorage = {};
