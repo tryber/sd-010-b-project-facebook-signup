@@ -25,13 +25,16 @@ function verificaInput() {
 function verificarRadio() {
   const pegaRadios = document.getElementsByName('gender');
   if (pegaRadios[0].checked) {
-    return document.getElementById('feminino').value;
+    const encontraValor = document.getElementById('feminino').value;
+    return encontraValor;
   }
   if (pegaRadios[1].checked) {
-    return document.getElementById('masculino').value;
+    const encontraValor = document.getElementById('masculino').value;
+    return encontraValor;
   }
   if (pegaRadios[2].checked) {
-    return document.getElementById('genero-opcional').value;
+    const encontraValor = document.getElementById('genero-opcional').value;
+    return encontraValor;
   }
   return false;
 }
@@ -42,19 +45,17 @@ function clickCadastro() {
   if (verificaRadios === false || verificarInputs === false) {
     const encontraP = document.getElementById('cadastro-invalito');
     encontraP.style.display = 'block';
-  }
+  } 
   else {
     const encontraForm = document.getElementsByClassName('form-cadastro');
-    let encontraP = document.getElementsByClassName('texto-formulario');
+    const encontraP = document.getElementsByClassName('texto-formulario');
     const encontraNome = document.getElementsByName('firstname').value;
     const encontraSobrenome = document.getElementsByName('lastname').value;
     const encontraEmail = document.getElementsByName('phone_email').value;
     const encontraData = document.getElementsByName('birthdate').value;
-    const verificaRadios = verificarRadio();
     encontraP.style.display = 'block';
-
-    encontraP.innerText = 'Olá, '+  encontraNome + ' ' + encontraSobrenome + ' ' + encontraEmail + ' ' + encontraData + ' ' + verificaRadios;
-
+    encontraP.innerText = encontraNome + encontraSobrenome; 
+    encontraP.innerText = encontraEmail + encontraData + verificaRadios;
     encontraForm.style.display = 'none';
   }
 }
