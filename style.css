@@ -11,29 +11,35 @@
 }
 
 .forms {
+  float: right;
+  width: 100%;
   margin-top: 15px;
   color: white;
   display: flex;
-  margin-left: 650px;
+  justify-content: flex-end;
+ 
+ 
 }
 
 .form-group {
+  float: right;
   color: white;
   font-size: 12px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
 }
 
 .form-control {
   display: flex;
   align-self: flex-end;
+  
 }
 
 #button-login {
   color: white;
   background-color: #4267b2;
   align-self: flex-end;
+  float: right;
 }
 
 .forget {
