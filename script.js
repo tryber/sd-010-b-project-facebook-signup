@@ -5,21 +5,21 @@ buttomLogin.addEventListener('click', () => {
 });
 
 const cadastro = document.getElementById('facebook-register');
-const radioValue = document.querySelector('input[name="gender"]:checked');
+// const radioValue = document.querySelector('input[name="gender"]:checked');
 const contaneirForms = document.querySelector('.thingamagig');
 
 const verificaNull = () => {
   const invalidos = document.querySelectorAll('.camposInvalidos');
+  let valido = false;
   for (let index = 0; index < invalidos.length; index += 1) {
     if (invalidos[index].value === '') {
-      return true;
-    } else {
-      return false;
+      valido = true;
     }
   }
-}
+  return valido;
+};
 
-cadastro .addEventListener('click', () => {
+cadastro.addEventListener('click', () => {
   const text = document.createElement('div');
   text.innerText = 'Campos invalidos';
   if (verificaNull()) {
