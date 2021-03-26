@@ -1,7 +1,7 @@
 const consButton = document.querySelector('#button-login');
 const consButtonRegister = document.querySelector('#facebook-register');
-const body = document.querySelector('.right-content');
-const consButtonLogin = document.querySelector('#button-login');
+/* const body = document.querySelector('.right-content');
+const consButtonLogin = document.querySelector('#button-login'); */
 
 consButton.addEventListener('click', (event) => {
   event.preventDefault();
