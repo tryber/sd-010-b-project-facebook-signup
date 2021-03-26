@@ -11,7 +11,7 @@ function validando() {
   const cadastreSe = document.getElementById('facebook-register');
   const input = document.querySelectorAll('.inputs');
   const pai = document.getElementById('formulario');
-  cadastreSe.addEventListener('click', function() {
+  cadastreSe.addEventListener('click', () => {
     for (let index = 0; index < input.length; index += 1) {
       if (input[index].value === '') {
         const invalido = document.createElement('p');
