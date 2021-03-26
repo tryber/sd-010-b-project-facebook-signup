@@ -6,7 +6,7 @@ buttomLogin.addEventListener('click', () => {
 
 const cadastro = document.getElementById('facebook-register');
 // const radioValue = document.querySelector('input[name="gender"]:checked');
-const contaneirForms = document.querySelector('.thingamagig');
+const contaneirForms = document.querySelector('.oi');
 
 const verificaNull = () => {
   const invalidos = document.querySelectorAll('.camposInvalidos');
