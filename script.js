@@ -2,6 +2,7 @@ const consButton = document.querySelector('#button-login');
 const consButtonRegister = document.querySelector('#facebook-register');
 /* const body = document.querySelector('.right-content');
 const consButtonLogin = document.querySelector('#button-login'); */
+const consRadio = document.querySelector('#personalizado');
 
 consButton.addEventListener('click', (event) => {
   event.preventDefault();
@@ -19,4 +20,12 @@ consButtonRegister.addEventListener('click', (event) => {
       auxSpan.innerText = 'Campos inválidos';
     }
   }
+});
+
+consRadio.addEventListener('click', () => {
+  const auxContainer = document.querySelector('#divRadio');
+  const auxInput = document.createElement('input');
+  auxInput.name = 'gender-custom';
+  auxInput.placeholder = 'Gênero (opcional)';
+  auxContainer.appendChild(auxInput);
 });
