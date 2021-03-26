@@ -34,17 +34,31 @@ function validaRadioButton() {
   }
 }
 
+function mostraInfos() {
+  const container = document.querySelector('.right-content');
+  const nome = document.getElementById('firstname').value;
+  const sobrenome = document.getElementById('lastname').value;
+  const contato = document.getElementById('phone_email').value;
+  const nascimento = document.getElementById('birthdate').value;
+  const genero = document.formulario.gender;
+  container.innerHTML = `<h1>Olá, ${nome} ${sobrenome}</h1>
+  <p>${contato}; ${nascimento}; ${genero.value}</p>`;
+}
+
 // Se algum campo não estiver preenchido paramos a ação padrão do botão de cadastrar e mostrarmos a mensagem "Campos invalidos".
 
 function valida(event) {
   if (validaInput() === true || validaRadioButton() === true) {
     event.preventDefault();
     textoCamposInvalidos.innerHTML = 'Campos inválidos';
+  } else {
+    mostraInfos();
   }
 }
 
 const botaoCadastrar = document.getElementById('facebook-register');
 botaoCadastrar.addEventListener('click', valida);
+botaoCadastrar.addEventListener('click', mostraInfos);
 
 // Selecionamos a div que contém os radio buttons com opções de genêro e a opção "Personalizado".
 
