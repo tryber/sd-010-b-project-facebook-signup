@@ -39,9 +39,16 @@
   padding-right: 10px;
 }
 
-header form div input {
+header input {
   border: solid 1px black;
   height: 19px;
+}
+
+main input {
+  border: solid 1px grey;
+  height: 25px;
+  margin: 5px 5px 5px 5px;
+  border-radius: 5%;
 }
 
 .main-content {
@@ -62,13 +69,34 @@ header form div input {
   flex-direction: column;
 }
 
+#formulario {
+  width: auto;
+}
+
 #cadastro-nome {
   display: flex;
+}
+
+#cadastro-nome input {
+  width: 140px;
+}
+
+#cadastro-email-senha {
+  display: flex;
+  flex-direction: column;
+  width: auto;
 }
 
 #birthdate {
   display: flex;
   flex-direction: column;
+  width: auto;
+}
+
+#genders{
+  display: flex;
+  width: auto;
+  align-items: center;
 }
 
 #senha {
