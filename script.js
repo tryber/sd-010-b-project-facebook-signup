@@ -4,19 +4,25 @@ buttomLogin.addEventListener('click', () => {
   alert(loginValue.value);
 });
 
+const cadastro = document.getElementById('facebook-register');
 const radioValue = document.querySelector('input[name="gender"]:checked');
-const firstname = document.getElementById('firstname');
-const lastname = document.getElementById('lastname');
-const phoneEmail = document.getElementById('phone_email');
-const password = document.getElementById('password');
-const birthdate = document.getElementById('birthdate');
-const cadas = document.getElementById('facebook-register');
+const contaneirForms = document.querySelector('.thingamagig');
 
-cadas.addEventListener('click', () => {
-  if (radioValue.value === '' || firstname.value === '' || lastname.value === '' ||phoneEmail.value === '') {
-    alert('Campos Invaálidos');
+const verificaNull = () => {
+  const invalidos = document.querySelectorAll('.camposInvalidos');
+  for (let index = 0; index < invalidos.length; index += 1) {
+    if (invalidos[index].value === '') {
+      return true;
+    } else {
+      return false;
+    }
   }
-  if (password.value === '' || birthdate.value === '' || cadastre.value === '') {
-    alert('Campos Invaálidos');
+}
+
+cadastro .addEventListener('click', () => {
+  const text = document.createElement('div');
+  text.innerText = 'Campos invalidos';
+  if (verificaNull()) {
+    contaneirForms.appendChild(text);
   }
 });
