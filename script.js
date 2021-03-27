@@ -48,7 +48,8 @@ function valida(event) {
     textoCamposInvalidos.innerHTML = 'Campos inválidos';
   } else {
     container.innerHTML = `Olá, ${nome} ${sobrenome}`;
-    container.innerHTML += `<p>${contato}</p><p>${nascimento}</p><p>${genero}</p>`;
+    container.innerHTML += `<p>${contato}</p><p>${nascimento}</p>
+    <p>${genero}</p>`;
   }
 }
 
