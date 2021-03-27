@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------- box header ------ */
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  padding: 10px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.facebook-logo {
+  width: 200px;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  border-color: #1d2a5b;
+  width: 142px;
+  border: 0 solid #ccd0d5;
+}
+
+/* ------ box main content ------- */
+.main-content {
+  display: flex;
+  padding-top: 25px;
+  justify-content: center;
+}
+
+.left-content {
+  flex-basis: 800px;
+}
+
+.right-content {
+  flex-basis: 300px;
+}
+
+#facebook-slogan {
+  font-size: 20px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-width {
+  width: 49%;
+}
+
+.hide {
+  display: none;
+}
