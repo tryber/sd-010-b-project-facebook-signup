@@ -47,9 +47,10 @@ function valida(event) {
     event.preventDefault();
     textoCamposInvalidos.innerHTML = 'Campos inválidos';
   } else {
-    container.innerHTML = `Olá, ${nome} ${sobrenome}`;
-    container.innerHTML += `<p>${contato}</p><p>${nascimento}</p>
-    <p>${genero}</p>`;
+    container.style.display = 'flex';
+    container.style.flexDirection = 'column';
+    container.innerHTML = `<h1>Olá, ${nome} ${sobrenome}</h1><p>${contato}</p>`;
+    container.innerHTML += `<p>${nascimento}</p><p>${genero}</p>`;
   }
 }
 
