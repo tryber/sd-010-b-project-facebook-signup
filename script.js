@@ -22,7 +22,7 @@ function toReplace() {
   const div = document.createElement('div');
   const arrayUser = document.querySelectorAll('.info-user');
   const generoSelec = document.querySelector('input[name="gender"]:checked');
-  
+
   paragrafo.innerHTML = `Olá, ${arrayUser[0].value} ${arrayUser[1].value}
   ${arrayUser[2].value}, ${arrayUser[7].value}, ${generoSelec.value}`;
   paragrafo.id = 'novo-paragrafo';
@@ -41,7 +41,7 @@ function validate(event) {
     if (arrayUser[index].value === '') {
       isValidate = false;
       invalid();
-    } 
+    }
   }
   if (isValidate) {
     toReplace();
