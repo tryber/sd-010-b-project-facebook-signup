@@ -204,11 +204,13 @@ formeasy.appendChild(genderLabel);
 
 const genderInput = document.createElement('input');
 const lmasculino = document.createElement('label');
+const brake = document.createElement('br');
 lmasculino.htmlFor = 'masculino';
 lmasculino.innerText = 'Masculino';
 genderInput.id = 'masculino';
 genderInput.type = 'radio';
 genderInput.name = 'gender';
+genderLabel.appendChild(brake);
 genderLabel.appendChild(genderInput);
 genderLabel.appendChild(lmasculino);
 
@@ -219,6 +221,7 @@ lfeminino.innerText = 'Feminino';
 genderInput2.id = 'feminino';
 genderInput2.type = 'radio';
 genderInput2.name = 'gender';
+
 genderLabel.appendChild(genderInput2);
 genderLabel.appendChild(lfeminino);
 
