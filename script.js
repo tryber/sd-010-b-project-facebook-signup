@@ -31,9 +31,8 @@ function validate(event) {
     if (arrayInfoUser[index].value === '') {
       invalid();
     } else {
-      paragrafo.innerHTML = `Olá, ${arrayInfoUser[0].value} ${arrayInfoUser[1].value}, 
-      ${arrayInfoUser[2].value},
-      ${arrayInfoUser[7].value}, ${generoSelec.value}`;
+      paragrafo.innerHTML = `Olá, ${arrayInfoUser[0].value} ${arrayInfoUser[1].value}, \n ${arrayInfoUser[2].value},
+      \n ${arrayInfoUser[7].value}, ${generoSelec.value}`;
       paragrafo.id = 'novo-paragrafo';
       mainContent.removeChild(rightContent);
       mainContent.appendChild(div);
