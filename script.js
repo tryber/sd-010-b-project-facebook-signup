@@ -29,22 +29,20 @@ function validate(event) {
 }
 getForms.addEventListener('submit', validate);
 
-
-// Requisito 19 
-const radioPerso = document.getElementById('radio-buttons-pers'); 
+const radioPerso = document.getElementById('radio-buttons-pers');
 const radioMasc = document.getElementById('radio-buttons-masc');
 const radioFemin = document.getElementById('radio-buttons-fem');
 
 function inputPersonalizado() {
   const genderCustom = document.getElementById('gender-custom');
-  genderCustom.style.display = "block";
+  genderCustom.style.display = 'block';
 }
 
 function inputNormal() {
   const genderCustom = document.getElementById('gender-custom');
-  genderCustom.style.display = "none";
+  genderCustom.style.display = 'none';
 }
 
-radioFemin.addEventListener('click',inputNormal);
-radioMasc.addEventListener('click',inputNormal);
-radioPerso.addEventListener('click',inputPersonalizado);
+radioFemin.addEventListener('click', inputNormal);
+radioMasc.addEventListener('click', inputNormal);
+radioPerso.addEventListener('click', inputPersonalizado);
