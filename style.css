@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
+.top-bar {
+  display: flex;
+  background-color: rgb(66, 103, 178);
+  justify-content: space-between;
+  height: 84px;
+}
+
+.facebook-login {
+  display: flex;
+  color: aliceblue;
+  font-size: 16px;
+  max-height: 30px;
+  align-self: center;
+  margin-bottom: 60px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 13px;
+}
+
+.form-control {
+  background-color: rgb(66, 103, 178);
+  align-self: flex-end;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.thingamagig {
+  display: flex;
+  flex-direction: column;
+}
+
+#button-login {
+  background-color: rgb(66, 103, 178);
+  color: white;
+  height: 30px;
+  width: 50px;
+}
+
+.email_phone {
+  display: flex;
+}
+
+.name_fast_last {
+  display: flex;
+  flex-direction: row;
+}
+
+.contaneir-birthdate {
+  display: flex;
+  flex-direction: column;
+}
+
+.genero {
+  display: flex;
+  flex-direction: column;
+}
