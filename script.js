@@ -5,7 +5,6 @@ buttomLogin.addEventListener('click', () => {
 });
 
 const cadastro = document.getElementById('facebook-register');
-// const radioValue = document.querySelector('input[name="gender"]:checked');
 
 const verificaNull = () => {
   const invalidos = document.querySelectorAll('.camposInvalidos');
@@ -20,6 +19,25 @@ const verificaNull = () => {
   return valido;
 };
 
+const substituiCampo = document.querySelector('.right-content');
+const formsCompleto = () => {
+  const radioValue = document.querySelector('input[name="gender"]:checked').value;
+  const nome = document.querySelector('#firstname').value;
+  const sobreNome = document.querySelector('#lastname').value;
+  const emailOuTelefone = document.querySelector('#phone_email').value;
+  const DateNascimento = document.querySelector('#birthdate').value;
+  const pai = substituiCampo.children;
+  for (let index = 0; index < pai.length; index += 1) {
+    substituiCampo.removeChild(pai[index]);
+  }
+  const criarDiv = document.createElement('p');
+  criarDiv.innerText = `Olá, ${nome} ${sobreNome}
+  ${emailOuTelefone}
+  ${DateNascimento}
+  ${radioValue}
+  Sua conta foi criada.`
+}
+
 let cont = 0;
 cadastro.addEventListener('click', (event) => {
   event.preventDefault();
@@ -30,6 +48,8 @@ cadastro.addEventListener('click', (event) => {
   if (verificaNull() && cont === 0) {
     cont += 1;
     contaneirForms.appendChild(text);
+  } else {
+    formsCompleto();
   }
 });
 
