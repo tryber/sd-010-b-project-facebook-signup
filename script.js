@@ -237,3 +237,9 @@ genderInput3.type = 'radio';
 genderInput3.name = 'gender';
 genderLabel.appendChild(genderInput3);
 genderLabel.appendChild(lpersonalizado);
+
+const cadastro = document.createElement('button');
+cadastro.type = 'submit';
+cadastro.innerText = 'Cadastre-se';
+cadastro.id = 'facebook-register';
+formeasy.appendChild(cadastro);
