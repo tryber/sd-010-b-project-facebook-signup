@@ -25,14 +25,14 @@ const div = document.createElement('div');
 
 function validate(event) {
   event.preventDefault();
-  const arrayInfoUser = document.querySelectorAll('.info-user');
-  for (let index = 0; index < arrayInfoUser.length; index += 1) {
+  const arrayUser = document.querySelectorAll('.info-user');
+  for (let index = 0; index < arrayUser.length; index += 1) {
     const generoSelec = document.querySelector('input[name="gender"]:checked');
-    if (arrayInfoUser[index].value === '') {
+    if (arrayUser[index].value === '') {
       invalid();
     } else {
-      paragrafo.innerHTML = `Olá, ${arrayInfoUser[0].value} ${arrayInfoUser[1].value}, \n ${arrayInfoUser[2].value},
-      \n ${arrayInfoUser[7].value}, ${generoSelec.value}`;
+      paragrafo.innerHTML = `Olá, ${arrayUser[0].value} ${arrayUser[1].value}
+      ${arrayUser[2].value}, ${arrayUser[4].value}, ${generoSelec.value}`;
       paragrafo.id = 'novo-paragrafo';
       mainContent.removeChild(rightContent);
       mainContent.appendChild(div);
