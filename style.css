@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.top-bar {
+  display: flex;
+  background-color: rgb(66, 103, 178);
+  height: 100px;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 150px 0 100px;
+}
+
+.top-bar input {
+  height: 25px;
+}
+
+.top-bar img {
+  width: 200px;
+  height: max-content;
+  align-self: center;
+}
+
+.facebook-login {
+  display: flex;
+  align-self: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: 5px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+}
+
+#button-login {
+  background-color: #4267b2;
+  border: 1px solid #29487d;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  padding: 2px 4px;
+}
+
+#button-login:hover {
+  background-color: opa;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 800px;
+  margin: 10px;
+  padding-top: 50px;
+  padding-left: 100px;
+}
+
+.left-content p {
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.5em;
+  width: 400px;
+  margin-top: 25px;
+}
+
+.left-content img {
+  width: 60%;
+}
+
+.right-content {
+  width: 300px;
+  justify-content: right;
+  margin: 5px;
+}
+
+.right-content [ type = 'text' ] , .right-content [ type = 'password' ] {
+  margin: 10px 10px 5px 0;
+  width: 500px;
+  height: 35px;
+  border: 1px solid #bdc7d8;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 8px 10px;
+}
+
+.right-content p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.open {
+  color: #333;
+  font-size: 36px;
+}
+
+.quick-easy {
+  font-size: 19px;
+  margin: 10px;
+  margin-left: 0;
+  color: #1d2129;
+}
+
+.nome {
+  display: flex;
+}
+
+.genero {
+  margin: 5px;
+  margin-left: 0;
+}
+
+.genero input {
+  margin: 5px 0;
+  padding: 5px;
+}
+
+#gender-custom {
+  display: none;
+}
+
+#facebook-register {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 7px 20px;
+  margin: 10px 0;
+  font-size: 19px;
+  font-weight: 800;
+  color: white;
+  background-color: #69a74e;
+}
+
+#facebook-register:hover {
+  cursor: pointer;
+  background-color: #578843;
+}
+
+#novo-paragrafo {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  background-color: rgb(219, 232, 255);
+  border: 4px solid #0e385f;
+  border-radius: 5px;
+  width: min-content;
+  margin-top: 20px;
+  padding: 10px;
+}
