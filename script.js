@@ -209,8 +209,8 @@ lmasculino.innerText = 'Masculino';
 genderInput.id = 'masculino';
 genderInput.type = 'radio';
 genderInput.name = 'gender';
-formeasy.appendChild(lmasculino);
 formeasy.appendChild(genderInput);
+formeasy.appendChild(lmasculino);
 
 const genderInput2 = document.createElement('input');
 const lfeminino = document.createElement('label');
@@ -219,8 +219,8 @@ lfeminino.innerText = 'Feminino';
 genderInput2.id = 'feminino';
 genderInput2.type = 'radio';
 genderInput2.name = 'gender';
-formeasy.appendChild(lfeminino);
 formeasy.appendChild(genderInput2);
+formeasy.appendChild(lfeminino);
 
 const genderInput3 = document.createElement('input');
 const lpersonalizado = document.createElement('label');
@@ -229,5 +229,5 @@ lpersonalizado.innerText = 'Personalizado';
 genderInput3.id = 'personalizado';
 genderInput3.type = 'radio';
 genderInput3.name = 'gender';
-formeasy.appendChild(lpersonalizado);
 formeasy.appendChild(genderInput3);
+formeasy.appendChild(lpersonalizado);
