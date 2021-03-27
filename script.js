@@ -26,7 +26,7 @@ const formsCompleto = () => {
   const sobreNome = document.querySelector('#lastname').value;
   const emailOuTelefone = document.querySelector('#phone_email').value;
   const DateNascimento = document.querySelector('#birthdate').value;
-  const sexoDaPessoa = radioValue.value
+  const sexoDaPessoa = radioValue.value;
   const pai = substituiCampo.children;
   for (let index = 0; index < pai.length; index += 1) {
     substituiCampo.removeChild(pai[index]);
