@@ -46,3 +46,7 @@ body {
 .container-radio {
   display: flex;
 }
+
+#gender-custom {
+  display: none;
+}
