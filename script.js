@@ -15,30 +15,36 @@ function invalid() {
   errorMessage.innerText = 'Campos inválidos';
 }
 
-const getForms = document.getElementById('forms');
-// const allInputs = document.querySelectorAll('.inputs');
-const rightContent = document.querySelector('.right-content');
-const mainContent = document.querySelector('.main-content');
-const paragrafo = document.createElement('p');
-const div = document.createElement('div');
-// const mensagem = document.getElementsByClassName('error-message');
+function toReplace() {
+  const rightContent = document.querySelector('.right-content');
+  const mainContent = document.querySelector('.main-content');
+  const paragrafo = document.createElement('p');
+  const div = document.createElement('div');
+  const arrayUser = document.querySelectorAll('.info-user');
+  const generoSelec = document.querySelector('input[name="gender"]:checked');
+  
+  paragrafo.innerHTML = `Olá, ${arrayUser[0].value} ${arrayUser[1].value}
+  ${arrayUser[2].value}, ${arrayUser[7].value}, ${generoSelec.value}`;
+  paragrafo.id = 'novo-paragrafo';
+  mainContent.removeChild(rightContent);
+  mainContent.appendChild(div);
+  div.className = 'right-content';
+  div.appendChild(paragrafo);
+}
 
+const getForms = document.getElementById('forms');
 function validate(event) {
   event.preventDefault();
   const arrayUser = document.querySelectorAll('.info-user');
+  let isValidate = true;
   for (let index = 0; index < arrayUser.length; index += 1) {
-    const generoSelec = document.querySelector('input[name="gender"]:checked');
     if (arrayUser[index].value === '') {
+      isValidate = false;
       invalid();
-    } else {
-      paragrafo.innerHTML = `Olá, ${arrayUser[0].value} ${arrayUser[1].value}
-      ${arrayUser[2].value}, ${arrayUser[4].value}, ${generoSelec.value}`;
-      paragrafo.id = 'novo-paragrafo';
-      mainContent.removeChild(rightContent);
-      mainContent.appendChild(div);
-      div.className = 'right-content';
-      div.appendChild(paragrafo);
-    }
+    } 
+  }
+  if (isValidate) {
+    toReplace();
   }
 }
 getForms.addEventListener('submit', validate);
