@@ -49,13 +49,14 @@
         </div>
         <label for="gender" id='label-gender'>Gênero</label>
         <div id="gender">
-          <input id="female" type="radio" name="gender" value="Feminino" checked>
+          <input class="gnd" id="female" type="radio" name="gender" value="Feminino" checked>
           <label for="female">Feminino</label>
-          <input id="male" type="radio" name="gender" value="Masculino">
+          <input class="gnd" id="male" type="radio" name="gender" value="Masculino">
           <label for="male">Masculino</label>
-          <input id="other" type="radio" name="gender" value="Personalizado">
+          <input class="gnd" id="other" type="radio" name="gender" value="Personalizado">
           <label for="other">Personalizado</label>
-        </div> 
+        </div>
+        <input class="gnd-c"type="text" placeholder="Gênero (opcional)" name="gender-custom"></input>
       </form>
       <button id="facebook-register" type="submit" form="register" value="submit">Cadastre-se</button>
     </div>

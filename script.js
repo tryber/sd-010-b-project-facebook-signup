@@ -23,10 +23,13 @@ btnRegister.addEventListener('click', (event) => {
   }
 });
 
-const otherGender = document.getElementsByName('gender')[2];
-if (otherGender.checked) {
-  const creatInput = document.createElement('input');
-  creatInput.type = 'text';
-  creatInput.name = 'gender';
-  // em desenvolvimento
-}
+const gender = document.getElementById('gender');
+
+gender.addEventListener('click', () => {
+  if (document.querySelector('.gnd[name]:checked').value === 'Personalizado') {
+    document.querySelector('.gnd-c').style.display = 'block';
+  }
+  if (document.querySelector('.gnd[name]:checked').value !== 'Personalizado') {
+    document.querySelector('.gnd-c').style.display = 'none';
+  }
+});
