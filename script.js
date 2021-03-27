@@ -21,11 +21,12 @@ const verificaNull = () => {
 
 const substituiCampo = document.querySelector('.right-content');
 const formsCompleto = () => {
-  const radioValue = document.querySelector('input[name="gender"]:checked').value;
+  const radioValue = document.querySelector('input[name="gender"]:checked');
   const nome = document.querySelector('#firstname').value;
   const sobreNome = document.querySelector('#lastname').value;
   const emailOuTelefone = document.querySelector('#phone_email').value;
   const DateNascimento = document.querySelector('#birthdate').value;
+  const sexoDaPessoa = radioValue.value
   const pai = substituiCampo.children;
   for (let index = 0; index < pai.length; index += 1) {
     substituiCampo.removeChild(pai[index]);
@@ -34,9 +35,9 @@ const formsCompleto = () => {
   criarDiv.innerText = `Olá, ${nome} ${sobreNome}
   ${emailOuTelefone}
   ${DateNascimento}
-  ${radioValue}
-  Sua conta foi criada.`
-}
+  ${sexoDaPessoa}
+  Sua conta foi criada.`;
+};
 
 let cont = 0;
 cadastro.addEventListener('click', (event) => {
