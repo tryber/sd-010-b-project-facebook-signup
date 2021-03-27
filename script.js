@@ -1,7 +1,5 @@
 const buttonEntrar = document.getElementById('button-login');
 
-const form = document.getElementById('forms');
-
 function botaoEntrar() {
   const emailTel = document.getElementById('user-email-phone').value;
   alert(emailTel);
@@ -9,30 +7,10 @@ function botaoEntrar() {
 
 buttonEntrar.addEventListener('click', botaoEntrar);
 
-<<<<<<< HEAD
-const buttonCadastrar = document.getElementById('facebook-register');
-const userName = document.getElementById('name');
-const lastName = document.getElementById('lastname');
-const phoneEmail = document.getElementById('phone_email'); 
-const password = document.getElementById('password'); 
-const birthdate = document.getElementById('birthdate'); 
-const radioSelecionado = document.querySelector('input[name="gender"]:checked');
-
-function validarCadastro(){
-  if((userName.value === "") || (lastName.value === "") || (phoneEmail.value === "") || (password.value === "") || (birthdate.value === "") || (radioSelecionado.value === "" )){
-    alert('Campo inválido');
-  } else {
-    alert('Tudo ok'); 
-  }
-}
-
-buttonCadastrar.addEventListener('click', validarCadastro); 
-
-=======
 
 // Referência tirado do https://medium.com/@jezmael/como-validar-os-dados-de-um-formul%C3%A1rio-com-javascript-abdc5a5fba67
 
-function validar(evento) {
+ function validar(evento) {
   evento.preventDefault();
   const name = document.getElementById('name');
   const lastname = document.getElementById('lastname');
@@ -70,5 +48,31 @@ function validar(evento) {
     return;
   }
 }
-  form.addEventListener('submit', validar);
->>>>>>> 0d335f06302f916ef96a2ee0ed8aaf5539719fab
+  form.addEventListener('submit', validar); 
+
+/* const buttonCadastrar = document.getElementById('facebook-register');
+const userName = document.getElementById('name');
+const lastName = document.getElementById('lastname');
+const phoneEmail = document.getElementById('phone_email'); 
+const password = document.getElementById('password'); 
+const birthdate = document.getElementById('birthdate'); 
+const radioSelecionado = document.querySelector('input[name="gender"]:checked');
+const radio = document.querySelector('input[name="gender"]:checked');
+
+function validarCadastro(){
+  if((userName.value === "") || (lastName.value === "") || (phoneEmail.value === "") || (password.value === "") || (birthdate.value === "") || (radioSelecionado.value === "" ) || (radio.value === null)){
+    alert('Campo inválido');
+  } else {
+    alert('Tudo ok'); 
+  }
+}
+
+buttonCadastrar.addEventListener('click', validarCadastro);  */
+
+function validarCampo(){
+  let 
+  if(document.form1.tipoEndereco[0].checked == false){
+
+  }
+}
+
