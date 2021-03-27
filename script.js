@@ -82,11 +82,11 @@ personalizado.addEventListener('click', criaInputGenero);
 
 // Criamos uma função para determinar que caso o usuário selecione outro gênero que não "Personalizado" o campo de input para o gênero personalizado será removido.
 
-function retiraInputPersonalizado() {
-  const inputPersonalizado = document.getElementById('input-personalizado');
-  if (personalizado.checked === false) {
-    inputPersonalizado.remove();
-  }
-}
+// function retiraInputPersonalizado() {
+//   const inputPersonalizado = document.getElementById('input-personalizado');
+//   if (personalizado.checked === false) {
+//     inputPersonalizado.remove();
+//   }
+// }
 
-genderOptions.addEventListener('click', retiraInputPersonalizado);
+// genderOptions.addEventListener('click', retiraInputPersonalizado);
