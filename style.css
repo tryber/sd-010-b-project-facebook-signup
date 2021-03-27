@@ -1,0 +1,212 @@
+/* Requisito 1 */
+* {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  width: 100%;
+  height: 81px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-bar img {
+  align-self: center;
+}
+
+/* Requisito 2 */
+.facebook-logo {
+  margin-top: 13px;
+}
+
+/* Requisito 3 */
+.facebook-login {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 5px;
+  color: white;
+  font-size: 12px;
+}
+
+.form-group label {
+  align-self: start;
+  padding-bottom: 4px;
+}
+
+.form-control {
+  display: flex;
+  align-self: flex-end;
+  margin-bottom: 27px;
+}
+
+.form-control button {
+  background-color: rgb(66, 103, 178);
+  border: 1px solid;
+  border-color: rgb(41, 72, 125);
+  color: white;
+  padding: 3px 5px;
+  font-weight: 800;
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+  opacity: 0.7;
+  color: rgb(156, 180, 216);
+  padding-top: 6px;
+  align-self: start;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#user-email-phone {
+  margin-bottom: 20px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+  background: linear-gradient(white, rgb(211, 216, 232));
+  width: 100%;
+  height: 700px;
+}
+
+/* Requisito 9 */
+.left-content {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 800px;
+}
+
+.facebook-slogan {
+  color: rgb(14, 56, 95);
+  font-size: 1.25em;
+  font-weight: 800;
+  line-height: 29px;
+  width: 450px;
+  zoom: 1.05;
+}
+
+/* Requisito 10 */
+.right-content {
+  width: 300px;
+}
+
+#name , #lastname {
+  box-sizing: border-box;
+  width: 147px;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+
+.data {
+  box-sizing: border-box;
+  height: 30px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.right-content input {
+  padding: 8px 10px;
+  font-size: 18px;
+  border: solid 1px rgb(189, 199, 216);
+  margin-bottom: 5px;
+  height: 39px;
+}
+
+h1 {
+  font-size: 36px;
+  color: #333;
+  font-weight: 600;
+}
+
+#right-content-header {
+  margin-bottom: 20px;
+}
+
+/* Requisito 15 */
+.birthdate {
+  color: rgb(133, 137, 145);
+  font-weight: 600;
+  font-size: 1.08em;
+}
+
+.birthdate label {
+  margin: 10px 8px 0;
+}
+
+#label-gender , #label-birthdate {
+  display: block;
+}
+
+/* Requisito 16 */
+.genders #label-gender {
+  color: rgb(133, 137, 145);
+  font-weight: 600;
+  font-size: 1.08em;
+}
+
+.inputs_labels_genders label {
+  font-size: 0.95em;
+  color: rgb(27, 30, 36);
+}
+
+/* Requisito 17 */
+.userTerms {
+  margin-top: 18px;
+  width: 320px;
+  color: rgb(133, 137, 145);
+  font-size: 0.7em;
+  line-height: 14px;
+}
+
+.userTerms span {
+  color: rgb(97, 97, 213);
+}
+
+.btnSumit {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.btnSumit button {
+  background: linear-gradient(#67ae55, #578843);
+  border: 1px solid #2b7d07;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: 600;
+  height: 40px;
+  margin-top: 1em;
+  text-shadow: 0.7px 0.7px black;
+  width: 200px;
+}
+
+.form-control button:hover {
+  background-color: darkslateblue;
+  border: 1px solid;
+  border-color: rgb(41, 72, 125);
+  cursor: pointer;
+}
+
+.btnSumit button:hover {
+  background: linear-gradient(#67ae55e0, #578843);
+  border: 1px solid #2b7d07;
+}
