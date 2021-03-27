@@ -16,12 +16,12 @@ function invalid() {
 }
 
 const getForms = document.getElementById('forms');
-const allInputs = document.querySelectorAll('.inputs');
+// const allInputs = document.querySelectorAll('.inputs');
 const rightContent = document.querySelector('.right-content');
 const mainContent = document.querySelector('.main-content');
 const paragrafo = document.createElement('p');
 const div = document.createElement('div');
-const mensagem = document.getElementsByClassName('error-message');
+// const mensagem = document.getElementsByClassName('error-message');
 
 function validate(event) {
   event.preventDefault();
@@ -31,7 +31,8 @@ function validate(event) {
     if (arrayInfoUser[index].value === '') {
       invalid();
     } else {
-      paragrafo.innerHTML = `Olá, ${arrayInfoUser[0].value} ${arrayInfoUser[1].value} ${arrayInfoUser[2].value},
+      paragrafo.innerHTML = `Olá, ${arrayInfoUser[0].value} ${arrayInfoUser[1].value}, 
+      ${arrayInfoUser[2].value},
       ${arrayInfoUser[7].value}, ${generoSelec.value}`;
       paragrafo.id = 'novo-paragrafo';
       mainContent.removeChild(rightContent);
@@ -43,7 +44,7 @@ function validate(event) {
 }
 getForms.addEventListener('submit', validate);
 
-//Requisito 19
+// Requisito 19
 const radioPerso = document.getElementById('radio-buttons-pers');
 const radioMasc = document.getElementById('radio-buttons-masc');
 const radioFemin = document.getElementById('radio-buttons-fem');
