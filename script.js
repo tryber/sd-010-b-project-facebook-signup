@@ -37,6 +37,7 @@ const formsCompleto = () => {
   ${DateNascimento}
   ${sexoDaPessoa}
   Sua conta foi criada.`;
+  substituiCampo.appendChild(criarDiv);
 };
 
 let cont = 0;
