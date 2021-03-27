@@ -17,7 +17,6 @@ function invalid() {
 
 const getForms = document.getElementById('forms');
 
-
 function validate(event) {
   event.preventDefault();
   const arrayInfoUser = document.querySelectorAll('.info-user');
@@ -61,8 +60,7 @@ radioMasc.addEventListener('click', inputNormal);
 radioPerso.addEventListener('click', inputPersonalizado);
 
 // Rquisito 20 e 18 TESTE
-
- const allInputs = document.querySelectorAll('.inputs'); 
+const allInputs = document.querySelectorAll('.inputs'); 
 const rightContent = document.querySelector('.right-content');
 const mainContent = document.querySelector('.main-content');
 const paragrafo = document.createElement('p');
