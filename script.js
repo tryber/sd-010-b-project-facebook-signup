@@ -46,6 +46,7 @@ function validaCampos(evento) {
     } else {
       paragrafo.innerHTML = `Olá, ${inputsForm[0].value} ${inputsForm[1].value}
       ${inputsForm[2].value}, ${inputsForm[4].value}, ${generoSelec.value}`;
+      paragrafo.id = 'novo-paragrafo';
       mainContent.removeChild(rightContent);
       mainContent.appendChild(div);
       div.className = 'right-content';
