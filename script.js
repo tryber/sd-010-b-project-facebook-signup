@@ -19,8 +19,8 @@ const getForms = document.getElementById('forms');
 
 function validate(event) {
   event.preventDefault();
+  
   const arrayInfoUser = document.querySelectorAll('.info-user');
-
   for (let index = 0; index < arrayInfoUser.length; index += 1) {
     if (arrayInfoUser[index].value === '') {
       invalid();
