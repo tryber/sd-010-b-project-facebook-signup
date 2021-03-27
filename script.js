@@ -16,26 +16,29 @@ function invalid() {
 }
 
 const getForms = document.getElementById('forms');
+const allInputs = document.querySelectorAll('.inputs');
+const rightContent = document.querySelector('.right-content');
+const mainContent = document.querySelector('.main-content');
+const paragrafo = document.createElement('p');
+const div = document.createElement('div');
+const mensagem = document.getElementsByClassName('error-message');
 
 function validate(event) {
   event.preventDefault();
   const arrayInfoUser = document.querySelectorAll('.info-user');
-
   for (let index = 0; index < arrayInfoUser.length; index += 1) {
     const generoSelec = document.querySelector('input[name="gender"]:checked');
     if (arrayInfoUser[index].value === '') {
       invalid();
-    } else{
-      paragrafo.innerHTML = `Olá, ${arrayInfoUser[0].value} ${arrayInfoUser[1].value}
-      ${arrayInfoUser[2].value}, ${arrayInfoUser[4].value}, ${generoSelec.value}`;
+    } else {
+      paragrafo.innerHTML = `Olá, ${arrayInfoUser[0].value} ${arrayInfoUser[1].value} ${arrayInfoUser[2].value},
+      ${arrayInfoUser[7].value}, ${generoSelec.value}`;
       paragrafo.id = 'novo-paragrafo';
       mainContent.removeChild(rightContent);
       mainContent.appendChild(div);
       div.className = 'right-content';
       div.appendChild(paragrafo);
-
     }
-    
   }
 }
 getForms.addEventListener('submit', validate);
@@ -58,33 +61,3 @@ function inputNormal() {
 radioFemin.addEventListener('click', inputNormal);
 radioMasc.addEventListener('click', inputNormal);
 radioPerso.addEventListener('click', inputPersonalizado);
-
-// Rquisito 20 e 18 TESTE
-const allInputs = document.querySelectorAll('.inputs'); 
-const rightContent = document.querySelector('.right-content');
-const mainContent = document.querySelector('.main-content');
-const paragrafo = document.createElement('p');
-const div = document.createElement('div');
-const mensagem = document.getElementsByClassName('error-message')
-
-/*
-function newCadastro (event) {
-  event.preventDefault(); 
-  for (let index = 0; index < allInputs.length; index += 1) {
-    const generoSelec = document.querySelector('input[name="gender"]:checked');
-    if (allInputs[index].value === '' || generoSelec === null) {
-      mensagem.innerHTML = 'Campos inválidos';
-      mensagem.style.color = 'red';
-    } else {
-      paragrafo.innerHTML = `Olá, ${allInputs[0].value} ${allInputs[1].value}
-      ${allInputs[2].value}, ${allInputs[4].value}, ${generoSelec.value}`;
-      paragrafo.id = 'novo-paragrafo';
-      mainContent.removeChild(rightContent);
-      mainContent.appendChild(div);
-      div.className = 'right-content';
-      div.appendChild(paragrafo);
-    }
-  } 
-}
-
-getForms.addEventListener('submit', newCadastro); */
