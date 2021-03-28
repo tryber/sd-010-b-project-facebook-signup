@@ -1,0 +1,71 @@
+.top-bar {
+  display: flex;
+  background-color: rgb(66, 103, 178);
+  justify-content: space-between;
+}
+
+.facebook-logo {
+  display: flex;
+  align-self: flex-start;
+  margin-left: auto;
+}
+
+.facebook-login {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+}
+
+#user-email-phone-label {
+  color: white;
+}
+
+#souser-password-label {
+  color: white;
+}
+
+#form-login-container {
+  display: flex;
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  display: flex;
+  align-self: flex-end;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+#form-nome-sobrenome {
+  display: flex;
+  flex-direction: row;
+}
+
+#genero-personalizado {
+  display: none;
+}
+
+#infos {
+  display: none;
+}
+
+#campos-invalidos {
+  display: none;
+}
