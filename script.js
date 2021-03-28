@@ -13,9 +13,15 @@ clickBotao.addEventListener('click', exibeAlerta);
 const formValidate = () => {
   for (let index = 0; index < inputForm.length; index += 1) {
     let counter = 0;
-    inputForm[index].value === '' ? counter += 1 : inputForm;
-    counter !== 0 ? textForm.innerHTML = 'Campos inválidos' : inputForm;
+    if (inputForm[index].value === '') {
+      counter += 1;
+    }
+
+    if (counter !== 0) {
+      textForm.innerHTML = 'Campos inválidos';
+    }
   }
+  return inputForm;
 };
 
 clickCad.addEventListener('click', formValidate);
