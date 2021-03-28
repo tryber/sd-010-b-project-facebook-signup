@@ -15,12 +15,12 @@ const formValidate = () => {
     let counter = 0;
     if (inputForm[index].value === '') {
       counter += 1;
-    }
+    };
     if (counter >= 1) {
       textForm.innerHTML = 'Campos inválidos';
-    }
+    };
     return inputForm;
-  }
-}
+  };
+};
 
 clickCad.addEventListener('click', formValidate);
