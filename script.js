@@ -1,6 +1,6 @@
 const btnEntrar = document.getElementById('button-login');
 const userLogin = document.getElementById('user-email-phone');
-
+const gender = document.getElementById('gender');
 const btnRegister = document.getElementById('facebook-register');
 const inputArray = document.getElementById('name-password');
 const inputs = inputArray.getElementsByTagName('input');
@@ -11,7 +11,7 @@ const sN = document.getElementById('lsName');
 const e = document.getElementById('celEmail');
 const date = document.getElementById('dt');
 const p = '.gnd[name]:checked';
-const g = document.querySelector(p);
+let g = document.querySelector(p).value;
 const rgtContent = document.querySelector('.right-content');
 
 btnEntrar.addEventListener('click', () => {
@@ -20,7 +20,7 @@ btnEntrar.addEventListener('click', () => {
 
 btnRegister.addEventListener('click', (event) => {
   event.preventDefault();
-  const itens = [`Olá, ${nM.value} ${sN.value}`, e.value, date.value, g.value];
+  const itens = [`Olá, ${nM.value} ${sN.value}`, e.value, date.value, g];
   for (let i = 0; i < inputs.length; i += 1) {
     if (inputs[i].value === '') {
       inputs.value = '';
@@ -39,13 +39,11 @@ btnRegister.addEventListener('click', (event) => {
   }
 });
 
-const gender = document.getElementById('gender');
-
 gender.addEventListener('click', () => {
   if (document.querySelector(p).value === 'Personalizado') {
     document.querySelector('.gnd-c').style.display = 'block';
-  }
-  if (document.querySelector(p).value !== 'Personalizado') {
+  } else {
     document.querySelector('.gnd-c').style.display = 'none';
   }
+  g = document.querySelector(p).value;
 });
