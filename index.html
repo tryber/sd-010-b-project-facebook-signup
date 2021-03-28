@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imgs/icon-title-dim.png">
+    <title>Facebook - entre ou cadastre-se</title>
+</head>
+<body>
+    <main>
+        <header class="top-bar" ><!-- REQUISITO 1 -->
+		    <img class="facebook-logo" src="imgs/facebook-logo.png" alt="logo facebook"> <!-- REQUISITO 2 -->
+            <form action="" method="GET" class="facebook-login">  
+                <section class="form-group">  <!-- REQUISITO 3 -->
+                    <label for="user-email-phone-label" id='user-email-phone-label'>Email ou telefone</label>
+                    <input type="text" id="user-email-phone">
+                </section>
+                <section class="form-group">
+                    <label for="user-password-label" id="user-password-label">Senha</label>
+                    <input type="text" id="user-password">
+                    <a href="">Esqueceu a conta?</a>
+                </section>
+                <section class="form-control">
+                    <button id="button-login">Entrar</button>
+                </section>
+            </form>
+        </header>
+        <section class="main-content">
+            <section class="left-content"> <!-- REQUISITO 9 -->
+                <p id="facebook-slogan" class="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+                <img id ="facebook-networking" src="imgs/networking.png" alt="rede de contatos do facebook" width="530px">
+            </section>
+            <section class="right-content">
+            <header id="right-content-header">
+            <h1>Abra uma conta</h1>
+            <p class="quick-easy">É rápido e fácil.</p>
+            </header>
+            <form action="" method="GET" id="subscription">
+                <input type="text" name="firstname" placeholder="Nome" id="name">
+                <input type="text" name="lastname" placeholder="Sobrenome" id='lastname'>
+
+                <input type="text" name="phone_email" placeholder="Celular ou email" class="data">
+
+                <input type="password" name="password" placeholder="Nova senha" class="data">
+
+				<div class="birthdate" ><!--- REQUISITO 15 --->
+				<label for="label-birthdate" id="label-birthdate">Data de nascimento</label>
+                <input type="text" name="birthdate" placeholder="dd/mm/aaaa" class="data">
+				</div>
+              
+				<section class="genders"> <!-- REQUISITO 16 -->
+				    <label for="" id="label-gender">Gênero </label>
+					<div class="inputs_labels_genders" >
+						<input type="radio" name="gender" id="feminino" value="Feminino">
+						<label for="feminino">Feminino</label>
+						<input type="radio" name="gender" id="masculino" value="Masculino">
+						<label for="masculino">Masculino</label>
+						<input type="radio" name="gender" id="personalizado" value="Personalizado" >
+						<label for="personalizado">Personalizado</label>
+					</div>
+				</section> 
+            
+                <div class="userTerms" > <!-- REQUISITO 17 -->
+                    <p>Ao clicar em Cadastre-se, você concorda com nossos <span>Termos, Política de Dados e Política de Cookies.</span> 
+                        Você pode receber notificações por SMS e pode cancelar isso quando quiser.</p>
+                </div>
+
+								<div class="genderPersonal" ></div> <!-- REQUISITO 19 -->
+
+                <div class="btnSumit" > <!-- REQUISITO 17 -->
+                    <button type="submit" id="facebook-register">Cadastre-se</button>
+                </div>
+                <p id="invalidMessage"></p>
+            </form>
+        </section>
+        </section>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>
