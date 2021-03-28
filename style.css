@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  background: linear-gradient(white, #d3d8e8);
+  height: 630px;
+}
+
+header {
+  background-color: rgb(66, 103, 178);
+  margin-bottom: 13px;
+}
+
+.top-bar {
+  display: flex;
+  height: 78px;
+  background-color: rgb(66, 103, 178);
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  width: 1100px;
+  margin: auto;
+}
+
+.facebook-logo {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+.facebook-login {
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0 14px 0 0;
+}
+
+.form-control {
+  display: flex;
+  align-self: flex-end;
+}
+
+main {
+  margin: auto;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
+/* CÓDIGO DO LP */
+main label {
+  font-size: 14px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  width: 1100px;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.left-content p {
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-top: 40px;
+  width: 450px;
+  word-spacing: -1px;
+}
+
+.right-content {
+  width: 300px;
+  align-content: stretch;
+}
+
+.signUp {
+  display: flex;
+  justify-content: start;
+}
+
+.gender-radios {
+  display: flex;
+}
+
+h1 {
+  font-size: 36px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.quick-easy {
+  font-size: 19px;
+  color: #1d2129;
+}
+
+.input {
+  padding: 8px 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border-color: #bdc7d8;
+  border: 1px solid #ccd0d5;
+  margin-bottom: 10px;
+}
+
+.name , .last {
+  width: 130px;
+}
+
+.name {
+  margin-right: 8px;
+}
+
+#facebook-register {
+  font-size: 19px;
+  padding: 7px 20px;
+  margin: 10px 0;
+  background: linear-gradient(#67ae55, #578843);
+  border-radius: 5px;
+  color: white;
+}
