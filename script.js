@@ -20,64 +20,54 @@ buttonLogin.addEventListener('click', () => {
   alert(document.querySelector('#user-email-phone').value);
 });
 
+const inputText = document.querySelectorAll('.validInput');
+const inputRadio = document.querySelectorAll('.validInputRadio');
+const cadastrar = document.querySelector('#facebook-register');
 
+function validFormInput() {
+  let resultInput = true;
+  for (let i = 0; i < inputText.length; i += 1) {
+    if (inputText[i] === false) {
+      resultInput = false;
+    }
+  }
+  return resultInput;
+}
 
+function validInputRadio() {
+  let resultRadio = false;
+  for (let i = 0; i < inputRadio.length; i += 1) {
+    if (inputRadio[i].checked) {
+      resultRadio = true;
+    }
+  }
+  return resultRadio;
+}
 
+function paremt(valid1, valid2) {
+  let value;
+  if ((valid1 === true) && (valid2 === true)) {
+    value = true;
+  } else {
+    value = false;
+  }
+  return value;
+}
 
+function printCampo(parametro) {
+  if (parametro === false) {
+    const alerta = document.querySelector('#alertError');
+    const p = document.createElement('p');
+    p.innerHTML = 'Campos inválidos';
+    p.style.fontSize = '25px';
+    p.style.fontWeight = '900';
+    alerta.appendChild(p);
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//começar aqui 
-// if (xxxx === true) {
-//   document.querySelector('.right-content').style.display = 'none';
-
-  
-// }
-document.querySelector('.right-content').style.display = 'none';
-const containerRight = document.querySelector('.right-content')
-
-let firstName = document.querySelector('#name').value;
-firstName = "lucas"
-
-let lastName = document.querySelector('#subName').value;
-lastName = "lotar"
-
-
-let fullName = `Olá, ${firstName} ${lastName}`;
-let divElement = document.createElement('div');
-divElement.innerHTML = fullName;
-containerRight.appendChild(divElement);
-
-
-
+cadastrar.addEventListener('click', () => {
+  const valid1 = validFormInput();
+  const valid2 = validInputRadio();
+  const parametro = paremt(valid1, valid2);
+  printCampo(parametro);
+});
