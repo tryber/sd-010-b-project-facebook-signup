@@ -51,3 +51,7 @@
 .name input {
   width: 50%;
 }
+
+.gnd-c {
+  display: none;
+}

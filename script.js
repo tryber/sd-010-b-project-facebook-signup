@@ -1,28 +1,26 @@
 const btnEntrar = document.getElementById('button-login');
 const userLogin = document.getElementById('user-email-phone');
 
-btnEntrar.addEventListener('click', () => {
-  alert(userLogin.value);
-});
-
 const btnRegister = document.getElementById('facebook-register');
 const inputArray = document.getElementById('name-password');
 const inputs = inputArray.getElementsByTagName('input');
 const form = document.getElementById('register');
 const span = document.createElement('span');
-
-const nm = document.getElementById('fsName').value;
-const surName = document.getElementById('lsName').value;
-const complete = `Olá, ${nm} ${surName}`;
-const email = document.getElementById('celEmail').value;
-const date = document.getElementById('dt').value;
+const nM = document.getElementById('fsName');
+const sN = document.getElementById('lsName');
+const e = document.getElementById('celEmail');
+const date = document.getElementById('dt');
 const p = '.gnd[name]:checked';
-const gend = document.querySelector(p).value;
+const g = document.querySelector(p);
 const rgtContent = document.querySelector('.right-content');
-const itens = [complete, email, date, gend];
+
+btnEntrar.addEventListener('click', () => {
+  alert(userLogin.value);
+});
 
 btnRegister.addEventListener('click', (event) => {
   event.preventDefault();
+  const itens = [`Olá, ${nM.value} ${sN.value}`, e.value, date.value, g.value];
   for (let i = 0; i < inputs.length; i += 1) {
     if (inputs[i].value === '') {
       inputs.value = '';
