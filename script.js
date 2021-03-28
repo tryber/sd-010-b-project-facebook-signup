@@ -11,7 +11,7 @@ const sN = document.getElementById('lsName');
 const e = document.getElementById('celEmail');
 const date = document.getElementById('dt');
 const p = '.gnd[name]:checked';
-let g = document.querySelector(p).value;
+let gnd = '';
 const rgtContent = document.querySelector('.right-content');
 // BUG?
 btnEntrar.addEventListener('click', () => {
@@ -20,7 +20,7 @@ btnEntrar.addEventListener('click', () => {
 
 btnRegister.addEventListener('click', (event) => {
   event.preventDefault();
-  const itens = [`Olá, ${nM.value} ${sN.value}`, e.value, date.value, g];
+  const itens = [`Olá, ${nM.value} ${sN.value}`, e.value, date.value, gnd];
   for (let i = 0; i < inputs.length; i += 1) {
     if (inputs[i].value === '') {
       inputs.value = '';
@@ -45,5 +45,5 @@ gender.addEventListener('click', () => {
   } else {
     document.querySelector('.gnd-c').style.display = 'none';
   }
-  g = document.querySelector(p).value;
+  gnd = document.querySelector(p).value;
 });
