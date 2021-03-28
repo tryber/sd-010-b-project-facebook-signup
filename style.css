@@ -84,7 +84,7 @@ body {
 
 #label-gender {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 #user-email-phone-label {
