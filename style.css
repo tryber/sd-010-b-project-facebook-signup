@@ -54,13 +54,24 @@ body {
   align-items: center;
 }
 
+.left-content img {
+  margin-top: 20px;
+}
+
 .right-content {
   width: 300px;
+  margin-right: 100px;
 }
 
 .nomeSobrenome {
   display: flex;
   padding-top: 10px;
+}
+
+.form-cadastro input {
+  border: none;
+  padding: 5px;
+  margin: 5px;
 }
 
 #button-login {
