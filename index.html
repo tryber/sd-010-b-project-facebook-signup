@@ -37,20 +37,21 @@
       <h4 class="quick-easy">É rápido e fácil.</h4>
       <form action="" class="subscriptionForms">
         <div class="fullName">
-          <input type="text" placeholder="Nome" name="firstname" required>
-          <input type="text" placeholder="Sobrenome" name="lastname" required>
+          <input type="text" class="input-formulario" placeholder="Nome" name="firstname" required>
+          <input type="text" class="input-formulario" placeholder="Sobrenome" name="lastname" required>
         </div>
-        <input type="text" placeholder="Celular ou email" name="phone_email" required>
-        <input type="password" placeholder="Nova senha" name="password" required>
+        <input type="text" class="input-formulario" placeholder="Celular ou email" name="phone_email" required>
+        <input type="password" class="input-formulario" placeholder="Nova senha" name="password" required>
         <label id="label-gender">Gênero</label>
         <label id="label-birthdate">Data de nascimento</label>
-        <input type="text" name="birthdate" placeholder="dd/mm/aaaa" required>
+        <input type="text" class="input-formulario" name="birthdate" placeholder="dd/mm/aaaa" required>
         <div class="genderChoice">
-          <input type="radio" name="gender" value="Feminino" required>Feminino
+          <input class="input-formulario" type="radio" name="gender" value="Feminino" required>Feminino
           <input type="radio" name="gender" value="Masculino">Masculino
           <input id="personalizado" type="radio" name="gender" value="Personalizado">Personalizado
         </div>
         <button type="submit" id="facebook-register">Cadastre-se</button>
+        <p id="paragrafo-alerta"></p>
       </form>
     </div>
   </main>

@@ -18,3 +18,14 @@ opcaoPersonalizada.addEventListener('click', () => {
     escolhaGenero.appendChild(inputP);
   }
 });
+
+const buttonSubmit = document.getElementById('facebook-register');
+buttonSubmit.addEventListener('click', () => {
+  const todosInputs = document.getElementsByClassName('input-formulario');
+  const paragrafoAlerta = document.getElementById('paragrafo-alerta');
+  for (let i = 0; i < todosInputs.length; i += 1) {
+    if (!todosInputs[i].innerHTML) {
+      paragrafoAlerta.innerText = 'Campos inválidos';
+    }
+  }
+});
