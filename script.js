@@ -13,7 +13,7 @@ const date = document.getElementById('dt');
 const p = '.gnd[name]:checked';
 let gnd = '';
 const rgtContent = document.querySelector('.right-content');
-// BUG?
+// BRANCH ABIMAEL
 btnEntrar.addEventListener('click', () => {
   alert(userLogin.value);
 });
