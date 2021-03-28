@@ -1,6 +1,9 @@
 const inputEmail = document.getElementById('user-email-phone');
 const clickBotao = document.getElementById('button-login');
 const clickCad = document.getElementById('facebook-register');
+const inputForm = document.querySelectorAll('main form input');
+const textForm = document.getElementById('text-form');
+
 
 function exibeAlerta() {
   alert(inputEmail.value);
@@ -8,36 +11,17 @@ function exibeAlerta() {
 
 clickBotao.addEventListener('click', exibeAlerta);
 
-function camposInvalidos() {
-  const divMensagem = document.getElementById('div_mensagem');
-  const nome = document.getElementById('nome');
-  const sobrenome = document.getElementById('sobrenome');
-  const email = document.getElementById('email');
-  const senha = document.getElementById('senha');
-  const dataDeNascimento = document.getElementById('data_de_nascimento');
-  const generoM = document.getElementById('masculino');
-  const generoF = document.getElementById('feminino');
-  const generoP = document.getElementById('personalizado');
-
-  if (nome.value === '') {
-    divMensagem.innerHTML = 'Campos Inválidos';
-  } if (sobrenome.value === '') {
-    divMensagem.innerHTML = 'Campos Inválidos';
-  } if (email.value === '') {
-    divMensagem.innerHTML = 'Campos Inválidos';
-  } if (senha.value === '') {
-    divMensagem.innerHTML = 'Campos Inválidos';
-  } if (dataDeNascimento.value === '') {
-    divMensagem.innerHTML = 'Campos Inválidos';
-  } if (generoF.value === '') {
-    divMensagem.innerHTML = 'Campos Inválidos';
-  } if (generoM.value === '') {
-    divMensagem.innerHTML = 'Campos Inválidos';
-  } if (generoP.value === '') {
-    divMensagem.innerHTML = 'Campos Inválidos';
-  } else {
-    divMensagem.innerHTML = ''
+const formValidate = () => {
+  for (let index = 0; index < inputForm.length; index += 1) {
+    let counter = 0;
+    if (inputForm[index].value === '') {
+      counter += 1;
+    }
+    if (counter >= 1) {
+      textForm.innerHTML = 'Campos inválidos';
+    }
+    return inputForm;
   }
 }
 
-clickCad.addEventListener('click', camposInvalidos);
+clickCad.addEventListener('click', formValidate);
