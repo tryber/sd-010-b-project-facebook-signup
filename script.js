@@ -13,7 +13,7 @@ const date = document.getElementById('dt');
 const p = '.gnd[name]:checked';
 let g = document.querySelector(p).value;
 const rgtContent = document.querySelector('.right-content');
-
+// BUG?
 btnEntrar.addEventListener('click', () => {
   alert(userLogin.value);
 });
