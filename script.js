@@ -19,3 +19,65 @@ const buttonLogin = document.querySelector('#button-login');
 buttonLogin.addEventListener('click', () => {
   alert(document.querySelector('#user-email-phone').value);
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//começar aqui 
+// if (xxxx === true) {
+//   document.querySelector('.right-content').style.display = 'none';
+
+  
+// }
+document.querySelector('.right-content').style.display = 'none';
+const containerRight = document.querySelector('.right-content')
+
+let firstName = document.querySelector('#name').value;
+firstName = "lucas"
+
+let lastName = document.querySelector('#subName').value;
+lastName = "lotar"
+
+
+let fullName = `Olá, ${firstName} ${lastName}`;
+let divElement = document.createElement('div');
+divElement.innerHTML = fullName;
+containerRight.appendChild(divElement);
+
+
+
