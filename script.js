@@ -8,14 +8,10 @@ function paraEvento(event) {
 }
 
 function limpaForm() {
-  const pai = document.getElementById('formcontato');
   const listaDivs = document.getElementsByClassName('removivel');
-
-
   for (let i = 0; i < listaDivs.length; i += 1) {
     if (listaDivs[i].classList.contains('removivel') === true) {
       listaDivs[i].classList.add('remover');
-      // pai.removeChild(listaDivs[i]);
     }
   }
 }
@@ -24,7 +20,7 @@ function imprimeDados() {
   const array = document.getElementsByClassName('imprimir');
   const els = document.getElementsByClassName('checked-genero');
   let genero;
-  for (let i = 0; i < els.length; i++) {
+  for (let i = 0; i < els.length; i += 1) {
     if (els[i].checked) {
       genero = (els[i].value);
     }
@@ -57,16 +53,13 @@ function valida(event) {
     const p = document.createElement('p');
     p.innerHTML = 'Campos inválidos';
     pai.appendChild(p);
-    para(event);
+    paraEvento(event);
   } else {
     limpaForm();
     imprimeDados();
     paraEvento(event);
   }
-
 }
-
-
 
 document.getElementById('button-login').addEventListener('click', alerta);
 document.getElementById('facebook-register').addEventListener('click', valida);
