@@ -100,6 +100,8 @@ input:focus {
 .main-content {
   display: flex;
   justify-content: space-between;
+  max-width: 980px;
+  margin: 0 auto;
 }
 
 .left-content {
@@ -108,6 +110,7 @@ input:focus {
 
 .right-content {
   width: 300px;
+  padding-bottom: 30px;
 }
 
 h1 {
@@ -177,10 +180,6 @@ p {
   margin-bottom: 10px;
 }
 
-#facebook-register {
-  margin-top: 20px;
-}
-
 #label-gender {
   margin-top: 10px;
 }
@@ -200,4 +199,53 @@ p {
 
 #custom-gender {
   margin-top: 10px;
+}
+
+#policy {
+  color: #777;
+  font-size: 11px;
+  width: 300px;
+  display: block;
+  margin: 1em 0;
+}
+
+#facebook-register {
+  margin-top: 10px;
+  font-size: 19px;
+  border: 1px solid;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  letter-spacing: 1px;
+  position: relative;
+  text-shadow: 0 1px 2px rgb(0 0 0 / 50%);
+  min-width: 194px;
+  padding: 7px 20px;
+  font-weight: 600;
+  background: linear-gradient(#67ae55, #578843);
+  background-color: #69a74e;
+  box-shadow: inset 0 1px 1px #a4e388;
+  border-color: #3b6e22 #3b6e22 #2c5115;
+}
+
+
+#facebook-register:focus {
+  outline: none;
+}
+
+#facebook-register:hover {
+  background: linear-gradient(#79bc64, #578843);
+  box-shadow: inset 0 1px 1px #a4e388;
+  border-color: #3b6e22 #3b6e22 #2c5115;
+
+}
+
+#page {
+  border-top: 1px solid #dddfe2;
+  color: #666;
+  font-size: 10px;
+  font-weight: 600;
+  margin-top: 10px;
+  padding-top: 15px;
 }
