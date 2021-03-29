@@ -10,18 +10,18 @@ function exibeAlerta() {
 
 clickBotao.addEventListener('click', exibeAlerta);
 
-const formValidate = () => {
-  for (let index = 0; index < inputForm.length; index += 1) {
-    let counter = 0;
-    if (inputForm[index].value === '') {
-      counter += 1;
-    }
+  clickCad.addEventListener('click', (event) => {
+    for (let index = 0; index < inputForm.length; index += 1) {
+      let counter = 0;
+      if (inputForm[index].value === '') {
+        counter += 1;
+      }
 
-    if (counter !== 0) {
-      textForm.innerText = 'Campos inválidos';
+      if (counter !== 0) {
+        event.preventDefault();
+        textForm.innerText = 'Campos inválidos';
+      }
     }
-  }
-  return inputForm;
-};
+    return inputForm;
+  })
 
-clickCad.addEventListener('click', formValidate);
