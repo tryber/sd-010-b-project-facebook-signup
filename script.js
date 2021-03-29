@@ -10,7 +10,6 @@ function exibeAlerta() {
 clickBotao.addEventListener('click', exibeAlerta);
 
 function camposInvalidos() {
-
   const clickSiginup = document.querySelectorAll('input');
   const novoP = document.createElement('p');
   const textoP = document.createTextNode('Campos Inválidos');
