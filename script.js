@@ -17,7 +17,7 @@ function customGender() {
   clicked = true;
 }
 
-window.onload = function () {
+window.onload = function x () {
   const buttonLogin = document.getElementById('button-login');
   buttonLogin.addEventListener('click', emailTelephoneAlert);
 
