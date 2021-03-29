@@ -1,4 +1,5 @@
 //Emite alerta com nome de usuário após clicar no botão ENTRAR.
+
 const enterButton = document.querySelector('#button-login');
 
 enterButton.addEventListener('click', () => {
@@ -45,7 +46,9 @@ enterButton.addEventListener('click', () => {
 //   }
 
 // });
+
 // adicionando comentario para envio da pr //
+
 const selectedPers = document.getElementById('other');
 selectedPers.addEventListener('click', () => {
   const arm = document.getElementById('genders');
