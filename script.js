@@ -57,7 +57,7 @@ function clickCadastro() {
     encontraConteudo.style.display = 'none';
     encontraP.style.display = 'block';
     encontraP.innerText = `Olá, ${encontraNome} ${encontraSobrenome}
-    ${encontraEmail}\n${encontraData} \n${encotraGender}`;
+    ${encontraEmail}\n${encontraData}\n${encotraGender}`;
   }
 }
 
