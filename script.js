@@ -82,6 +82,7 @@ function createGender() {
   const pegaContainer = document.querySelector('#gender-container');
   const criaInput = document.createElement('input');
   criaInput.id = 'custom-gender';
+  criaInput.classList.add('input-register');
   criaInput.name = 'gender-custom';
   criaInput.placeholder = 'Gênero (opcional)';
   pegaContainer.appendChild(criaInput);

@@ -134,6 +134,22 @@ p {
   font-size: 19px;
 }
 
+.input-register {
+  font-size: 14px;
+  padding: 3px 4px;
+  border: 1px solid;
+  background-color: transparent;
+  border-color: #bdc7d8;
+  border-radius: 5px;
+}
+
+.date-gender-label {
+  color: #90949c;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 10px 0 5px;
+}
+
 .name-surname {
   display: flex;
   justify-content: space-between;
@@ -172,7 +188,10 @@ p {
 #gender-container {
   display: block;
   margin-top: 10px;
-  font-size: 14px;
+  color: #1d2129;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 0 10px 0 3px;
 }
 
 .input-gender {
@@ -180,5 +199,5 @@ p {
 }
 
 #custom-gender {
-  /* code */
+  margin-top: 10px;
 }
