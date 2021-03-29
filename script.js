@@ -24,7 +24,6 @@ function camposInvalidos() {
       cont = true;
     }
   }
-
   if (cont === false) {
     novoP.appendChild(textoP);
     form.insertBefore(novoP, divAtual);
@@ -32,4 +31,4 @@ function camposInvalidos() {
   return inputForm;
 };
 
-clickCad.addEventListener('click', formValidate);
+clickCad.addEventListener('click', camposInvalidos);
