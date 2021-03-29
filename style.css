@@ -5,7 +5,7 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 75px;
   width: 100%;
 }
@@ -39,14 +39,10 @@
 
 .left-content {
   width: 800px;
-  justify-content: space-evenly;
-  padding: 20px 0 0 100px;
 }
 
 .right-content {
   width: 300px;
-  padding-right: 20px;
-  justify-content: space-evenly;
 }
 
 .name-content {
@@ -55,12 +51,4 @@
 
 #nome {
   margin-right: 3px;
-}
-
-button {
-  margin-bottom: 2px;
-}
-
-#facebook-slogan {
-  width: 40%;
 }
