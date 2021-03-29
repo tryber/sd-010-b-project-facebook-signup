@@ -25,20 +25,14 @@ function imprimeDados() {
       genero = (els[i].value);
     }
   }
-  console.log(array.length);
   const pai = document.getElementById('formcontato');
-  const pNome = document.createElement('p');
-  const pGenero = document.createElement('p');
-  pNome.innerHTML = `Olá, ${array[0].value} ${array[1].value}`;
+  const pNome = document.createElement('p').innerHTML = `Olá, ${array[0].value} ${array[1].value}`;
   pai.appendChild(pNome);
-
   for (let i = 2; i < array.length; i += 1) {
-    const p = document.createElement('p');
-    p.innerHTML = `${array[i].value}.`;
+    const p = document.createElement('p').innerHTML = `${array[i].value}.`;
     pai.appendChild(p);
   }
-
-  pGenero.innerHTML = `Genero: ${genero}.`;
+  const pGenero = document.createElement('p').innerHTML = `Genero: ${genero}.`;
   pai.appendChild(pGenero);
 }
 
