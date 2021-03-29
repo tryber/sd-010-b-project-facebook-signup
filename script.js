@@ -2,7 +2,6 @@ const inputEmail = document.getElementById('user-email-phone');
 const clickBotao = document.getElementById('button-login');
 const clickCad = document.getElementById('facebook-register');
 const inputForm = document.querySelectorAll('main form input');
-const textForm = document.getElementById('text-form');
 
 function exibeAlerta() {
   alert(inputEmail.value);
@@ -18,7 +17,6 @@ function camposInvalidos() {
   const divAtual = document.getElementById('div_mensagem');
   const form = document.getElementById('form_cad');
   let cont = false;
-
   for (let index = 0; index < clickSiginup.length; index += 1) {
     if (clickSiginup[index].value === '') {
       cont = true;
@@ -29,6 +27,6 @@ function camposInvalidos() {
     form.insertBefore(novoP, divAtual);
   }
   return inputForm;
-};
+}
 
 clickCad.addEventListener('click', camposInvalidos);
