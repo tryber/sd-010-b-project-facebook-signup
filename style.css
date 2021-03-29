@@ -110,6 +110,30 @@ input:focus {
   width: 300px;
 }
 
+h1 {
+  font-size: 36px;
+  color: #1d2129;
+}
+
+p {
+  color: #1d2129;
+}
+
+#facebook-slogan {
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 29px;
+  margin-top: 40px;
+  width: 450px;
+  word-spacing: -1px;
+  margin-bottom: 0;
+}
+
+.quick-easy {
+  font-size: 19px;
+}
+
 .name-surname {
   display: flex;
   justify-content: space-between;
@@ -156,5 +180,5 @@ input:focus {
 }
 
 #custom-gender {
-  
+  /* code */
 }
