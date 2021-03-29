@@ -68,7 +68,7 @@ const validLogin = (parametro) => {
       element.style.display = 'none';
     }
   }
-  printCampo(parametro); 
+  printCampo(parametro);
 };
 
 const createWelcome = () => {
@@ -87,7 +87,7 @@ const createWelcome = () => {
     }
   }
   paragraph.innerHTML = `Olá, ${name} ${lastName};
-Seu contato é ${contact} e sua data de nascimento é ${birthday}, gênero ${genero}`;
+Seu contato é ${contact} e sua data de nascimento é ${birthday}, ${genero}`;
   containerRight.appendChild(paragraph);
 };
 
