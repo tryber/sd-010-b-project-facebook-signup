@@ -2,7 +2,7 @@ const inputEmail = document.getElementById('user-email-phone');
 const clickBotao = document.getElementById('button-login');
 const clickCad = document.getElementById('facebook-register');
 const inputForm = document.querySelectorAll('main form input');
-let textForm = document.getElementById('text-form');
+const textForm = document.getElementById('text-form');
 
 function exibeAlerta() {
   alert(inputEmail.value);
