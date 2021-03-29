@@ -17,7 +17,7 @@ body {
   height: 100px;
   justify-content: space-between;
   align-items: center;
-  width: 980px;
+  width: 1100px;
   margin: 0 auto;
 }
 
@@ -100,7 +100,7 @@ input:focus {
 .main-content {
   display: flex;
   justify-content: space-between;
-  max-width: 980px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
