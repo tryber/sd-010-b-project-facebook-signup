@@ -67,3 +67,5 @@ function inputNormal() {
 radioFemin.addEventListener('click', inputNormal);
 radioMasc.addEventListener('click', inputNormal);
 radioPerso.addEventListener('click', inputPersonalizado);
+
+// Adicionando modificações, clonando repositório
