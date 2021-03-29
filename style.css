@@ -40,7 +40,7 @@
 .left-content {
   width: 800px;
   justify-content: space-evenly;
-  padding: 20px 0 0 100px; 
+  padding: 20px 0 0 100px;
 }
 
 .right-content {
@@ -56,9 +56,11 @@
 #nome {
   margin-right: 3px;
 }
+
 button{
   margin-bottom: 2px;
 }
+
 #facebook-slogan{
   width: 40%;
 }
