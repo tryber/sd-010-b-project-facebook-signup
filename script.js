@@ -45,13 +45,13 @@ enterButton.addEventListener('click', () => {
 
 // });
 
-let selectedPers = document.getElementById('other');
-selectedPers.addEventListener('click' , () => {
-  let arm = document.getElementById('genders')
-  let opc = document.createElement('input');
+const selectedPers = document.getElementById('other');
+selectedPers.addEventListener('click', () => {
+  const arm = document.getElementById('genders');
+  const opc = document.createElement('input');
   opc.type = 'Text';
   opc.name = 'gender-custom';
-  opc.id = 'opcional'
-  opc.placeholder = 'Gênero (opcional)'
+  opc.id = 'opcional';
+  opc.placeholder = 'Gênero (opcional)';
   arm.appendChild(opc);
 });
