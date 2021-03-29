@@ -54,10 +54,11 @@ function clickCadastro() {
     const encontraEmail = document.getElementsByName('phone_email').value;
     const encontraData = document.getElementsByName('birthdate').value;
     const encotraGender = checked();
+    encontraConteudo.style.display = 'none';
     encontraP.style.display = 'block';
     encontraP.innerText = `Olá, ${encontraNome} ${encontraSobrenome}
     ${encontraEmail}\n${encontraData} \n${encotraGender}`;
-    encontraConteudo.style.display = 'none';
+    
   }
 }
 
