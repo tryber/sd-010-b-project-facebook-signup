@@ -19,15 +19,14 @@ function limpaForm() {
 function imprimeDados() {
   const arr = document.getElementsByClassName('imprimir');
   const els = document.getElementsByClassName('checked-genero');
-  let genero;
-  for (let i = 0; i < els.length; i += 1) {
-    if (els[i].checked) {
-      genero = (els[i].value);
-    }
-  }
   const pai = document.getElementById('formcontato');
   const pNome = document.createElement('p');
   const pGen = document.createElement('p');
+  for (let i = 0; i < els.length; i += 1) {
+    if (els[i].checked) {
+      pGen.innerHTML = `Genero: ${(els[i].value)}.`;
+    }
+  }
   pNome.innerHTML = `Olá, ${arr[0].value} ${arr[1].value}`;
   pai.appendChild(pNome);
   for (let i = 2; i < arr.length; i += 1) {
@@ -35,7 +34,6 @@ function imprimeDados() {
     p.innerHTML = `${arr[i].value}.`;
     pai.appendChild(p);
   }
-  pGen.innerHTML = `Genero: ${genero}.`;
   pai.appendChild(pGen);
 }
 
