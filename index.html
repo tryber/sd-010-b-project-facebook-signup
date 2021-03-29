@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Facebook</title>
+</head>
+<body>
+  <header>
+      <section class="top-bar">
+        <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Logo Facebook">
+        <form class="facebook-login" action="">
+          <div class="form-group">
+              <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
+              <input type="text" id="user-email-phone">
+          </div>
+          <div class="form-group">
+            <label for="user-password" id="user-password-label">Senha</label>
+            <input type="password" id="user-password">
+            <label class="label"><a id="esqueceu" href="#">Esqueceu a conta?</a></label>
+          </div>
+
+          <div class="form-control">
+            <button id="button-login">Entrar</button>
+          </div>
+        </form>
+      </section>
+  </header>
+  <main>
+    <section class="main-content">
+      <div class="left-content">
+        <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+        <img id="facebook-networking" src="imgs/networking.png" alt="Facebook Networking">
+      </div>
+      <div class="right-content">
+        <h1>Abra uma conta</h1>
+        <p class="quick-easy">É rápido e fácil.</p>
+        <form action="" id="new-user">
+            <div class="names">
+              <input type="text" name="firstname" placeholder="Nome" id="firstname">
+              <input type="text" name="lastname" placeholder="Sobrenome" id="lastname">
+            </div>
+            <input type="text" name="phone_email" placeholder="Celular ou email" id="phone_email">
+            <input type="password" name="password" placeholder="Nova senha" id="password"><br>
+            <label for="" id="label-birthdate">Data de nascimento</label>
+            <input type="text" name="birthdate" id="birth-date" placeholder="dd/mm/aaaa"><br>
+            <label for="" id="label-gender">Gênero</label><br>
+            <input type="radio" id="female" name="gender" value="Feminino">
+            <label for="female">Feminino</label>
+            <input type="radio" id="male" name="gender" value="Masculino">
+            <label for="male">Masculino</label>
+            <input type="radio" id="other" name="gender" value="Personalizado">
+            <label for="other">Personalizado</label>
+            <input type="text" name="gender-custom" placeholder="Género (opcional)" id="gender-custom">
+            <div id="alert"></div>
+            <!-- utilização de uma função e return false no botão para parar de submeter o form e recarregar a página foi feita usando o stackoverflow
+            link: https://stackoverflow.com/questions/21263414/dom-element-disappearing-immediately-after-update -->
+            <button type="submit" id="facebook-register"  onclick="returnFalse(); return false;">Cadastre-se</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
