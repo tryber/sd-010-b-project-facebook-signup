@@ -86,7 +86,8 @@ const createWelcome = () => {
       genero = inputRadio[i].value;
     }
   }
-  paragraph.innerHTML = `Olá, ${name} ${lastName}, ${contact}, ${birthday}, ${genero}`;
+  paragraph.innerHTML = `Olá, ${name} ${lastName}, 
+  ${contact}, ${birthday}, ${genero}`;
   containerRight.appendChild(paragraph);
 };
 
