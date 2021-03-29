@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(66, 103, 178);
+  padding: 13px 0;
+}
+
+.facebook-logo {
+  display: flex;
+  align-content: flex-start;
+  text-align: left;
+}
+
+.facebook-login {
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  font-size: 12px;
+  font-family: Helvetica, sans-serif;
+}
+
+#user-email-phone , #user-password {
+  width: 150px;
+  height: 24px;
+}
+
+#button-login {
+  background-color: #4267b2;
+  border: 1px solid #29487d;
+  padding: 2px 6px;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  height: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-right: 14px;
+}
+
+.form-control {
+  align-self: flex-end;
+  background-color: #4267b2;
+  padding: 2px 6px;
+  height: 24px;
+  font-family: inherit;
+}
+
+.main-content {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-evenly;
+}
+
+.left-content {
+  justify-content: left;
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.right-content h1 {
+  font-size: 36px;
+}
+
+.quick-easy {
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.fullname {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.gender-options {
+  display: flex;
+  width: 400px;
+  align-items: flex-end;
+}
+
+#facebook-slogan {
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 29px;
+  width: 450px;
+}
+
+#gender-custom {
+  display: none;
+}
+
+.cadastro input {
+  border-radius: 5px;
+  padding: 8px 10px;
+  font-size: 15px;
+  background-color: transparent;
+  border: 1px solid #ccd0d5;
+}
+
+#phone_email , #password {
+  margin: 5px 0;
+  width: 400px;
+}
+
+#label-birthdate , #label-gender {
+  display: flex;
+  font-size: 16px;
+  color: #90949c;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.gender-options input {
+  margin: 5px;
+}
+
+.gender-options label {
+  margin: 5px;
+  font-size: 18px;
+  padding: 5px;
+}
+
+/* Estilização copiada do botão original da página de login do facebook */
+#facebook-register {
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  min-width: 194px;
+  padding: 7px 20px;
+  background: linear-gradient(#67ae55, #578843);
+  box-shadow: inset 0 1px 1px #a4e388;
+  border: 1px solid #3b6e22;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
