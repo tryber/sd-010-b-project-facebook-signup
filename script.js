@@ -45,7 +45,7 @@ const validarCampos = (event) => {
     }
   }
   confirm();
-};
+}; 
 
 const facebookRegister = document.getElementById('formCadastro');
 facebookRegister.addEventListener('submit', validarCampos);
