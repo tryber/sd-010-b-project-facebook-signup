@@ -24,7 +24,7 @@ function imprimeDados() {
   const pGen = document.createElement('p');
   for (let i = 0; i < els.length; i += 1) {
     if (els[i].checked) {
-      pGen.innerHTML = `Genero: ${(els[i].value)}.`;
+      pGen.innerHTML = `Gênero: ${(els[i].value)}.`;
     }
   }
   pNome.innerHTML = `Olá, ${arr[0].value} ${arr[1].value}`;
