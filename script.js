@@ -2,7 +2,6 @@ const buttonLogin = document.querySelector('#button-login');
 const emailPhoneInput = document.querySelector('#user-email-phone');
 const registerInputs = document.querySelectorAll('.input-register');
 const registerButton = document.querySelector('#facebook-register');
-// const pegaRadio = document.querySelector('#custom');
 const divRight = document.querySelector('.right-content');
 const gender = document.querySelectorAll('.input-gender');
 const dateInput = document.querySelector('#input-date');
@@ -26,17 +25,6 @@ function validatesInputs() {
 
   return isValid;
 }
-
-// function that places slashes on the date
-function slash() {
-  dateInput.addEventListener('keypress', () => {
-    if (dateInput.value.length === 2 || dateInput.value.length === 5) {
-      dateInput.value += '/';
-    }
-  });
-}
-
-slash();
 
 // validates the whole form
 function validatesForm() {
@@ -69,9 +57,10 @@ function showUserInfo() {
   const name = document.querySelector('#input-name');
   const surname = document.querySelector('#input-lastname');
   const emailPhone = document.querySelector('#input-phone-email');
+  const dateBirth = dateInput;
   const userInfo = `Olá, ${name.value} ${surname.value}
   E-mail/Phone: ${emailPhone.value}
-  Birth Date: ${dateInput.value}
+  Birth Date: ${dateBirth.value}
   Gênero: ${getGender()}`;
   divRight.innerText = '';
   const paragraph = document.createElement('p');
@@ -101,14 +90,14 @@ function createGender() {
 // removes the custom gender input if other gender were selected
 function addRemoveCustomSex() {
   const customGender = document.querySelector('#custom-gender');
-
-  if (getGender() === 'Personalizado') {
+  if (getGender() === 'Personalizado' && !customGender) {
     createGender();
-  } else if (customGender) {
+  } else if (getGender() !== 'Personalizado' && customGender) {
     customGender.remove();
   }
 }
 
+// adds event listener for all radio buttons
 for (let i = 0; i < gender.length; i += 1) {
   gender[i].addEventListener('click', addRemoveCustomSex);
 }

@@ -1,5 +1,14 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
 body {
   margin: 0; /* eliminates all margin */
+}
+
+#header-background {
+  height: 100px;
+  background-color: rgb(66, 103, 178);
 }
 
 .top-bar {
@@ -8,6 +17,8 @@ body {
   height: 100px;
   justify-content: space-between;
   align-items: center;
+  width: 980px;
+  margin: 0 auto;
 }
 
 .facebook-login {
@@ -15,13 +26,69 @@ body {
   color: white;
 }
 
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 .form-group {
+  font-size: 12px;
   display: flex;
   flex-direction: column;
+  margin-right: 14px;
+}
+
+.form-group input {
+  border: solid 1px;
+  border-color: #1d2a5b;
+  padding: 3px 3px 4px;
+}
+
+.login-label {
+  padding-bottom: 4px;
+}
+
+#forgot-pass {
+  padding-top: 4px;
+  line-height: 16px;
+  color: #9cb4d8;
+  cursor: pointer;
+}
+
+#forgot-pass:hover {
+  text-decoration: underline;
 }
 
 .form-control {
-  align-self: flex-end;
+  align-self: center;
+}
+
+#button-login {
+  font-family: inherit;
+  background-color: #4267b2;
+  border: 1px solid;
+  border-color: #29487d;
+  border-radius: 2px;
+  -webkit-font-smoothing: antialiased;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  padding: 2px 6px;
+  cursor: pointer;
+}
+
+#button-login:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#button-login:hover {
+  background-color: #3b5998;
+}
+
+#button-login:active {
+  background-color: #29487d;
 }
 
 .main-content {
