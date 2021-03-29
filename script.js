@@ -47,10 +47,10 @@ function validInputRadio() {
 function paremt(valid1, valid2) {
   let value;
   if ((valid1 === true) && (valid2 === true)) {
-      value = true;
+    value = true;
   } else {
-      value = false;
-    }
+    value = false;
+  }
   return value;
 }
 
@@ -65,41 +65,37 @@ function printCampo(parametro) {
   }
 }
 
+const validLogin = (parametro) => {
+  const childrenContainer = document.querySelector('.right-content').children;
+  if (parametro === true) {
+    for (let index = 0; index < childrenContainer.length; index += 1) {
+      const element = childrenContainer[index];
+      element.style.display = 'none';
+    }
+  }
+  printCampo(parametro);
+};
+
+const createWelcome = () => {
+  const containerRight = document.querySelector('.right-content');
+  const name = document.querySelector('#name').value;
+  const lastName = document.querySelector('#subName').value;
+  const userName = name.value + lastName.value;
+  const contact = document.querySelector('#phoneEmail').value;
+  const div = document.createElement('div');
+  div.className = 'right-content';
+  const paragraph = document.createElement('p');
+  const birthday = document.querySelector('#date-birthdate').value;
+  paragraph.innerHTML = `Olá, ${userName};
+Seu contato é ${contact} e sua data de nascimento é ${birthday}`;
+  containerRight.appendChild(paragraph);
+};
+
 cadastrar.addEventListener('click', (event) => {
   event.preventDefault();
   const valid1 = validFormInput();
   const valid2 = validInputRadio();
   const parametro = paremt(valid1, valid2);
-  const containerRight = document.querySelector('.right-content');
-  const childrenContainer = document.querySelector(".right-content").children
-    
-  if (parametro === true) {
-    for (let index = 0; index < childrenContainer.length; index += 1) {
-      const element = childrenContainer[index];
-      element.style.display = "none"
-    }
-
-    let userNameRegistrartion = `${document.querySelector("#name").value} ${document.querySelector("#subName").value}`;
-    let contact = document.querySelector('#phoneEmail').value;
-    let div = document.createElement('div');
-    div.className = 'right-content';
-    let paragraph = document.createElement('p')
-    paragraph.innerHTML = `Olá, ${userNameRegistrartion}
-Seu contato é ${contact}` 
-    containerRight.appendChild(paragraph);
-
-    // let birthday = document.querySelector('#date-birthdate').value;
-    // tratar data de nascimento;
-
-    } else {
-      printCampo(parametro);
-    }
-
-    const createElement = () => {
-      div.innerText = "oi"
-      console.log(div);
-    }
+  validLogin(parametro);
+  createWelcome();
 });
-
-//Requisito 20
-
