@@ -1,0 +1,139 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  min-height: 82px;
+  border-bottom: 1px solid #133783;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.facebook-logo {
+  width: 200px;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  border-color: #1d2a5b;
+  width: 142px;
+  padding-right: 5px;
+  color: whitesmoke;
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.form-control {
+  align-self: flex-end;
+  padding-right: 10px;
+}
+
+header input {
+  border: solid 1px black;
+  height: 19px;
+}
+
+main input {
+  border: solid 1px grey;
+  height: 25px;
+  margin: 5px;
+  border-radius: 5%;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.left-content {
+  display: flex;
+  width: 800px;
+  flex-direction: column;
+}
+
+.right-content {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+}
+
+#formulario {
+  width: auto;
+}
+
+#cadastro-nome {
+  display: flex;
+}
+
+#cadastro-nome input {
+  width: 140px;
+}
+
+#cadastro-email-senha {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+#birthdate {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+#genders {
+  display: flex;
+  width: auto;
+  align-items: center;
+}
+
+#senha {
+  margin-top: 40px;
+  position: absolute;
+  left: 800px;
+}
+
+#facebook-slogan {
+  margin: 20px;
+  margin-left: 130px;
+}
+
+.quick-easy {
+  display: flex;
+  color: dimgrey;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+#date input {
+  left: 0;
+  position: absolute;
+  margin-top: 25px;
+}
+
+#facebook-register {
+  background-color: #42b72a;
+  color: white;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+#opcional {
+  position: absolute;
+  margin-top: 60px;
+  margin-left: 50px;
+}

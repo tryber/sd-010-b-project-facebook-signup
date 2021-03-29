@@ -11,5 +11,19 @@
   "scripts": {
     "lint": "eslint --no-inline-config --ext .js,.jsx --no-error-on-unmatched-pattern -c .eslintrc.json .",
     "lint:styles": "stylelint **/*.css --config .stylelintrc.json --ignore-disables --allow-empty-input"
-  }
+  },
+  "name": "sd-010-b-project-facebook-signup",
+  "description": "Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do Manual da Pessoa Estudante da Trybe.",
+  "version": "1.0.0",
+  "main": "script.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tryber/sd-010-b-project-facebook-signup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tryber/sd-010-b-project-facebook-signup/issues"
+  },
+  "homepage": "https://github.com/tryber/sd-010-b-project-facebook-signup#readme"
 }
