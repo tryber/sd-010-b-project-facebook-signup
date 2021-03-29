@@ -9,34 +9,23 @@ function exibeAlerta() {
 clickBotao.addEventListener('click', exibeAlerta);
 
 function camposInvalidos() {
-  const divMensagem = document.getElementById('div_mensagem');
-  const nome = document.getElementById('nome');
-  const sobrenome = document.getElementById('sobrenome');
-  const email = document.getElementById('email');
-  const senha = document.getElementById('senha');
-  const dataDeNascimento = document.getElementById('data_de_nascimento');
-  const generoM = document.getElementById('masculino');
-  const generoF = document.getElementById('feminino');
-  const generoP = document.getElementById('personalizado');
 
-  if (nome.value === '') {
-    divMensagem.innerHTML = 'Campos Inválidos';
-  } if (sobrenome.value === '') {
-    divMensagem.innerHTML = 'Campos Inválidos';
-  } if (email.value === '') {
-    divMensagem.innerHTML = 'Campos Inválidos';
-  } if (senha.value === '') {
-    divMensagem.innerHTML = 'Campos Inválidos';
-  } if (dataDeNascimento.value === '') {
-    divMensagem.innerHTML = 'Campos Inválidos';
-  } if (generoF.value === '') {
-    divMensagem.innerHTML = 'Campos Inválidos';
-  } if (generoM.value === '') {
-    divMensagem.innerHTML = 'Campos Inválidos';
-  } if (generoP.value === '') {
-    divMensagem.innerHTML = 'Campos Inválidos';
-  } else {
-    divMensagem.innerHTML = ''
+  const clickSiginup = document.querySelectorAll('input');
+  const novoP = document.createElement('p');
+  const textoP = document.createTextNode('Campos Inválidos');
+  const divAtual = document.getElementById('div_mensagem');
+  const form = document.getElementById('form_cad');
+  let cont = false;
+
+  for (let index = 0; index < clickSiginup.length; index += 1) {
+    if (clickSiginup[index].value === '') {
+      cont = true;
+    }
+  }
+
+  if (cont === false) {
+    novoP.appendChild(textoP);
+    form.insertBefore(novoP, divAtual);
   }
 }
 
