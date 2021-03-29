@@ -17,7 +17,7 @@ function limpaForm() {
 }
 
 function imprimeDados() {
-  const array = document.getElementsByClassName('imprimir');
+  const arr = document.getElementsByClassName('imprimir');
   const els = document.getElementsByClassName('checked-genero');
   let genero;
   for (let i = 0; i < els.length; i += 1) {
@@ -26,14 +26,17 @@ function imprimeDados() {
     }
   }
   const pai = document.getElementById('formcontato');
-  const pNome = document.createElement('p').innerHTML = `Olá, ${array[0].value} ${array[1].value}`;
+  const pNome = document.createElement('p');
+  const pGen = document.createElement('p');
+  pNome.innerHTML = `Olá, ${arr[0].value} ${arr[1].value}`;
   pai.appendChild(pNome);
-  for (let i = 2; i < array.length; i += 1) {
-    const p = document.createElement('p').innerHTML = `${array[i].value}.`;
+  for (let i = 2; i < arr.length; i += 1) {
+    const p = document.createElement('p');
+    p.innerHTML = `${arr[i].value}.`;
     pai.appendChild(p);
   }
-  const pGenero = document.createElement('p').innerHTML = `Genero: ${genero}.`;
-  pai.appendChild(pGenero);
+  pGen.innerHTML = `Genero: ${genero}.`;
+  pai.appendChild(pGen);
 }
 
 function valida(event) {
