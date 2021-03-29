@@ -1,0 +1,132 @@
+/* * {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+.top-bar {
+  display: flex;
+  background-color: rgb(66, 103, 178);
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  width: 100%;
+}
+
+.facebook-logo {
+  align-self: flex-start;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  padding: 3px 3px 4px;
+  color: white;
+}
+
+.form-control {
+  align-self: flex-end;
+  padding: 4px 6px;
+}
+
+#button-login {
+  background-color: #4267b2;
+  color: white;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.right-content input:first-of-type , .right-content input:nth-of-type( 2 ) {
+  width: 49%;
+}
+
+#label-birthdate , #label-gender , #facebook-register {
+  display: block;
+}
+ */
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+.top-bar {
+  display: flex;
+  background-color: rgb(66, 103, 178);
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  width: 100%;
+}
+
+.facebook-logo {
+  align-self: flex-start;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  padding: 3px 3px 4px;
+  color: white;
+}
+
+.form-control {
+  align-self: flex-end;
+  padding: 4px 6px;
+}
+
+#button-login {
+  background-color: #4267b2;
+  color: white;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.right-content input:first-of-type , .right-content input:nth-of-type( 2 ) {
+  width: 49%;
+}
+
+#label-birthdate , #label-gender , #facebook-register {
+  display: block;
+}
+
+#error-message {
+  color: red;
+}
