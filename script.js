@@ -25,17 +25,19 @@ function imprimeDados() {
       genero = (els[i].value);
     }
   }
+  console.log(array.length);
   const pai = document.getElementById('formcontato');
   const pNome = document.createElement('p');
-  const pEmail = document.createElement('p');
-  const pData = document.createElement('p');
   const pGenero = document.createElement('p');
   pNome.innerHTML = `Olá, ${array[0].value} ${array[1].value}`;
   pai.appendChild(pNome);
-  pEmail.innerHTML = `Email ou Telefone: ${array[2].value}.`;
-  pai.appendChild(pEmail);
-  pData.innerHTML = `Data de Nascimento: ${array[3].value}.`;
-  pai.appendChild(pData);
+
+  for (let i = 2; i < array.length; i += 1) {
+    const p = document.createElement('p');
+    p.innerHTML = `${array[i].value}.`;
+    pai.appendChild(p);
+  }
+
   pGenero.innerHTML = `Genero: ${genero}.`;
   pai.appendChild(pGenero);
 }
