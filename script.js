@@ -68,21 +68,26 @@ const validLogin = (parametro) => {
       element.style.display = 'none';
     }
   }
-  printCampo(parametro);
+  printCampo(parametro); 
 };
 
 const createWelcome = () => {
+  let genero;
   const containerRight = document.querySelector('.right-content');
   const name = document.querySelector('#name').value;
   const lastName = document.querySelector('#subName').value;
-  const userName = name.value + lastName.value;
   const contact = document.querySelector('#phoneEmail').value;
   const div = document.createElement('div');
   div.className = 'right-content';
   const paragraph = document.createElement('p');
   const birthday = document.querySelector('#date-birthdate').value;
-  paragraph.innerHTML = `Olá, ${userName};
-Seu contato é ${contact} e sua data de nascimento é ${birthday}`;
+  for (let i = 0; i < inputRadio.length; i += 1) {
+    if (inputRadio[i].checked) {
+      genero = inputRadio[i].value;
+    }
+  }
+  paragraph.innerHTML = `Olá, ${name} ${lastName};
+Seu contato é ${contact} e sua data de nascimento é ${birthday}, gênero ${genero}`;
   containerRight.appendChild(paragraph);
 };
 
