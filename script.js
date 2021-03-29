@@ -58,7 +58,6 @@ function clickCadastro() {
     encontraP.style.display = 'block';
     encontraP.innerText = `Olá, ${encontraNome} ${encontraSobrenome}
     ${encontraEmail}\n${encontraData} \n${encotraGender}`;
-    
   }
 }
 
