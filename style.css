@@ -93,6 +93,10 @@ input:focus {
   background-color: #29487d;
 }
 
+#main-background {
+  background-image: linear-gradient(white, #d3d8e8);
+}
+
 .main-content {
   display: flex;
   justify-content: space-between;
@@ -144,8 +148,13 @@ input:focus {
 #gender-container {
   display: block;
   margin-top: 10px;
+  font-size: 14px;
 }
 
 .input-gender {
   margin: 0;
+}
+
+#custom-gender {
+  
 }
