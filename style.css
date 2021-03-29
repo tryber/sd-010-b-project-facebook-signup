@@ -60,7 +60,9 @@ input:focus {
 }
 
 .form-control {
-  align-self: center;
+  align-self: flex-end;
+  width: 50px;
+  margin-bottom: 20px;
 }
 
 #button-login {
