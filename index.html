@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Projeto Facebook Signup | Trybe</title>
+  <!-- https://web.archive.org/web/20200101163229if_/https://pt-br.facebook.com/ -->
+</head>
+
+<body>
+  <header class="top-bar">
+    <div id="logo-container">
+      <img src="imgs/facebook-logo.png" alt="logoFacebook" class="facebook-logo">
+    </div>
+    <div id="form-login-container">
+      <form method="GET" class="facebook-login">
+        <div class="form-group">
+          <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
+          <input id="user-email-phone" type="text" name="user-email-telefone" required>
+        </div>
+        <div class="form-group">
+          <label for="user-password" id="user-password-label">Senha</label>
+          <input id="user-password" type="password" name="user-password" required>
+        </div>
+        <div class="form-control">
+          <label for="button-login">
+            <button id="button-login">Entrar</button>
+          </label>
+        </div>
+      </form>
+    </div>
+  </header>
+  <main class="main-content">
+    <aside class="left-content">
+      <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua
+        vida.</p>
+      <img src="imgs/networking.png" alt="imagemGloboConectado" id="facebook-networking">
+    </aside>
+    <aside class="right-content">
+      <h1>Abra uma conta</h1>
+      <div class="quick-easy">
+        <p>É rápido e fácil.</p>
+      </div>
+      <form method="GET" id="registro">
+        <div id="form-nome-sobrenome">
+          <input type="text" name="firstname" placeholder="Nome" id="nameLogin" required
+            oninvalid="this.setCustomValidity('Campos Inválidos')" oninput="this.setCustomValidity('')">
+          <input type="text" name="lastname" placeholder="Sobrenome" id="lastnameLogin" required required
+            oninvalid="this.setCustomValidity('Campos Inválidos')" oninput="this.setCustomValidity('')">
+        </div>
+        <div>
+          <input type="text" name="phone_email" placeholder="Celular ou email" id="phoneEmailLogin" required required
+            oninvalid="this.setCustomValidity('Campos Inválidos')" oninput="this.setCustomValidity('')">
+          <input type="password" name="password" placeholder="Nova senha" id="senhaLogin" required required
+            oninvalid="this.setCustomValidity('Campos Inválidos')" oninput="this.setCustomValidity('')">
+        </div>
+        <label for="nascimentoLogin" id="label-birthdate">Data de nascimento</label>
+        <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="nascimentoLogin" required required
+          oninvalid="this.setCustomValidity('Campos Inválidos')" oninput="this.setCustomValidity('')">
+        <br>
+        <label id="label-gender">Gênero</label>
+        <br>
+        <label for="feminino">
+          <input type="radio" name="gender" id="feminino" checked value="Feminino">Feminino
+        </label>
+        <label for="masculino">
+          <input type="radio" name="gender" id="masculino" value="Masculino">Masculino
+        </label>
+        <label for="personalizado">
+          <input type="radio" name="gender" id="personalizado" value="Personalizado">Personalizado
+        </label>
+        <input type="text" id="genero-personalizado" name="gender-custom" placeholder="Gênero (opcional)">
+        <button id="facebook-register" type="submit">Cadastre-se</button>
+        <p id="campos-invalidos">Campos inválidos</p>
+      </form>
+    </aside>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
