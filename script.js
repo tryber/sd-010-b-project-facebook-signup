@@ -47,7 +47,7 @@ function clickCadastro() {
     const encontraP = document.getElementById('cadastro-invalito');
     encontraP.style.display = 'block';
   } else {
-    const encontraForm = document.getElementsByClassName('form-cadastro');
+    const encontraConteudo = document.getElementsByClassName('conteudo');
     const encontraP = document.getElementsByClassName('texto-formulario');
     const encontraNome = document.getElementsByName('firstname').value;
     const encontraSobrenome = document.getElementsByName('lastname').value;
@@ -57,7 +57,7 @@ function clickCadastro() {
     encontraP.style.display = 'block';
     encontraP.innerText = encontraNome + encontraSobrenome;
     encontraP.innerText = encontraEmail + encontraData + encotraGender;
-    encontraForm.style.display = 'none';
+    encontraConteudo.style.display = 'none';
   }
 }
 
