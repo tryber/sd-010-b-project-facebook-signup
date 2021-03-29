@@ -23,5 +23,4 @@ clickCad.addEventListener('click', (event) => {
     }
   }
   return inputForm;
-})
-
+});
