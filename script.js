@@ -2,7 +2,7 @@ const inputEmail = document.getElementById('user-email-phone');
 const clickBotao = document.getElementById('button-login');
 const clickCad = document.getElementById('facebook-register');
 const inputForm = document.querySelectorAll('main form input');
-const textForm = document.getElementById('text-form');
+let textForm = document.getElementById('text-form');
 
 function exibeAlerta() {
   alert(inputEmail.value);
@@ -18,7 +18,7 @@ const formValidate = () => {
     }
 
     if (counter !== 0) {
-      textForm.innerHTML = 'Campos inválidos';
+      textForm.innerText = 'Campos inválidos';
     }
   }
   return inputForm;
