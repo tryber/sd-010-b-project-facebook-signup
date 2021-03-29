@@ -43,47 +43,51 @@
 
             <form class="borda" action="/" name="formcontato" id="formcontato" method="GET">
 
-                <div id="nome-completo">
-                    <input class="verifica" type="text" name="firstname" id="firstname" placeholder="Nome">
-                    <input class="verifica" type="text" name="lastname" id="lastname" placeholder="Sobrenome">
+                <div id="nome-completo" class="nome-completo removivel">
+                    <input class="verifica imprimir" type="text" name="firstname" id="firstname" placeholder="Nome">
+                    <input class="verifica imprimir" type="text" name="lastname" id="lastname" placeholder="Sobrenome">
                 </div>
 
-                <div>
-                    <input class="verifica" type="text" name="phone_email" id="phone_email"
-                        placeholder="Celular ou email"><br>
+                <div class="removivel">
+                    <input class="verifica imprimir" type="text" name="phone_email" id="phone_email"
+                        placeholder="Celular ou email">
+                    <br>
                     <input class="verifica" type="password" name="password" id="password" placeholder="Nova senha">
                 </div>
-                <div id="data-nascimento">
+                <div id="data-nascimento" class="removivel">
                     <label id="label-birthdate" for="">
                         <h3>Data de nascimento</h3>
                     </label>
-                    <input class="verifica" type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa">
+                    <input class="verifica imprimir" type="text" name="birthdate" id="birthdate"
+                        placeholder="dd/mm/aaaa">
                 </div>
-                <div>
+                <div class="removivel">
                     <label id="label-gender">Gênero</label>
                     <div id="tipo-genero">
-                        <input type="radio" name="gender" id="feminino" value="Feminino" checked>
+                        <input class="checked-genero" type="radio" name="gender" id="feminino" value="Feminino" checked>
                         <label for="feminino">Feminino</label>
-                        <input type="radio" name="gender" id="masculino" value="Masculino">
+                        <input class="checked-genero" type="radio" name="gender" id="masculino" value="Masculino">
                         <label for="masculino">Masculino</label>
-                        <input type="radio" name="gender" id="personalizado" value="Personalizado">
+                        <input class="checked-genero" type="radio" name="gender" id="personalizado"
+                            value="Personalizado">
                         <label for="personalizado">Personalizado</label>
                     </div>
                 </div>
 
-                <div>
+                <div class="removivel">
 
                     <input type="text" name="gender-custom" id="gender-custom" placeholder="Gênero (opcional)">
 
                 </div>
 
-                <div>
+                <div class="removivel">
 
                     <button type="submit" name="" id="facebook-register">Cadastre-se</button>
 
                 </div>
 
-                <div id="campo-obrigatorio"></div>
+                <div id="campo-obrigatorio" class="removivel"></div>
+            </form>
         </div>
     </section>
     <script src="/script.js"></script>

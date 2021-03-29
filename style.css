@@ -64,7 +64,8 @@ h3 {
   height: 400px;
 }
 
-#nome-completo {
+/* #nome-completo {} */
+.nome-completo {
   display: flex;
 }
 
@@ -152,4 +153,8 @@ input {
   border-radius: 5px;
   padding: 10px;
   margin: 5px;
+}
+
+.remover {
+  display: none;
 }
