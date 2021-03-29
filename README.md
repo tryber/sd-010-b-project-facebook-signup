@@ -1,3 +1,24 @@
+- [x] Requisito 1
+- [x] Requisito 2
+- [x] Requisito 3
+- [x] Requisito 4
+- [x] Requisito 5
+- [x] Requisito 6
+- [x] Requisito 7
+- [x] Requisito 8
+- [x] Requisito 9
+- [x] Requisito 10
+- [x] Requisito 11
+- [x] Requisito 12
+- [x] Requisito 13
+- [x] Requisito 14
+- [x] Requisito 15
+- [ ] Requisito 16
+- [x] Requisito 17
+- [ ] Requisito 18
+- [ ] Requisito 19
+- [ ] Requisito 20
+
 ### Termos e acordos
 
 Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do Manual da Pessoa Estudante da Trybe.

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top-bar">    
+        <img class="facebook-logo" src="imgs/facebook-logo.png" alt="">
+        <form action="" class="facebook-login">
+            <div class="form-group">
+                <label for="user-email-phone-label" id="user-email-phone-label">Email ou telefone</label>
+                <input type="text" id="user-email-phone">
+                <div class="formulario-column">
+                    <label for="email">Email ou telefone</label>
+                    <input type="text" id="email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="user-password-label" id="user-password-label">Senha</label>
+                <input type="password" id="user-password">
+                <div class="formulario-column">
+                    <label for="Senha">Senha </label>
+                    <input type="password" id="Senha">
+                    <a href="">Esqueceu a conta?</a>
+                </div>
+            </div>
+            <div class="form-control">
+                <button id="button-login">Entrar</button>
+                <div class="formulario-column">
+                    <button class="button-login">Entrar</button>
+                </div>
+            </div>
+        </form>
+    </header>
+
+    <div class="main-content">
+        <div class="left-content">
+            <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+            <img src="imgs/networking.png" id="facebook-networking" alt="">
+        </div>
+    
+        <div class="right-content">
+            <p class="texto-formulario"></p>
+            <div id="conteudo">
+            <h1>Abra uma conta</h1>
+            <p class="quick-easy">É rápido e fácil.</p>
+
+            
+            
+            <form action="" class="form-cadastro">
+                <div class="cadastro-nome">
+                <input class="input" type="text" name="firstname" placeholder="Nome" >
+                <input class="input" type="text" name="lastname" placeholder="Sobrenome">
+            </div>
+                <div class="cadastro-email">
+                <input class="input" type="text" name="phone_email" placeholder="Celular ou email">
+                <input class="input" type="password" name="password" placeholder="Nova senha">
+            </div>
+               
+                
+                    <label for="" id="label-birthdate"> Data de nascimento</label>
+                <input class="input" type="text" name="birthdate" placeholder="dd/mm/aaaa">
+
+                <div class="gender-container">
+                    <label for="gender" id="label-gender">Gênero</label>
+                    <div class="label-gender-content">
+                      <input  type="radio"  onclick="desaparecerInput()" name="gender" id="feminino" value="Feminino">
+                      <label for="feminino" id="label-feminino">Feminino</label>
+                      <input  type="radio"  onclick="desaparecerInput()" name="gender" id="masculino" value="Masculino">
+                      <label for="masculino" id="label-masculino">Masculino</label>
+                      <input  type="radio"  onclick="aparecerInput()" name="gender" id="personalizado" value="Personalizado">
+                      <label for="personalizado" id="label-personalizado">Personalizado</label>
+                    </div>
+                    <input class="input" type="text" name="gender-custom" id="genero-opcional" placeholder="Gênero (opcional)">
+                  </div>
+                  <p id="cadastro-invalito">Campos inválidos</p>cancelado
+                <button type="submit" id="facebook-register" onclick="clickCadastro()">Cadastre-se</button>
+            </form>
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
