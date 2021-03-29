@@ -129,5 +129,11 @@ h1 {
   background-color: #42b72a;
   color: white;
   padding: 10px;
-  margin-top: 10px;
+  margin-top: 30px;
+}
+
+#opcional {
+  position: absolute;
+  margin-top: 60px;
+  
 }
