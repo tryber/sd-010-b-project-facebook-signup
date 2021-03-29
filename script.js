@@ -1,3 +1,4 @@
+//Emite alerta com nome de usuário após clicar no botão ENTRAR.
 const enterButton = document.querySelector('#button-login');
 
 enterButton.addEventListener('click', () => {
