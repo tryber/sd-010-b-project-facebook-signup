@@ -17,7 +17,7 @@ function alertButton() {
 //   message2.innerText = `Olá, ${elementos[0].value} ${elementos[1].value}`;
 /* Função que verifica se os campos do formulário estão preenchidos e mostra mensagem Campo Inválido */
 function checks() {
-  const verifica = document.querySelectorAll(':required');
+  const verifica = document.querySelectorAll('.right-content :required');
   for (let i = 0; i < verifica.length; i += 1) {
     if (verifica[i].value === '') {
       const formInput = document.getElementById('campos');
@@ -25,6 +25,7 @@ function checks() {
       return true;
     }
   }
+  return true;
 }
 
 const customGenderRadio = document.getElementById('custom');
@@ -50,8 +51,52 @@ function radioEventClick() {
   }
 }
 
+const registerForm = document.getElementById('register-form');
+const rightContent = document.getElementById('right-content');
+const i = document.querySelectorAll('.right-content input[type=text]');
+
+const verifyCheckedRadio = (index, object, radioInput) => {
+  const personalInfo = object;
+  if (radioInput === customGenderRadio) {
+    personalInfo[radioInput.name] = i[index].value;
+  } else {
+    personalInfo[radioInput.name] = radioInput.value;
+  }
+};
+
+const createPersonalObject = () => {
+  const personalInfo = {};
+  for (let index = 0; index < i.length; index += 1) {
+    const selectRadio = document.querySelectorAll('.right-content :checked')[0];
+    if (i[index] === customGenderInput) {
+      verifyCheckedRadio(index, personalInfo, selectRadio);
+    } else {
+      personalInfo[i[index].name] = i[index].value;
+    }
+  }
+  return personalInfo;
+};
+
+const showInformation = (isValid) => {
+  if (isValid) {
+    const personalInfo = createPersonalObject();
+    registerForm.classList.add('hidden');
+    const info = document.createElement('div');
+    rightContent.appendChild(info);
+    info.innerText = `Olá, ${personalInfo.firstname} ${personalInfo.lastname}
+Email ou Telefone: ${personalInfo.phone_email}
+Data de Nascimento: ${personalInfo.birthdate}
+Gênero: ${personalInfo.gender}
+    `;
+  }
+};
+
 window.onload = () => {
   button.addEventListener('click', alertButton);
   radioEventClick();
-  faceregister.addEventListener('click', checks);
+  faceregister.addEventListener('click', (e) => {
+    const isValid = checks();
+    showInformation(isValid);
+    e.preventDefault();
+  });
 };
