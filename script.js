@@ -7,15 +7,6 @@ function alertButton() {
   alert(emailTel.value);
 }
 
-// function change() {
-//   const elementos = document.querySelectorAll('input [type: text]');
-//   const gender = document.querySelector('input[type:"radio"]:checked');
-//   const p = document.createElement('p');
-//   const div = document.createElement('div');
-
-//   const message2 = document.createElement('h2');
-//   message2.innerText = `Olá, ${elementos[0].value} ${elementos[1].value}`;
-/* Função que verifica se os campos do formulário estão preenchidos e mostra mensagem Campo Inválido */
 function checks() {
   const verifica = document.querySelectorAll('.right-content :required');
   for (let i = 0; i < verifica.length; i += 1) {
