@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Project Facebook</title>
+</head>
+
+<body>
+  <header class='top-bar' id="top-bar">
+    <img src="imgs/facebook-logo.png" class='facebook-logo'>
+    <form action="" class='facebook-login' id="login-form-top-bar">
+      <div class='form-group'>
+        <label for='user-email-phone' id='user-email-phone-label'>Email ou telefone</label>
+        <input id='user-email-phone' type="email" required>
+      </div>
+      <div class='form-group'>
+        <label for="user-password" id='user-password-label'>Senha</label>
+        <input id='user-password' type="password" required>
+      </div>
+      <div class='form-control'>
+        <button id='button-login'>Entrar</button>
+      </div>
+    </form>
+  </header>
+  <!-- Conteudo Matheus -->
+  <main class="main-content" id="main-content">
+    <section class="left-content">
+      <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+      <img id="facebook-networking" src="imgs/networking.png" alt="networking img">
+    </section>
+    <section class="right-content" id="right-content">
+      <section id="register-form">
+        <h1>Abra uma conta</h1>
+        <p class="quick-easy">É rápido e fácil.</p>
+        <form action="" method="get">
+          <div class="name-input">
+            <input required name="firstname" type="text" placeholder="Nome">
+            <input required name="lastname" type="text" placeholder="Sobrenome">
+          </div>
+          <input required name="phone_email" type="text" placeholder="Celular ou email">
+          <input required type="password" name="password" placeholder="Nova senha">
+          <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+          <input required type="text" placeholder="dd/mm/aaaa" name="birthdate" id="birthdate">
+          <label for="" id="label-gender">Gênero</label>
+          <div class="radio-labels">
+            <label class="radio-input" for="female"><input type="radio" name="gender" value="Feminino" id='female' checked>Feminino</label>
+            <label class="radio-input" for="male"><input type="radio" name="gender" id='male' value="Masculino">Masculino</label>
+            <label class="radio-input" for="custom"><input type="radio" id="custom" value="Personalizado" name="gender">Personalizado</label>
+          </div>
+          <input type="text" id='gender-custom' class="hidden" name="gender-custom" placeholder="Gênero (opcional)">
+          <button id="facebook-register" type="submit">Cadastre-se</button>
+          <p id='campos'></p>
+        </form>
+      </section>
+    </section>
+    <form action="" class='facebook-login mobile-element'>
+      <div class='form-group'>
+        <input type="email" required placeholder="Email ou telefone">
+      </div>
+      <div class='form-group'>
+        <input type="password" required placeholder="Senha">
+      </div>
+      <hr>
+      <div class='form-control'>
+        <button class="button-enter-mobile">Entrar</button>
+      </div>
+      <div id="or-container">
+        <hr>
+        <p>ou</p>
+        <hr>
+      </div>
+    </form>
+    <section class="mobile-element register">
+      <button>Criar nova Conta</button>
+      <a href="#">Esqueceu a senha?</a>
+    </section>
+  </main>
+  <footer>
+    <p class="created-by">Created by: </p>
+    <div>
+      <div class="author">
+        <p> Matheus Gois </p>
+        <a href="https://github.com/Matthengo" target="_blank"><img src="imgs/github-icon.png" alt=""></a>
+      </div>
+      <div class="author">
+        <p> Letycia Barreto </p>
+        <a href="https://github.com/LetyciaBarreto" target="_blank"><img src="imgs/github-icon.png" alt=""></a>
+      </div>
+    </div>
+    <p>Sponsored by: </p>
+    <br>
+    <div class="sponsor">
+      <p> Trybe </p>
+      <a href="https://www.betrybe.com/" target="_blank"><img src="imgs/trybe-logo.jpg" alt=""></a>
+    </div>
+  </footer>
+</body>
+<script type="text/javascript" src="script.js"></script>
+
+</html>
