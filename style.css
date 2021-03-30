@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+}
+
+.form-group input {
+  width: 110px;
+  margin-right: 15px;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+#button-login {
+  background-color: rgb(66, 103, 178);
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  margin-bottom: 6px;
+  border-width: 1px;
+  font-size: 10px;
+  padding: 3px;
+}
+
+.main-content {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(180deg, rgb(254, 254, 254) 0%, rgb(210, 217, 231) 100%);
+  font-family: Helvetica, Arial, sans-serif;
+  flex: 1;
+}
+
+.left-content {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-content p {
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 29px;
+  width: 500px;
+}
+
+.right-content {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+.right-content h1 {
+  font-size: 36px;
+}
+
+.right-content p {
+  font-size: 19px;
+}
+
+.right-content h1 , .right-content p {
+  margin-bottom: 10px;
+}
+
+.right-content form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.right-content input {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  font-size: large;
+  border: 1px solid #bcc8d7;
+  border-radius: 10px;
+}
+
+.name-input {
+  display: flex;
+}
+
+/*
+Source
+https://stackoverflow.com/questions/42421361/input-button-elements-not-shrinking-in-a-flex-container
+
+Code: min-width: 0 -> Serve para o input entrar nas regras de grow e shrink do flexbox.
+*/
+
+.name-input input {
+  min-width: 0;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.radio-labels input {
+  margin-right: 5px;
+}
+
+.name-input input:last-of-type {
+  margin-right: 0;
+}
+
+/* Remove a borda quando o input é focado */
+.right-content input:focus {
+  outline: none;
+}
+
+#label-birthdate , #label-gender {
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.radio-labels {
+  display: flex;
+}
+
+.radio-input {
+  flex: 1 1 auto;
+  font-size: 14px;
+}
+
+#facebook-register {
+  width: 150px;
+  margin: 15px 0;
+  padding: 10px 0;
+  background-color: #5a9b54;
+  border: 1px solid #e2ecf8;
+  color: white;
+  font-weight: 700;
+}
+
+footer {
+  text-align: center;
+  background-color: #272727;
+  height: auto;
+  color: white;
+  font-size: large;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+.created-by {
+  padding-top: 15px;
+}
+
+footer div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer img {
+  width: 50px;
+}
+
+.sponsor {
+  display: flex;
+  flex-direction: column;
+}
+
+.sponsor img {
+  margin: 10px 0;
+}
+
+.hidden , .mobile-element {
+  display: none;
+  visibility: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and ( max-width : 870px ) {
+
+  .left-content , .right-content , #login-form-top-bar {
+    display: none;
+    visibility: hidden;
+  }
+
+  .top-bar {
+    justify-content: center;
+  }
+
+  .facebook-login {
+    flex-direction: column;
+    width: 80vw;
+  }
+
+  .facebook-login input {
+    padding: 8px 10px;
+    font-size: large;
+    border: 1px solid #e3e3e3;
+    background: #f5f6f7;
+  }
+
+  #user-password {
+    border-top: 0;
+  }
+
+  .main-content {
+    padding-top: 50px;
+    background: white;
+    flex-direction: column;
+    align-items: center;
+    min-height: 450px;
+    justify-content: flex-start;
+  }
+
+  .form-control {
+    align-self: stretch;
+  }
+
+  .button-enter-mobile {
+    width: 100%;
+    margin: 15px 0;
+    height: 40px;
+    border: transparent;
+    border-radius: 5px;
+    font-size: large;
+    background: #007eec;
+    color: white;
+    font-weight: 700;
+  }
+
+  .mobile-element {
+    display: initial;
+    visibility: visible;
+  }
+
+  hr {
+    border: 1px solid #ccd0d5;
+  }
+
+  #or-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #or-container hr {
+    flex: 1;
+    height: 1px;
+  }
+
+  #or-container p {
+    width: 40px;
+  }
+
+  .register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .register button {
+    margin: 15px 0;
+    padding: 0 15px;
+    height: 40px;
+    border: transparent;
+    border-radius: 5px;
+    font-size: large;
+    color: white;
+    font-weight: 700;
+    background: #00bb2e;
+  }
+
+  footer img {
+    width: 75px;
+  }
+
+  .created-by {
+    margin-bottom: 20px;
+  }
+}
