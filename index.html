@@ -32,30 +32,30 @@
       <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
       <img id="facebook-networking" src="imgs/networking.png" alt="networking img">
     </section>
-    <section class="right-content">
-      <h1>Abra uma conta</h1>
-      <p class="quick-easy">É rápido e fácil.</p>
-      <form action="" method="get">
-        <div class="name-input">
-          <input required name="firstname" type="text" placeholder="Nome">
-          <input required name="lastname" type="text" placeholder="Sobrenome">
-        </div>
-        <input required name="phone_email" type="text" placeholder="Celular ou email">
-        <input required type="password" name="password" placeholder="Nova senha">
-        <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-        <input required type="text" placeholder="dd/mm/aaaa" name="birthdate" id="birthdate">
-        <label for="" id="label-gender">Gênero</label>
-        <div class="radio-labels">
-          <label class="radio-input" for="female"><input type="radio" name="gender" value="Feminino" id='female' checked>Feminino</label>
-          <label class="radio-input" for="male"><input type="radio" name="gender" id='male' value="Masculino">Masculino</label>
-          <label class="radio-input" for="custom"><input type="radio" id="custom" value="Personalizado" name="gender">Personalizado</label>
-        </div>
-
-        <input type="text" id='gender-custom' class="hidden" name="gender-custom" placeholder="Gênero (opcional)">
-
-        <button id="facebook-register" type="submit">Cadastre-se</button>
-        <p id='campos'></p>
-      </form>
+    <section class="right-content" id="right-content">
+      <section id="register-form">
+        <h1>Abra uma conta</h1>
+        <p class="quick-easy">É rápido e fácil.</p>
+        <form action="" method="get">
+          <div class="name-input">
+            <input required name="firstname" type="text" placeholder="Nome">
+            <input required name="lastname" type="text" placeholder="Sobrenome">
+          </div>
+          <input required name="phone_email" type="text" placeholder="Celular ou email">
+          <input required type="password" name="password" placeholder="Nova senha">
+          <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+          <input required type="text" placeholder="dd/mm/aaaa" name="birthdate" id="birthdate">
+          <label for="" id="label-gender">Gênero</label>
+          <div class="radio-labels">
+            <label class="radio-input" for="female"><input type="radio" name="gender" value="Feminino" id='female' checked>Feminino</label>
+            <label class="radio-input" for="male"><input type="radio" name="gender" id='male' value="Masculino">Masculino</label>
+            <label class="radio-input" for="custom"><input type="radio" id="custom" value="Personalizado" name="gender">Personalizado</label>
+          </div>
+          <input type="text" id='gender-custom' class="hidden" name="gender-custom" placeholder="Gênero (opcional)">
+          <button id="facebook-register" type="submit">Cadastre-se</button>
+          <p id='campos'></p>
+        </form>
+      </section>
     </section>
     <form action="" class='facebook-login mobile-element'>
       <div class='form-group'>
