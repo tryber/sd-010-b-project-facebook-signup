@@ -1,7 +1,7 @@
 const inputEmailPhone = document.getElementById('user-email-phone');
 const buttonGetIn = document.getElementById('button-login');
 const genderPersonality = document.getElementById('input-gender-personality');
-const divRightContent = document.getElementsByClassName('right-content')[0];
+// const divRightContent = document.getElementsByClassName('right-content')[0];
 const formOpenAccount = document.querySelector('[name="form"]');
 
 console.log(formOpenAccount);
@@ -76,10 +76,13 @@ if (localStorage.getItem('infoUserFacebook')) {
   let info = localStorage.getItem('infoUserFacebook');
   console.log(info);
   info = JSON.parse(info);
-  divRightContent.innerHTML = '';
-  divRightContent.innerText = `Olá, ${info.firstname} ${info.lastname}
+  const className = 'firstname-lastname';
+  const firstnameLastname = document.getElementsByClassName(className)[0];
+  firstnameLastname.innerText = `Olá, ${info.firstname} ${info.lastname}`;
+  // divRightContent.innerHTML = '';
+  /* divRightContent.innerText = `Olá, ${info.firstname} ${info.lastname}
   ${info.phone_email}
   ${info.birthdate}
   ${info.gender}
-  `;
+  `; */
 }
