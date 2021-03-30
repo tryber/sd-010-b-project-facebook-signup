@@ -6,11 +6,9 @@ const formOpenAccount = document.querySelector('[name="form"]');
 
 /* Requisito 20: */
 
-const getStorageInfoSignUp = () => {
+const getInfoSignUp = (info) => {
   // console.log('localizei informações do cadastro do Facebook');
-  let info = localStorage.getItem('infoUserFacebook');
   console.log(info);
-  info = JSON.parse(info);
   divRightContent.innerHTML = '';
   divRightContent.innerText = `Olá, ${info.firstname} ${info.lastname}
   ${info.phone_email}
@@ -18,11 +16,6 @@ const getStorageInfoSignUp = () => {
   ${info.gender}
   `;
 };
-
-/* Se as informações foram preenchidas pelo usuário anteriormente, ele retorna uma mensagem na tela de login: */
-if (localStorage.getItem('infoUserFacebook')) {
-  getStorageInfoSignUp();
-}
 
 console.log(formOpenAccount);
 
@@ -34,10 +27,6 @@ buttonGetIn.addEventListener('click', buttonIn);
 
 /* Requisito 18: verificando se algum dos campos é vazio: */
 const buttonSubmitForm = document.getElementById('facebook-register');
-/* Função para adicionar informações ao localStorage: */
-const addLocalStorage = (jsonInfoFacebook) => {
-  localStorage.setItem('infoUserFacebook', jsonInfoFacebook);
-};
 
 const idMessegeError = 'messege-error';
 const isValidFunction = (isValid, objectLocalStorage) => {
@@ -48,8 +37,7 @@ const isValidFunction = (isValid, objectLocalStorage) => {
     p.innerText = 'Campos inválidos';
     formOpenAccount.prepend(p);
   } else {
-    addLocalStorage(JSON.stringify(objectLocalStorage));
-    getStorageInfoSignUp();
+    getInfoSignUp(objectLocalStorage);
   }
 };
 
