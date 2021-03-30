@@ -77,7 +77,9 @@ function validateForm(event) {
   isValidFunction(isValid, objectLocalStorage);
 }
 
-buttonSubmitForm.addEventListener('click', validateForm);
+if (buttonSubmitForm) {
+  buttonSubmitForm.addEventListener('click', validateForm);
+}
 
 /* Requisito 19: */
 
