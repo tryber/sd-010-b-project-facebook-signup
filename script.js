@@ -5,7 +5,6 @@ const inputForm = document.querySelectorAll('main form input');
 const textForm = document.getElementById('text-form');
 const inputPersonalizado = document.getElementById('personalizado');
 
-
 function exibeAlerta() {
   alert(inputEmail.value);
 }
@@ -36,4 +35,4 @@ inputPersonalizado.addEventListener('click', () => {
     newInput.placeholder = 'Gênero (opcional)';
     newInput.id = 'newInput';
   }
-})
+});
