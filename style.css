@@ -74,6 +74,8 @@ body {
 
 .genero {
   display: flex;
+  flex-wrap: wrap;
+  width: 350px;
 }
 
 #button-login {
