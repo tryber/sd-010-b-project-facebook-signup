@@ -4,7 +4,6 @@ const clickRegister = document.getElementById('facebook-register');
 const inputForm = document.querySelectorAll('main form input');
 const textForm = document.getElementById('text-form');
 const inputPersonalizado = document.getElementById('personalizado');
-const nomeText = document.getElementById('nome');
 const divRightContent = document.querySelector('.right-content')
 
 function exibeAlerta() {
@@ -38,7 +37,3 @@ inputPersonalizado.addEventListener('click', () => {
     newInput.id = 'newInput';
   }
 });
-
-const myFunction = () => {
-  divRightContent.innerText = 'ola';
-}
