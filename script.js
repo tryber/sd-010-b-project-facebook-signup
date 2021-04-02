@@ -4,7 +4,6 @@ const clickRegister = document.getElementById('facebook-register');
 const inputForm = document.querySelectorAll('main form input');
 const textForm = document.getElementById('text-form');
 const inputPersonalizado = document.getElementById('personalizado');
-const divRightContent = document.querySelector('.right-content')
 
 function exibeAlerta() {
   alert(inputEmail.value);
