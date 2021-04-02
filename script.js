@@ -1,9 +1,11 @@
 const inputEmail = document.getElementById('user-email-phone');
 const clickBotao = document.getElementById('button-login');
-const clickCad = document.getElementById('facebook-register');
+const clickRegister = document.getElementById('facebook-register');
 const inputForm = document.querySelectorAll('main form input');
 const textForm = document.getElementById('text-form');
 const inputPersonalizado = document.getElementById('personalizado');
+const nomeText = document.getElementById('nome');
+const divRightContent = document.querySelector('.right-content')
 
 function exibeAlerta() {
   alert(inputEmail.value);
@@ -11,7 +13,7 @@ function exibeAlerta() {
 
 clickBotao.addEventListener('click', exibeAlerta);
 
-clickCad.addEventListener('click', (event) => {
+clickRegister.addEventListener('click', (event) => {
   for (let index = 0; index < inputForm.length; index += 1) {
     let counter = 0;
     if (inputForm[index].value === '') {
@@ -23,7 +25,6 @@ clickCad.addEventListener('click', (event) => {
       textForm.innerText = 'Campos inválidos';
     }
   }
-  return inputForm;
 });
 
 inputPersonalizado.addEventListener('click', () => {
@@ -33,6 +34,11 @@ inputPersonalizado.addEventListener('click', () => {
     const divInputs = document.querySelector('.genero');
     divInputs.appendChild(newInput);
     newInput.placeholder = 'Gênero (opcional)';
+    newInput.name = 'gender-custom';
     newInput.id = 'newInput';
   }
 });
+
+const myFunction = () => {
+  divRightContent.innerText = 'ola';
+}
