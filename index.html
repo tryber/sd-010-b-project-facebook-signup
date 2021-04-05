@@ -39,7 +39,7 @@
         </div>
         <div class="right-content borda">
             <h1>Abra uma conta</h1><br>
-            <h2 class="quick-easy">É rápido e fácil</h2>
+            <h2 class="quick-easy">É rápido e fácil.</h2>
 
             <form class="borda" action="/" id ="formcontato" method="GET">
 
@@ -56,40 +56,44 @@
                     <label id="label-birthdate" for=""><h3>Data de nascimento</h3></label>
                     <input type="text" name="birthdate" id="birthdate" required placeholder="dd/mm/aaaa" >
                 </div>
-                <div id="tipo-genero">
-                    <label id="label-gender"><h3>Gênero</h3></label>
-                    <input type="radio" name="gender"  id= "feminino" value="f" checked>  
-                    <label for="feminino">Feminino</label>
-                    <input type="radio" name="gender"  id = "masculino" value="m">
-                    <label for="masculino">Masculino</label>
-                    <input type="radio" name="gender" id="personalizado" value="p">
-                    <label for="personalizado">Personalizado</label>
+                <div class="removivel">
+                    <label id="label-gender">Gênero</label>
+                    <div id="tipo-genero">
+                        <input class="checked-genero" type="radio" name="gender" id="feminino" value="Feminino" checked>
+                        <label for="feminino">Feminino</label>
+                        <input class="checked-genero" type="radio" name="gender" id="masculino" value="Masculino">
+                        <label for="masculino">Masculino</label>
+                        <input class="checked-genero" type="radio" name="gender" id="personalizado"
+                            value="Personalizado">
+                        <label for="personalizado">Personalizado</label>
+                    </div>
                 </div>
+<<<<<<< HEAD
                 <div id="error"></div>
                 <div>
+=======
 
-                    <input type="text" name="gender-custom" id="gender-custom" placeholder="Gênero (opcional)" >
+                <div class="removivel">
+>>>>>>> ff1cfd0c244d508e14a55b874a0ac42ce852e296
+
+                    <input type="text" name="gender-custom" id="gender-custom" placeholder="Gênero (opcional)">
 
                 </div>
 
-                <div>
+                <div class="removivel">
 
+<<<<<<< HEAD
                     <button type="submit" name="" id="facebook-register"  >Cadastre-se</button>
+=======
+                    <button type="submit" name="" id="facebook-register">Cadastre-se</button>
+>>>>>>> ff1cfd0c244d508e14a55b874a0ac42ce852e296
 
                 </div>
 
-                <div id="campo-obrigatorio"></div>
-
-
-                </div>
-                </div>
-
+                <div id="campo-obrigatorio" class="removivel"></div>
+            </form>
         </div>
     </section>
-
-
-
-
     <script src="/script.js"></script>
 </body>
 
