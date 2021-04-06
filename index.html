@@ -11,10 +11,10 @@
 
 <body>
 
-    <header class="top-bar">
+    <header class="top-bar borda">
         <img src="imgs/facebook-logo.png" class="facebook-logo borda" alt="">
 
-        <form action="" class=" facebook-login">
+        <form action="" class=" facebook-login borda">
             <div class="form-group borda">
                 <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
                 <input id="user-email-phone" type="email" name="">
@@ -37,24 +37,29 @@
                 sua vida.</p>
             <img id="facebook-networking" src="imgs/networking.png" alt="">
         </div>
-        <div class="right-content">
+        <div class="right-content borda">
             <h1>Abra uma conta</h1><br>
             <h2 class="quick-easy">É rápido e fácil.</h2>
 
-            <form class="borda" action="/" id ="formcontato" method="GET">
+            <form class="borda" action="/" name="formcontato" id="formcontato" method="GET">
 
-                <div id="nome-completo">
-                    <input class="verifica" type="text" name="firstname" id="firstname" required placeholder="Nome">
-                    <input class="verifica" type="text" name="lastname" id="lastname" required placeholder="Sobrenome">
+                <div id="nome-completo" class="nome-completo removivel">
+                    <input class="verifica imprimir" type="text" name="firstname" id="firstname" placeholder="Nome">
+                    <input class="verifica imprimir" type="text" name="lastname" id="lastname" placeholder="Sobrenome">
                 </div>
 
-                <div>
-                <input type="text" name="phone_email" id="phone_email" required placeholder="Celular ou email" ><br>
-                <input type="password" name="password" id="password" required placeholder="Nova senha" >
+                <div class="removivel">
+                    <input class="verifica imprimir" type="text" name="phone_email" id="phone_email"
+                        placeholder="Celular ou email">
+                    <br>
+                    <input class="verifica" type="password" name="password" id="password" placeholder="Nova senha">
                 </div>
-                <div id="data-nascimento">
-                    <label id="label-birthdate" for=""><h3>Data de nascimento</h3></label>
-                    <input type="text" name="birthdate" id="birthdate" required placeholder="dd/mm/aaaa" >
+                <div id="data-nascimento" class="removivel">
+                    <label id="label-birthdate" for="">
+                        <h3>Data de nascimento</h3>
+                    </label>
+                    <input class="verifica imprimir" type="text" name="birthdate" id="birthdate"
+                        placeholder="dd/mm/aaaa">
                 </div>
                 <div class="removivel">
                     <label id="label-gender">Gênero</label>
@@ -68,13 +73,8 @@
                         <label for="personalizado">Personalizado</label>
                     </div>
                 </div>
-<<<<<<< HEAD
-                <div id="error"></div>
-                <div>
-=======
 
                 <div class="removivel">
->>>>>>> ff1cfd0c244d508e14a55b874a0ac42ce852e296
 
                     <input type="text" name="gender-custom" id="gender-custom" placeholder="Gênero (opcional)">
 
@@ -82,11 +82,7 @@
 
                 <div class="removivel">
 
-<<<<<<< HEAD
-                    <button type="submit" name="" id="facebook-register"  >Cadastre-se</button>
-=======
                     <button type="submit" name="" id="facebook-register">Cadastre-se</button>
->>>>>>> ff1cfd0c244d508e14a55b874a0ac42ce852e296
 
                 </div>
 
@@ -94,60 +90,6 @@
             </form>
         </div>
     </section>
-
-    <footer>
-        <div class="div-central">
-
-            <div class="linguas">
-                <p>Português (Brasil)</p>
-                <a href="">English (US)</a>
-                <a href="">Español</a>
-                <a href="">Français (France)</a>
-                <a href="">中文(简体)</a>
-                <a href="">العربية</a>
-                <a href="">Italiano</a>
-                <a href="">한국어</a>
-                <a href="">Deutsch</a>
-                <a href="">हिन्दी</a>
-                <a href="">日本語</a>
-                <button>+</button>
-            </div>
-            <hr>
-            <div>
-                <div class="funcoes">
-                    <a href="">Cadastre-se</a>
-                    <a href="">Entrar</a>
-                    <a href="">Messenger</a>
-                    <a href="">Facebook Lite</a>
-                    <a href="">Watch</a>
-                    <a href="">Pessoas</a>
-                    <a href="">Páginas</a>
-                    <a href="">Categorias de Página</a>
-                    <a href="">Locais</a>
-                    <a href="">Jogos</a>
-                    <a href="">Locais</a>
-                    <a href="">MarketPlace</a>
-                    <a href="">Grupos</a>
-                    <a href="">Instagram</a>
-                    <a href="">Local</a>
-                    <a href="">Campanhas de arrecadação de fundos</a>
-                    <a href="">Serviços</a>
-                    <a href="">Sobre</a>
-                    <a href="">Criar anúncio</a>
-                    <a href="">Criar Pagina</a>
-                    <a href="">Desenvolvedores</a>
-                    <a href="">Carreiras</a>
-                    <a href="">Privacidade</a>
-                    <a href="">Cookies</a>
-                    <a href="">Opções de anúncio</a>
-                    <a href="">Termos</a>
-                    <a href="">Ajuda</a>
-                </div>
-                <div>
-                    <p class="facebook-direitos">Facebook © 2020</p>
-                </div>
-            </div>
-    </footer>
     <script src="/script.js"></script>
 </body>
 
