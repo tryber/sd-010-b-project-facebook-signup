@@ -50,7 +50,7 @@ h3 {
 
 .main-content {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   background-color: #cecece;
   height: 400px;
 }
@@ -59,12 +59,21 @@ h3 {
   flex-basis: 800px;
 }
 
+.left-content p {
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 29px;
+  margin-top: 40px;
+  width: 400px;
+  margin-left: 35px;
+}
+
 .right-content {
   width: 300px;
   height: 400px;
 }
 
-/* #nome-completo {} */
 .nome-completo {
   display: flex;
 }
@@ -80,22 +89,20 @@ input {
 }
 
 #user-email-phone {
-  height: 30px;
+  height: 20px;
   padding-left: 2px;
-  font-size: 15px;
+  font-size: 12px;
   border: 1px solid #a5dcff;
-  border-radius: 8px;
 }
 
 #user-password {
-  height: 30px;
+  height: 20px;
   padding-left: 2px;
-  font-size: 15px;
+  font-size: 12px;
   border: 1px solid #a5dcff;
-  border-radius: 8px;
 }
 
-#firstname#lastname {
+#firstname {
   height: 30px;
   padding-left: 10px;
   font-size: 15px;
@@ -157,4 +164,49 @@ input {
 
 .remover {
   display: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.div-central {
+  width: 75%;
+}
+
+.linguas {
+  display: flex;
+  padding: 10px;
+}
+
+.linguas a {
+  font-size: 15px;
+  font-family: inherit;
+  color: #385898;
+  padding-right: 8px;
+}
+
+.linguas p {
+  padding-right: 8px;
+  color: gray;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.funcoes {
+  padding: 10px;
+}
+
+.funcoes a {
+  padding: 4px;
+  padding-bottom: 25px;
+  color: #385898;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.facebook-direitos {
+  color: gray;
+  padding-left: 5px;
 }
