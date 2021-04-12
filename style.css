@@ -8,12 +8,12 @@
 
 body {
   box-sizing: content-box;
-  background: linear-gradient(white, #D3D8E8);
+  background: linear-gradient(white, #d3d8e8);
 }
 
 .top-bar {
   display: flex;
-  background: linear-gradient(#4267B2, rgb(66, 103, 178));
+  background: linear-gradient(#4267b2, rgb(66, 103, 178));
   padding: 5px 50px;
   justify-content: space-between;
   align-items: center;
@@ -58,7 +58,6 @@ body {
   margin: 0;
   border: 1px solid black;
   padding: 3px 3px 4px;
-  
 }
 
 .form-control {
@@ -103,7 +102,7 @@ body {
 #facebook-slogan {
   color: #0e385f;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 29px;
   margin-top: 40px;
   width: 450px;
@@ -141,7 +140,7 @@ body {
 }
 
 #label-birthdate, #label-gender p {
-  color: #90949c;
+  color:#90949c;
   font-size: 16px;
   font-weight: 900;
   display: block;
