@@ -13,12 +13,6 @@ function entrar() {
 }
 btnEntrar.addEventListener('click', entrar);
 
-<<<<<<< HEAD
-const assert = require('assert'); // Sintaxe para incluir o módulo assert
-
-assert.strictEqual(50, 50); // Sem erros: 50 == 50
-assert.strictEqual(50, 70); // AssertionError: 50 == 70
-=======
 function verificaInput() {
   const encontraInput = document.getElementsByClassName('input');
   for (let index = 0; index <= encontraInput.length; index += 1) {
@@ -86,4 +80,3 @@ verificarRadio();
 aparecerInput();
 
 desaparecerInput();
->>>>>>> e70b473b50f46b01e07d8438cce28c0e5f356884
