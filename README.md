@@ -10,11 +10,11 @@
 - [x] Requisito 10
 - [x] Requisito 11
 - [x] Requisito 12
-- [ ] Requisito 13
-- [ ] Requisito 14
-- [ ] Requisito 15
+- [x] Requisito 13
+- [x] Requisito 14
+- [x] Requisito 15
 - [ ] Requisito 16
-- [ ] Requisito 17
+- [x] Requisito 17
 - [ ] Requisito 18
 - [ ] Requisito 19
 - [ ] Requisito 20
