@@ -1,6 +1,19 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  box-sizing: content-box;
+  background: linear-gradient(white, #D3D8E8);
+}
+
 .top-bar {
   display: flex;
-  background-color: rgb(66, 103, 178);
+  background: linear-gradient(#4267B2, rgb(66, 103, 178));
   padding: 5px 50px;
   justify-content: space-between;
   align-items: center;
@@ -10,7 +23,7 @@
   text-align: left;
 }
 
-.top-bar .facebook-login {
+.facebook-login {
   display: flex;
   align-self: flex-end;
   color: white;
@@ -33,21 +46,68 @@
 .form-group {
   display: flex;
   flex-direction: column;
-  padding: 0 5px;
+  padding: 0 0 0 14px;
+  font-size: small;
+}
+
+.form-group label {
+  padding-bottom: 4px;
+}
+
+.form-group input {
+  margin: 0;
+  border: 1px solid black;
+  padding: 3px 3px 4px;
+  
 }
 
 .form-control {
+  display: flex;
+  flex-direction: column;
   align-self: flex-end;
+  vertical-align: inherit;
+  padding: 0 0 21px 14px;
+  font-size: small;
+}
+
+#button-login {
+  display: table-column;
+  color: white;
+  background-color: #4267b2;
+  border: 1px solid #063874;
+  padding: 3px 9px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#button-login:hover {
+  background-color: #29487d;
 }
 
 .main-content {
   display: flex;
+  flex: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  margin: auto;
 }
 
 .left-content {
   width: 800px;
+  margin: 0 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#facebook-slogan {
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 29px;
+  margin-top: 40px;
+  width: 450px;
+  word-spacing: -1px;
 }
 
 .right-content {
@@ -64,8 +124,45 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding: 0 5px;
+}
+
+.right-content input {
+  font-size: 18px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  margin-bottom: 10px;
 }
 
 .cadastro-email {
   flex-direction: column;
+}
+
+#label-birthdate, #label-gender p {
+  color: #90949c;
+  font-size: 16px;
+  font-weight: 900;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#facebook-register {
+  min-width: 194px;
+  padding: 7px 20px;
+  font-size: 19px;
+  line-height: 126%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 900;
+  background: linear-gradient(#79bc64, #578843);
+  background-color: #69a74e;
+  box-shadow: 0 1px 1px #a4e388;
+  border-color: #3b6e22 #3b6e22 #2c5115;
+  border: 1px solid;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
 }
