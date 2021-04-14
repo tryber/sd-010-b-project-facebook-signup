@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  width: 980;
+  height: 85px;
+  display: flex;
+  align-content: center;
+}
+
+.nav-content {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: white;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  align-self: center;
+  justify-content: space-between;
+}
+
+.facebook-login {
+  width: 350px;
+  display: flex;
+  align-self: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 142px;
+}
+
+#button-login {
+  background-color: rgb(66, 103, 178);
+  border-radius: 2px;
+  padding: 2px 6px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+.form-control {
+  display: flex;
+  align-self: flex-end;
+}
+
+#user-email-phone {
+  padding: 3px 3px 4px;
+  border: 1px solid #ccd0d5;
+}
+
+#user-password {
+  padding: 3px 3px 4px;
+  border: 1px solid #ccd0d5;
+}
+
+.main-content {
+  display: flex;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.radio-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.right-content {
+  width: 300px;
+}
+
+#ajust {
+  display: flex;
+}
+
+#lastname-content {
+  margin-left: 10px;
+}
+
+.buttons-radius {
+  display: flex;
+}
+
+#alert-mensage {
+  color: darkred;
+}
