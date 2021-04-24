@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Facebook</title>
+</head>
+
+<body>
+  <header class="top-bar">
+    <section class="section-logo">
+      <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Logo do Facebook">
+    </section>
+    <section class="section-login">
+      <form action method="GET" class="facebook-login" enctype="multipart/form-data">
+        <!--Login-->
+        <section class="form-group">
+          <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
+          <input type="text" id="user-email-phone">
+        </section>
+        <!--Password-->
+        <section class="form-group">
+          <label id="user-password-label" for="user-password">Senha</label>
+          <input type="password" name="password-login" id="user-password">
+
+        </section>
+        <!--Button-->
+        <section class="form-control">
+          <button id="button-login">Entrar</button>
+        </section>
+      </form>
+    </section>
+  </header>
+  <article class="main-content">
+    <section class="left-content">
+      <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua
+        vida.</p>
+      <br>
+      <img src="imgs/networking.png" id="facebook-networking" alt="Conexões">
+    </section>
+    <section class="right-content">
+      <section class="section-forms">
+        <h1>Abra uma conta</h1>
+        <br>
+        <p class="quick-easy">É rápido e fácil.</p>
+        <br>
+        <form action="get" class="form-right-content">
+          <div class="full-name">
+            <label for="firstname"></label>
+            <input type="text" name="firstname" id="firstname" placeholder="Nome" class="required input-class">
+            <label for="lastname"></label>
+            <input type="text" name="lastname" id="lastname" placeholder="Sobrenome" class="required input-class">
+          </div>
+          <label for="phone-email"></label>
+          <input type="text" name="phone_email" id="phone-email" placeholder="Celular ou email"
+            class="required input-class">
+          <br>
+          <label for="password"></label>
+          <input type="password" name="password" id="password" placeholder="Nova senha" class="required">
+          <br>
+          <label id="label-birthdate" for="birthdate">Data de nascimento</label>
+          <br>
+          <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa" class="required input-class">
+          <br>
+
+          <section class="gender-section">
+            <label id="label-gender" for="">Gênero</label>
+            <br>
+
+            <label for="female"> <input type="radio" value="Feminino" name="gender" id="female"
+                class="rdBtn input-radio">
+              Feminino
+            </label>
+
+            <label for="male"> <input type="radio" value="Masculino" name="gender" id="male" class="rdBtn input-radio">
+              Masculino</label>
+
+            <label for="custom"><input type="radio" value="Personalizado" name="gender" id="custom"
+                class="rdBtn input-radio">
+              Personalizado</label>
+          </section>
+
+          <section>
+            <input type="text" name="gender-custom" placeholder="Gênero (opcional)" id="gender-custom">
+          </section>
+          <br>
+          <button type="submit" id="facebook-register">Cadastre-se</button>
+          <p id="invalid-message"></p>
+        </form>
+      </section>
+    </section>
+
+  </article>
+  <script src="script.js"></script>
+</body>
+
+</html>
